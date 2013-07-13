@@ -2,9 +2,9 @@
 
 @import "compass";
 
-@mixin debug(){
-	background: #CCC;
-}
+// あーあ
+@import "_twinkle.scss";
+@import "_scalar.scss";
 
 * {
 	font-family: 'Arial','メイリオ','ＭＳ Ｐゴシック',
@@ -19,35 +19,80 @@ html {
 
 body {
 	margin: 0;
-	padding: 0;
+	padding: 10px 0 0 0;
 	height: 100%;
-	background: #EEE;
+	background: #F7F7F7;
 }
 
 a {
-	&:hover{
-		color: #FFF;
-	}
-}
-
-div#container {
-	width: 960px;
-	min-height: 100%;
-	margin: auto;
-	padding: 5px 10px;
-	background: #FFF;
+	@include setHoverColor(#43C7E2);	
 }
 
 header {
-	@include debug();
+	@include clearfix();
 	display: block;
-	width: 100%;
-	height: 80px;
-	margin: 0;
+	width: $base_width;
+	height: $header_height;
+	margin: auto;
 	padding: 0;
-	h1 {
+	// ロゴ
+	h1#logo {
+		width: 400px;
+		height: $header_height;
 		margin: 0;
 		padding: 0;
 		float: left;
+	}
+	// ソーシャル活動場所へのリンク
+	ul#social_link {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		float: right;
+		li {
+			@include debug();
+			@include inline-block();
+			width: $header_height;
+			height: $header_height;
+			line-height: $header_height;
+			margin-right: 10px;
+			text-align: center;
+			// 最後の要素(github)
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+// メニュー画面
+nav {
+	@include clearfix();
+	display: block;
+	width: 100%;
+	height: $menu_height;
+	margin: 10px 0;
+	padding: 0;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		li {
+			@include inline-block();
+			width: 120px;
+			height: $menu_height;
+			margin: 0 5px;
+			&#home {
+				width: 50px;
+			}
+			a {
+				display: block;
+				width: 100%;
+				height: $menu_height;
+				line-height: $menu_height;
+				@include setHoverColor(#FFFFFF, #483131, none);
+			}
+		}
 	}
 }

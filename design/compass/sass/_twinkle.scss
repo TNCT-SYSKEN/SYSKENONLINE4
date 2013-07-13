@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// デバッグ用 背景色の設定
+@mixin debug(){
+	background: #CCC;
+}
+
+// リンクの色の設定用
+@mixin setHoverColor($text_color, $bg_color: none, $text_deco: underline) {
+	color: $text_color;
+	background: $bg_color;
+	text-decoration: $text_deco;
+	&:hover, &:focus, &:active {
+		color: lighten($text_color, 20%);
+		@if $bg_color == none {
+			background: none;
+		} @else {
+			background: lighten($bg_color, 20%);
+		}
+	}
+	&:visited {
+		color: $text_color;
+		background: $bg_color;
+	}
+}
