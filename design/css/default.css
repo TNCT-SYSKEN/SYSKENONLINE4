@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0;
-  padding: 10px 0 0 0;
+  padding: 0;
   height: 100%;
   background: #f7f7f7;
 }
@@ -22,7 +22,7 @@ a {
   text-decoration: underline;
 }
 a:hover, a:focus, a:active {
-  color: #9be1f0;
+  color: #6fd4e9;
   background: none;
 }
 a:visited {
@@ -36,7 +36,7 @@ header {
   display: block;
   width: 960px;
   height: 80px;
-  margin: auto;
+  margin: 10px auto;
   padding: 0;
 }
 header h1#logo {
@@ -76,9 +76,9 @@ nav {
   display: block;
   width: 100%;
   height: 40px;
-  margin: 10px 0;
-  padding: 0;
-  background: #422424;
+  margin: 0;
+  padding: .3em 0;
+  background: #34495e;
 }
 nav ul {
   margin: 0;
@@ -95,7 +95,8 @@ nav ul li {
   *display: inline;
   width: 120px;
   height: 40px;
-  margin: 0 5px;
+  margin: 0 .2em;
+  padding: 0;
 }
 nav ul li#home {
   width: 50px;
@@ -105,15 +106,26 @@ nav ul li a {
   width: 100%;
   height: 40px;
   line-height: 40px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
   color: white;
-  background: #483131;
+  background: #1abc9c;
   text-decoration: none;
 }
 nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   color: white;
-  background: #855a5a;
+  background: #1dd2af;
 }
 nav ul li a:visited {
   color: white;
-  background: #483131;
+  background: #1abc9c;
+}
+
+div#topimg {
+  background: #CCC;
+  width: 100%;
+  text-align: center;
 }

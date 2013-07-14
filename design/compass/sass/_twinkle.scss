@@ -11,11 +11,11 @@
 	background: $bg_color;
 	text-decoration: $text_deco;
 	&:hover, &:focus, &:active {
-		color: lighten($text_color, 20%);
+		color: lighten($text_color, 10%);
 		@if $bg_color == none {
 			background: none;
 		} @else {
-			background: lighten($bg_color, 20%);
+			background: lighten($bg_color, 5%);
 		}
 	}
 	&:visited {

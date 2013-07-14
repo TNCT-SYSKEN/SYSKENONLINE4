@@ -21,7 +21,7 @@ html {
 
 body {
 	margin: 0;
-	padding: 10px 0 0 0;
+	padding: 0;
 	height: 100%;
 	background: $c_page_bg;
 }
@@ -33,14 +33,14 @@ a {
 header {
 	@include clearfix();
 	display: block;
-	width: $base_width;
-	height: $header_height;
-	margin: auto;
+	width: $s_base_width;
+	height: $s_header_height;
+	margin: 10px auto;
 	padding: 0;
 	// ロゴ
 	h1#logo {
 		width: 400px;
-		height: $header_height;
+		height: $s_header_height;
 		margin: 0;
 		padding: 0;
 		float: left;
@@ -54,9 +54,9 @@ header {
 		li {
 			@include debug();
 			@include inline-block();
-			width: $header_height;
-			height: $header_height;
-			line-height: $header_height;
+			width: $s_header_height;
+			height: $s_header_height;
+			line-height: $s_header_height;
 			margin-right: .5em;
 			text-align: center;
 			// 最後の要素(github)
@@ -72,10 +72,10 @@ nav {
 	@include clearfix();
 	display: block;
 	width: 100%;
-	height: $menu_height;
-	margin: 10px 0;
-	padding: 0;
-	background: #422424;
+	height: $s_menu_height;
+	margin: 0;
+	padding: .3em 0;
+	background: $c_menu_bg;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -84,18 +84,26 @@ nav {
 		li {
 			@include inline-block();
 			width: 120px;
-			height: $menu_height;
-			margin: 0 5px;
+			height: $s_menu_height;
+			margin: 0 .2em;
+			padding: 0;
 			&#home {
 				width: 50px;
 			}
 			a {
 				display: block;
 				width: 100%;
-				height: $menu_height;
-				line-height: $menu_height;
-				@include setHoverColor(#FFFFFF, #483131, none);
+				height: $s_menu_height;
+				line-height: $s_menu_height;
+				@include border-radius();
+				@include setHoverColor(#FFFFFF, #1abc9c, none);
 			}
 		}
 	}
+}
+
+div#topimg {
+	@include debug();
+	width: 100%;
+	text-align: center;
 }
