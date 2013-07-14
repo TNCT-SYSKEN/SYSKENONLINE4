@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
 @import "compass";
+@import "compass/css3";
 
 // あーあ
 @import "_twinkle.scss";
 @import "_scalar.scss";
+@import "_color.scss";
 
 * {
 	font-family: 'Arial','メイリオ','ＭＳ Ｐゴシック',
@@ -21,11 +23,11 @@ body {
 	margin: 0;
 	padding: 10px 0 0 0;
 	height: 100%;
-	background: #F7F7F7;
+	background: $c_page_bg;
 }
 
 a {
-	@include setHoverColor(#43C7E2);	
+	@include setHoverColor($c_link);	
 }
 
 header {
@@ -55,7 +57,7 @@ header {
 			width: $header_height;
 			height: $header_height;
 			line-height: $header_height;
-			margin-right: 10px;
+			margin-right: .5em;
 			text-align: center;
 			// 最後の要素(github)
 			&:last-child {
@@ -65,7 +67,7 @@ header {
 	}
 }
 
-// メニュー画面
+// メニューバー
 nav {
 	@include clearfix();
 	display: block;
@@ -73,6 +75,7 @@ nav {
 	height: $menu_height;
 	margin: 10px 0;
 	padding: 0;
+	background: #422424;
 	ul {
 		margin: 0;
 		padding: 0;

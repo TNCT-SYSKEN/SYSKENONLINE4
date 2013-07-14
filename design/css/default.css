@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 10px 0 0 0;
   height: 100%;
-  background: #F7F7F7;
+  background: #f7f7f7;
 }
 
 a {
@@ -63,7 +63,7 @@ header ul#social_link li {
   width: 80px;
   height: 80px;
   line-height: 80px;
-  margin-right: 10px;
+  margin-right: .5em;
   text-align: center;
 }
 header ul#social_link li:last-child {
@@ -78,6 +78,7 @@ nav {
   height: 40px;
   margin: 10px 0;
   padding: 0;
+  background: #422424;
 }
 nav ul {
   margin: 0;
