@@ -7,6 +7,7 @@
 @import "_twinkle.scss";
 @import "_scalar.scss";
 @import "_color.scss";
+//@import "_debug.scss";
 
 * {
 	font-family: 'Arial','メイリオ','ＭＳ Ｐゴシック',
@@ -16,13 +17,11 @@
 
 html {
 	overflow-y: scroll;
-	height: 100%;
 }
 
 body {
-	margin: 0;
+	margin: 10px 0;
 	padding: 0;
-	height: 100%;
 	background: $c_page_bg;
 }
 
@@ -33,36 +32,15 @@ a {
 header {
 	@include clearfix();
 	display: block;
-	width: $s_base_width;
-	height: $s_header_height;
-	margin: 10px auto;
-	padding: 0;
-	// ロゴ
-	h1#logo {
-		width: 400px;
-		height: $s_header_height;
-		margin: 0;
-		padding: 0;
-		float: left;
-	}
+	margin-bottom: 10px;
 	// ソーシャル活動場所へのリンク
 	ul#social_link {
+		@include hideSmallScreen();
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		float: right;
 		li {
-			@include debug();
 			@include inline-block();
-			width: $s_header_height;
-			height: $s_header_height;
-			line-height: $s_header_height;
-			margin-right: .5em;
-			text-align: center;
-			// 最後の要素(github)
-			&:last-child {
-				margin-right: 0;
-			}
 		}
 	}
 }
@@ -72,7 +50,6 @@ nav {
 	@include clearfix();
 	display: block;
 	width: 100%;
-	height: $s_menu_height;
 	margin: 0;
 	padding: .3em 0;
 	background: $c_menu_bg;
@@ -100,10 +77,4 @@ nav {
 			}
 		}
 	}
-}
-
-div#topimg {
-	@include debug();
-	width: 100%;
-	text-align: center;
 }

@@ -6,13 +6,11 @@
 
 html {
   overflow-y: scroll;
-  height: 100%;
 }
 
 body {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
-  height: 100%;
   background: #f7f7f7;
 }
 
@@ -34,40 +32,25 @@ header {
   overflow: hidden;
   *zoom: 1;
   display: block;
-  width: 960px;
-  height: 80px;
-  margin: 10px auto;
-  padding: 0;
-}
-header h1#logo {
-  width: 400px;
-  height: 80px;
-  margin: 0;
-  padding: 0;
-  float: left;
+  margin-bottom: 10px;
 }
 header ul#social_link {
   margin: 0;
   padding: 0;
   list-style: none;
-  float: right;
+}
+@media screen and (max-width: 768px) {
+  header ul#social_link {
+    display: none;
+  }
 }
 header ul#social_link li {
-  background: #CCC;
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  margin-right: .5em;
-  text-align: center;
-}
-header ul#social_link li:last-child {
-  margin-right: 0;
 }
 
 nav {
@@ -75,7 +58,6 @@ nav {
   *zoom: 1;
   display: block;
   width: 100%;
-  height: 40px;
   margin: 0;
   padding: .3em 0;
   background: #34495e;
@@ -122,10 +104,4 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
 nav ul li a:visited {
   color: white;
   background: #1abc9c;
-}
-
-div#topimg {
-  background: #CCC;
-  width: 100%;
-  text-align: center;
 }

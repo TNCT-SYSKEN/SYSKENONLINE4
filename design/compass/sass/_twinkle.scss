@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-// デバッグ用 背景色の設定
-@mixin debug(){
-	background: #CCC;
-}
-
 // リンクの色の設定用
 @mixin setHoverColor($text_color, $bg_color: none, $text_deco: underline) {
 	color: $text_color;
@@ -21,5 +16,12 @@
 	&:visited {
 		color: $text_color;
 		background: $bg_color;
+	}
+}
+
+// 画面サイズの小さいデバイスでは表示しない
+@mixin hideSmallScreen() {
+	@media screen and (max-width: 768px) {
+		display: none;
 	}
 }
