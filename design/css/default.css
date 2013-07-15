@@ -1,4 +1,24 @@
 @charset "UTF-8";
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12 {
+  background: #CCC;
+}
+
+div#fakegrid {
+  overflow: hidden;
+  *zoom: 1;
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  div#fakegrid {
+    display: none;
+  }
+}
+div#fakegrid div.col_1 {
+  height: 5px;
+  background: #DC2C61;
+}
+
 * {
   font-family: 'Arial','メイリオ','ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Sans-serif;
   line-height: 1.4em;
@@ -37,6 +57,7 @@ header {
 header ul#social_link {
   margin: 0;
   padding: 0;
+  text-align: right;
   list-style: none;
 }
 @media screen and (max-width: 768px) {
@@ -45,12 +66,17 @@ header ul#social_link {
   }
 }
 header ul#social_link li {
+  padding-bottom: 32768px;
+  margin-bottom: -32768px;
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+}
+header ul#social_link li {
+  overflow: hidden;
 }
 
 nav {

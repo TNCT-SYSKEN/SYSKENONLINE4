@@ -7,7 +7,7 @@
 @import "_twinkle.scss";
 @import "_scalar.scss";
 @import "_color.scss";
-//@import "_debug.scss";
+@import "_debug.scss";
 
 * {
 	font-family: 'Arial','メイリオ','ＭＳ Ｐゴシック',
@@ -38,8 +38,10 @@ header {
 		@include hideSmallScreen();
 		margin: 0;
 		padding: 0;
+		text-align: right;
 		list-style: none;
 		li {
+			@include equalHeightBox();
 			@include inline-block();
 		}
 	}

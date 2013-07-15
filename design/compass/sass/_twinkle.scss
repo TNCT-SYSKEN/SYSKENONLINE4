@@ -25,3 +25,11 @@
 		display: none;
 	}
 }
+
+@mixin equalHeightBox() {
+	padding-bottom: 32768px;
+	margin-bottom: -32768px;
+	& {
+		overflow: hidden;
+	}
+}
