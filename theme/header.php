@@ -1,7 +1,7 @@
 <?php 
 /*
-	header.php
-*/
+ *	header.php
+ */
 ?>
 <!DOCTYPE html>
 <html lang='ja'>
@@ -20,7 +20,7 @@
 <div class="container1000">
 	<header>
 		<h1 id="logo" class="col_5">
-			<a href="<?php bloginfo('url'); ?>">
+			<a href="<?php echo home_url('/'); ?>">
 			<img src="<?php bloginfo('template_url'); ?>/img/logo.png"></a>
 		</h1>
 		<ul id="social_link">
@@ -30,6 +30,4 @@
 	</header>
 </div>
 
-<nav>
-	<?php wp_nav_menu(array('theme_location'  => 'main_navi',)); ?>
-</nav>
+<?php wp_nav_menu(array('theme_location'  => 'main_navi', 'container' => 'nav')); ?>
