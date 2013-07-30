@@ -80,21 +80,13 @@
 	"buffers":
 	[
 		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n	<meta charset=\"UTF-8\">\n\n	<title>SYSKEN ONLINE - 津山高専システム研究部</title>\n\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/onepcssgrid.css\">\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/default.css\">\n \n	<meta name=\"viewport\" content=\"width=device-width\"/>\n</head>\n<body>\n\n<!-- デバッグ用のグリッド表示です。そのうち消えます。 -->\n<div id=\"fakegrid\" class=\"container1000\">\n	<div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1 last\"></div>\n</div>\n\n<div class=\"container1000\">\n	<header>\n		<h1 id=\"logo\" class=\"col_5\"><a href=\"http://sysken.org/\"><img src=\"./img/logo.png\"></a></h1>\n		<ul id=\"social_link\">\n			<li id=\"twitter\" class=\"col_1\"><a href=\"//twitter.com/sysken\"><img src=\"img/twitter_ico.png\"></a></li><!--\n			--><li id=\"github\" class=\"col_1\"><img src=\"img/github_ico.png\"></li>\n		</ul>\n	</header>\n</div>\n\n<nav>\n	<ul>\n		<li id=\"home\"><a href=\"/\">合</a></li><!-- \n		--><li><a href=\"/about\">About</a></li><!--\n		--><li><a href=\"/active\">Active</a></li><!--\n		--><li><a href=\"/member\">Member</a></li><!--\n		--><li><a href=\"/blog\">Blog</a></li><!--\n		--><li><a href=\"/product\">Product</a></li><!--\n		--><li><a href=\"/link\">Link</a></li>\n	</ul>\n</nav>\n\n<div id=\"topimg\">\n	<img src=\"http://sysken.org/images/topimage/E382B7E382B9E382B3E383B332303131E5A48F.png\">\n</div>\n\n</body>\n</html>",
 			"file": "index.html",
+			"file_size": 1774,
+			"file_write_time": 130184219083359152,
 			"settings":
 			{
-				"buffer_size": 1645,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "",
-			"file": "/D/Users/Takuto/Desktop/onepcssgrid/grid_test.html",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 1646,
 				"line_ending": "Windows"
 			}
 		},
@@ -227,9 +219,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/hoge.html",
+		"/D/Users/Takuto/Desktop/onepcssgrid/grid_test.html",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/compass/sass/_setting.scss",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/js/default.js",
-		"/D/Users/Takuto/Desktop/onepcssgrid/grid_test.html",
 		"/D/Users/Takuto/Desktop/onepcssgrid/onepcssgrid.css",
 		"/D/Users/Takuto/Desktop/onepcssgrid_/onepcssgrid.css",
 		"/D/Users/Takuto/Desktop/onepcssgrid/grid-page-1000.html",
@@ -287,6 +280,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"col_1",
+			"col_5",
+			"col_1",
 			"<div></div>",
 			"div",
 			"a",
@@ -352,15 +348,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1645,
+						"buffer_size": 1646,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1108,
-								1108
+								443,
+								443
 							]
 						],
 						"settings":
@@ -369,34 +365,6 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false,
 							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 180.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/Users/Takuto/Desktop/onepcssgrid/grid_test.html",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -411,7 +379,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "compass/sass/default.scss",
 					"settings":
 					{
@@ -422,8 +390,8 @@
 						"selection":
 						[
 							[
-								594,
-								594
+								427,
+								427
 							]
 						],
 						"settings":
@@ -433,13 +401,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 400.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "compass/sass/_debug.scss",
 					"settings":
 					{
@@ -466,7 +434,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "compass/sass/_twinkle.scss",
 					"settings":
 					{
@@ -494,7 +462,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "css/onepcssgrid.css",
 					"settings":
 					{
@@ -521,7 +489,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "compass/sass/_scalar.scss",
 					"settings":
 					{
@@ -548,7 +516,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "compass/sass/_color.scss",
 					"settings":
 					{
