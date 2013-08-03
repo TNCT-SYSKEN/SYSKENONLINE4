@@ -9,8 +9,9 @@ html {
 }
 
 body {
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   padding: 0;
+  height: 100%;
   background: #fdfdfd;
 }
 
@@ -36,8 +37,9 @@ header {
   overflow: hidden;
   *zoom: 1;
   display: block;
+  width: 100%;
   height: 78px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 header h1 {
   margin: 0;
@@ -47,7 +49,6 @@ header .space {
   height: 78px;
 }
 header ul#social_link {
-  position: relative;
   height: 78px;
   margin-top: 0;
   margin-bottom: 0;
@@ -62,18 +63,23 @@ header ul#social_link li {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  width: 60px;
-  height: 60px;
-  margin: 18px 10px 0 0;
+  width: 50px;
+  height: 50px;
+  margin: 28px 5px 0 0;
   padding: 0;
-  font-size: 42px;
+  line-height: 50px;
   text-align: center;
+  font-size: 35px;
 }
 header ul#social_link li:last-child {
   margin-right: 0;
 }
 header ul#social_link li a {
   text-decoration: none;
+}
+header ul#social_link li a:hover, header ul#social_link li a:active, header ul#social_link li a:focus {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
 }
 
 nav {
@@ -140,9 +146,52 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
 }
 nav ul li#home {
   width: 50px;
-  font-size: 1.4em;
   border-left: 1px solid #e8e8e8;
+  font-size: 1.4em;
+  line-height: 50px;
 }
 nav ul li#home a {
   line-height: 50px;
+  color: #383434;
+  background: #f8f8f8;
+  text-decoration: none;
+}
+nav ul li#home a:hover, nav ul li#home a:focus, nav ul li#home a:active {
+  color: #433e3e;
+  background: #fdfdfd;
+}
+nav ul li#home a:visited {
+  color: #383434;
+  background: #f8f8f8;
+}
+
+div#contents {
+  margin: 10px auto;
+  padding: 0;
+}
+div#contents div {
+  background-color: #CCC;
+}
+
+footer {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 180px;
+  margin: 10px 0 0 0;
+  padding: 10px 0;
+  color: #585858;
+  border-top: 1px solid #e8e8e8;
+  background: #f8f8f8;
+  box-shadow: 0 -2px 5px #dfdfdf;
+}
+footer #alice_carteret {
+  position: absolute;
+  bottom: 10px;
+  font-size: .8em;
+}
+footer #alice_carteret #copyright {
+  text-align: right;
 }

@@ -52,5 +52,5 @@
  
 .icon-home:before { content: '\e803'; } /* '' */
 .icon-twitter:before { content: '\e800'; color: #00ACED; } /* '' */
-.icon-github:before { content: '\e801'; color: #000000; } /* '' */
+.icon-github:before { content: '\e801'; color: #363636; } /* '' */
 .icon-facebook-squared:before { content: '\e802'; color: #3B5998; } /* '' */

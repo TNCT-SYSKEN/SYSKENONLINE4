@@ -20,8 +20,9 @@ html {
 }
 
 body {
-	margin: 10px 0;
+	margin: 10px 0 0 0;
 	padding: 0;
+	height: 100%;
 	background: $c_page_bg;
 }
 
@@ -36,20 +37,23 @@ img {
 header {
 	@include clearfix();
 	display: block;
+	width: 100%;
 	height: $s_header_height;
-	margin-bottom: 10px;
+	margin: 10px 0;
+
 	// ロゴ
 	h1 {
 		margin: 0;
 		padding: 0;
 	}
+
 	// 謎の隙間
 	.space {
 		height: $s_header_height;
 	}
+
 	// ソーシャル活動場所へのリンク
 	ul#social_link {
-		position: relative;
 		height: $s_header_height;
 		margin-top: 0;
 		margin-bottom: 0;
@@ -60,17 +64,22 @@ header {
 			@include inline-block();
 			width: $s_socialicon_size;
 			height: $s_socialicon_size;
-			margin: $s_header_height - $s_socialicon_size 10px 0 0;
+			margin: $s_header_height - $s_socialicon_size 5px 0 0;
 			padding: 0;
-			font-size: $s_socialicon_size * 0.7;
+			line-height: $s_socialicon_size;
 			text-align: center;
+			font-size: $s_socialicon_size * 0.7;
 			&:last-child {
 				margin-right: 0;
 			}
 			a {
 				text-decoration: none;
+				&:hover, &:active, &:focus {
+					@include opacity(0.7);
+				}
 			}
 		}
+
 	}
 }
 
@@ -120,12 +129,48 @@ nav {
 			}
 			&#home {
 				width: 50px;
-				font-size: 1.4em;
 				border-left: 1px solid $c_menu_border;
+				font-size: 1.4em;
+				line-height: $s_menu_height;
 				a {
 					line-height: $s_menu_height;
+					@include setHoverColor($c_menu_text, $c_menu_bg, none, 4%);
 				}
 			}
+		}
+	}
+}
+
+div#contents {
+	margin: 10px auto;
+	padding: 0;
+	div {
+		background-color: #CCC;
+	}
+}
+
+// フッター
+footer {
+	@include clearfix();
+	position: relative;
+	display: block;
+	width: 100%;
+	height: $s_footer_height;
+	margin: 10px 0 0 0;
+	padding: 10px 0;
+	color: $c_footer_text;
+	border-top: 1px solid $c_footer_border;
+	background: $c_footer_bg;
+	box-shadow: 0 -2px 5px darken($c_footer_bg, 10%);
+
+	// アリスカータレットちゃん！
+	#alice_carteret {
+		position: absolute;
+		bottom: 10px;
+		font-size: .8em;
+		// コピーライト
+		#copyright {
+			text-align: right;
 		}
 	}
 }
