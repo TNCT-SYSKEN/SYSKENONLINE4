@@ -80,13 +80,10 @@
 	"buffers":
 	[
 		{
-			"contents": "<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n	<meta charset=\"UTF-8\">\n\n	<title>SYSKEN ONLINE - 津山高専システム研究部</title>\n\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/onepcssgrid.css\">\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/default.css\">\n \n	<meta name=\"viewport\" content=\"width=device-width\"/>\n</head>\n<body>\n\n<!-- デバッグ用のグリッド表示です。そのうち消えます。 -->\n<div id=\"fakegrid\" class=\"container1000\">\n	<div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1\"></div><!--\n	--><div class=\"col_1 last\"></div>\n</div>\n\n<div class=\"container1000\">\n	<header>\n		<h1 id=\"logo\" class=\"col_5\"><a href=\"http://sysken.org/\"><img src=\"./img/logo.png\"></a></h1>\n		<ul id=\"social_link\">\n			<li id=\"twitter\" class=\"col_1\"><a href=\"//twitter.com/sysken\"><img src=\"img/twitter_ico.png\"></a></li><!--\n			--><li id=\"github\" class=\"col_1\"><img src=\"img/github_ico.png\"></li>\n		</ul>\n	</header>\n</div>\n\n<nav>\n	<ul>\n		<li id=\"home\"><a href=\"/\">合</a></li><!-- \n		--><li><a href=\"/about\">About</a></li><!--\n		--><li><a href=\"/active\">Active</a></li><!--\n		--><li><a href=\"/member\">Member</a></li><!--\n		--><li><a href=\"/blog\">Blog</a></li><!--\n		--><li><a href=\"/product\">Product</a></li><!--\n		--><li><a href=\"/link\">Link</a></li>\n	</ul>\n</nav>\n\n<div id=\"topimg\">\n	<img src=\"http://sysken.org/images/topimage/E382B7E382B9E382B3E383B332303131E5A48F.png\">\n</div>\n\n</body>\n</html>",
 			"file": "index.html",
-			"file_size": 1774,
-			"file_write_time": 130184219083359152,
 			"settings":
 			{
-				"buffer_size": 1646,
+				"buffer_size": 2501,
 				"line_ending": "Windows"
 			}
 		},
@@ -219,7 +216,6 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/hoge.html",
 		"/D/Users/Takuto/Desktop/onepcssgrid/grid_test.html",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/compass/sass/_setting.scss",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/js/default.js",
@@ -280,9 +276,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"col_1",
-			"col_5",
-			"col_1",
 			"<div></div>",
 			"div",
 			"a",
@@ -348,15 +341,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1646,
+						"buffer_size": 2501,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								443,
-								443
+								804,
+								804
 							]
 						],
 						"settings":
@@ -390,8 +383,8 @@
 						"selection":
 						[
 							[
-								427,
-								427
+								519,
+								519
 							]
 						],
 						"settings":
@@ -401,7 +394,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 400.0,
+						"translation.y": 120.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
