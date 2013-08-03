@@ -1,10 +1,17 @@
 @charset "UTF-8";
 
 // ページ背景
-$c_page_bg: #F7F7F7;
+$c_page_bg: #FDFDFD;
 
 // リンク基本色
 $c_link: #43C7E2;
 
-// メニューバー背景
-$c_menu_bg: #34495e;
+// メニューバー
+$c_menu_bg: #F8F8F8;				// 背景
+$c_menu_border: #E8E8E8;			// 枠
+$c_menu_text: #383434;				// 文字
+
+// フッター
+$c_footer_bg: $c_menu_bg;			// 背景
+$c_footer_border: $c_menu_border;	// 枠
+$c_footer_text: #585858;

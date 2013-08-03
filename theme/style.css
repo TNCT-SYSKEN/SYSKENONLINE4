@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/*
+	Theme Name: SYSKEN ONLINE
+	Description: SYSKEN ONLINEのテーマです
+	Theme URI: 
+	Author: アリス・カータレット
+	Author URI: 
+	Version: 
+	License: 
+	License URI: 
+*/
+
+@import "./css/font_icons.css";
+@import "./css/978.css";
+@import "./css/default.css";
+@import "./css/toppage.css";
