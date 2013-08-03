@@ -26,14 +26,18 @@ body {
 }
 
 a {
-	@include setHoverColor($c_link);	
+	@include setHoverColor($c_link);
+}
+
+img {
+	border: 0;
 }
 
 header {
 	@include clearfix();
 	display: block;
+	height: $s_header_height;
 	margin-bottom: 10px;
-	height: 95px;
 	// ロゴ
 	h1 {
 		margin: 0;
@@ -41,10 +45,12 @@ header {
 	}
 	// 謎の隙間
 	.space {
-		@include equalHeightBox();
+		height: $s_header_height;
 	}
 	// ソーシャル活動場所へのリンク
 	ul#social_link {
+		position: relative;
+		height: $s_header_height;
 		margin-top: 0;
 		margin-bottom: 0;
 		padding: 0;
@@ -52,9 +58,17 @@ header {
 		list-style: none;
 		li {
 			@include inline-block();
-			width: 56px;
-			img {
-				width: 100%;
+			width: $s_socialicon_size;
+			height: $s_socialicon_size;
+			margin: $s_header_height - $s_socialicon_size 10px 0 0;
+			padding: 0;
+			font-size: $s_socialicon_size * 0.7;
+			text-align: center;
+			&:last-child {
+				margin-right: 0;
+			}
+			a {
+				text-decoration: none;
 			}
 		}
 	}
@@ -65,9 +79,14 @@ nav {
 	@include clearfix();
 	display: block;
 	width: 100%;
-	margin: 0;
-	padding: .3em 0;
+	height: $s_menu_height;	
+	margin: 10px 0;
+	padding: 0;
 	background: $c_menu_bg;
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: $c_menu_border;
+	box-shadow: 0 2px 5px darken($c_menu_bg, 10%);
 	ul {
 		margin: 0;
 		padding: 0;
@@ -75,20 +94,37 @@ nav {
 		text-align: center;
 		li {
 			@include inline-block();
-			width: 120px;
+			width: 150px;
 			height: $s_menu_height;
-			margin: 0 .2em;
+			margin: 0;
 			padding: 0;
-			&#home {
-				width: 50px;
-			}
+			border-right: 1px solid $c_menu_border;
 			a {
 				display: block;
 				width: 100%;
 				height: $s_menu_height;
-				line-height: $s_menu_height;
-				@include border-radius();
-				@include setHoverColor(#FFFFFF, #1abc9c, none);
+				line-height: $s_menu_height / 1.6;
+				font-weight: bold;
+				text-shadow: 0 1px 1px lighten($c_menu_text, 60%);
+				@include setHoverColor($c_menu_text, $c_menu_bg, none, 4%);
+				span {
+					display: block;
+					font-weight: normal;
+					font-size: .7em;
+					text-shadow: none;
+					color: lighten($c_menu_text, 20%);
+				}
+				&:hover, &:focus, &:active {
+					box-shadow: 0 0 2px $c_menu_border inset;
+				}
+			}
+			&#home {
+				width: 50px;
+				font-size: 1.4em;
+				border-left: 1px solid $c_menu_border;
+				a {
+					line-height: $s_menu_height;
+				}
 			}
 		}
 	}
