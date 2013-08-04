@@ -42,7 +42,7 @@
 <header>
 	<div class="container">
 		<h1 id="logo" class="col_5">
-			<a href="http://sysken.org/">
+			<a href="<?php echo home_url('/'); ?>">
 			<img src="<?php bloginfo('template_url'); ?>/img/logo.png"></a>
 		</h1>
 		<div class="col_4 space"></div>
