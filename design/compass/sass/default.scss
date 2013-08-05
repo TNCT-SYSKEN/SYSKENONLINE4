@@ -8,10 +8,6 @@
 @import "_scalar.scss";
 @import "_color.scss";
 
-// 便宜上別ファイルにわけたもの
-@import "_dynamic.scss";
-//@import "_debug.scss";
-
 * {
 	font-family: 'Arial','メイリオ','ＭＳ Ｐゴシック',
 		'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro', Sans-serif;
@@ -30,7 +26,7 @@ body {
 }
 
 a {
-	@include setHoverColor($c_link);
+	@include setLinkColor($c_link);
 }
 
 img {
@@ -42,7 +38,9 @@ header {
 	display: block;
 	width: 100%;
 	height: $s_header_height;
-	margin: 10px 0;
+	margin: 0;
+	padding: 10px 0;
+	background-color: $c_header_bg;
 
 	// ロゴ
 	h1 {
@@ -92,7 +90,7 @@ nav {
 	display: block;
 	width: 100%;
 	height: $s_menu_height;	
-	margin: 10px 0;
+	margin: 0;
 	padding: 0;
 	background: $c_menu_bg;
 	border-width: 1px 0;
@@ -118,7 +116,7 @@ nav {
 				line-height: $s_menu_height / 1.6;
 				font-weight: bold;
 				text-shadow: 0 1px 1px lighten($c_menu_text, 60%);
-				@include setHoverColor($c_menu_text, $c_menu_bg, none, 4%);
+				@include setLinkColor($c_menu_text, $c_menu_bg, none, 4%);
 				span {
 					display: block;
 					font-weight: normal;
@@ -128,6 +126,7 @@ nav {
 				}
 				&:hover, &:focus, &:active {
 					box-shadow: 0 0 3px $c_menu_border inset;
+					text-decoration: none;
 				}
 			}
 			&#home {
@@ -137,7 +136,6 @@ nav {
 				line-height: $s_menu_height;
 				a {
 					line-height: $s_menu_height;
-					@include setHoverColor($c_menu_text, $c_menu_bg, none, 4%);
 				}
 			}
 		}
@@ -149,6 +147,7 @@ nav {
 	position: fixed;
 	top: 0;
 	margin: 0;
+	z-index: 10;
 }
 
 // 追従時のダミー
@@ -159,12 +158,36 @@ nav {
 }
 
 div#contents {
-	@include clearfix();
-	margin: 10px auto;
+	margin: 30px auto;
 	padding: 0;
-	#main, #sidebar {
-		background-color: #CCC;
-		@include equalHeightBox();
+	// 諸事情によりclearfix方法が変更
+	&:after {
+		content: ""; 
+		display: block; 
+		height: 0; 
+		font-size:0;	
+		clear: both; 
+		visibility:hidden;
+	}
+}
+
+// メイン
+#main {
+	background: $c_main_bg;
+	box-shadow: 0px 0px 20px -5px darken($c_main_bg, 30%);
+	article {
+		padding: 20px 20px;
+	}
+	h2, h3, h4, h5 {
+		margin: 0 0 0.5em 0;
+		padding: 0;
+		text-decoration: none;
+		a {
+			@include setLinkColor(#000, none, none, 20%);
+		}
+	}
+	p {
+		margin: 0.5em 0;
 	}
 }
 
@@ -176,15 +199,16 @@ div#contents {
 	}
 
 	// Twitterウィジェット(カス)
-	#twitter-widgets {
+	#tw-widgets {
 		background-color: #AAA;
 	}
-	#twitter-widget-0 {
+	.twitter-timeline {
 		width: 95%;
+		height: 200px;
 		margin: 0px 2.5%;
 		background-color: #FFF;
 	}
-	#follow_me {
+	#tw-account {
 		margin-top: -8px;
 		padding: 5px;
 		font-size: .8em;
@@ -217,3 +241,7 @@ footer {
 		}
 	}
 }
+
+// 便宜上別ファイルにわけたもの
+@import "_dynamic.scss";
+//@import "_debug.scss";

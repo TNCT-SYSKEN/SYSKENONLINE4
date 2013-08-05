@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/*
- *
- *	動的コンテンツ用CSS
- *
- */
-
 // 追従
 .fixed_navi {
 	position: fixed;
@@ -17,7 +11,22 @@
 #dummy {
 	display: none;
 	height: $s_menu_height;
-	margin: 10px 0;
+	margin: 0;
+}
+
+// Twitterウィジェットローディング
+.twitter-timeline {
+	display: none;
+}
+#tw-loading {
+	display: block;
+	width: 95%;
+	height: 200px;
+	margin: 0 2.5% 6px 2.5%;
+	font-size: 0.6em;
+	line-height: 200px;
+	text-align: center;
+	color: #676767;
 }
 
 // トップへ戻る

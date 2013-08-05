@@ -1,10 +1,17 @@
 @charset "UTF-8";
 
 // リンクの色の設定用
-@mixin setHoverColor($text_color, $bg_color: none, $text_deco: underline, $light: 10%) {
+@mixin setLinkColor($text_color, $bg_color: none, $text_deco: underline, $light: 10%) {
 	color: $text_color;
 	background: $bg_color;
 	text-decoration: $text_deco;
+
+	&:link, &:visited {
+		color: $text_color;
+		background: $bg_color;
+		text-decoration: $text_deco;
+	}
+
 	&:hover, &:focus, &:active {
 		color: lighten($text_color, $light);
 		@if $bg_color == none {
@@ -12,10 +19,11 @@
 		} @else {
 			background: lighten($bg_color, $light*0.5);
 		}
-	}
-	&:visited {
-		color: $text_color;
-		background: $bg_color;
+		@if $text_deco == none {
+			text-decoration: underline;
+		} @else {
+			text-decoration: none;
+		}
 	}
 }
 

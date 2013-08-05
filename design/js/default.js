@@ -1,27 +1,31 @@
 (function(){
+
 $(function(){
+
 	$(window).load(function(){
+
 		// twitterウィジェットのスタイルの変更
-		// [notice] Internet Explorer(Trident系)だとなぜか効きません 爆発しろ
-		$("iframe#twitter-widget-0").contents()
-			.find(".timeline").css({"border-radius": "0px", "margin-bottom": "0"}).end()
-			.find(".u-photo.avatar").css({"display": "none"}).end()
-			.find(".p-author").css({"min-height": "14px", "padding": "0"}).end()
-			.find(".p-nickname").css({"display": "none"}).end()
-			.find(".footer").css({"display": "none"}).end()
-			.find(".h-entry").css({"padding": "8px 5px", "border-bottom": "1px dotted #CCC"}).end()
-			.find(".load-more").css({"display": "none"});
-		// ウィジェットを置くのは他人のサイトなんだからその人のサイトのデザインに合わせれられるようにするべきだ
-		// なんで丸角だ アイコンだ 見にくくなるだけだ リプライやリツイートをウィジェットからする人間なんて１日に１００人と居ないだろ 
-		// なのにTwitterとかいう会社はカスタマイズ性の低い使えないウィジェットしか提供していない
-		// ブランドイメージ？そんなもんウィジェットだけでつけられるもんじゃないはずだし
-		// そもそも悪意あるスタイルってなんだ そんなことでできる印象操作なんてたかが知れているだろ
-		// というかAPIを1.0に戻せ
-		// 以上 ここの作業でほとんど１日を消費してしまった人の意見でした
+		// [notice] Internet Explorer(Trident系)だとたまに効きません 爆発しろ
+		$("iframe.twitter-timeline").each(function(i, iframe){ // 全てのTLに適用
+			$(iframe).ready(function(){ // TLの準備ができた段階で処理
+				setTimeout(function(){ // TLが読み込まれるのを待つ
+					$("#tw-loading").hide();
+					$(".twitter-timeline").fadeIn();
+					$(iframe).contents() // twitterウィジェットのスタイルの変更
+						.find(".timeline").css({"border-radius": "0px", "margin-bottom": "0"}).end()
+						.find(".u-photo.avatar").css({"display": "none"}).end()
+						.find(".p-author").css({"min-height": "14px", "padding": "0"}).end()
+						.find(".p-nickname").css({"display": "none"}).end()
+						.find(".footer").css({"display": "none"}).end()
+						.find(".h-entry").css({"padding": "8px 5px", "border-bottom": "1px dotted #CCC"}).end()
+						.find(".load-more").css({"display": "none"});
+				}, 1000);
+			})
+		})
 
 		// Firefoxだと更新した時に追従していない(読み込み直後だとscrollTopが0になっている)のでページ読み込み完了時に再取得させる
 		var userAgent = window.navigator.userAgent.toLowerCase();
-		if (userAgent.indexOf("firefox") != -1 || userAgent.indexOf('gecko') != -1) {
+		if ( userAgent.indexOf("firefox") != -1 || userAgent.indexOf('gecko') != -1 ) {
 			showFixedNavigation($(this).scrollTop());
 		}
 
@@ -34,7 +38,7 @@ $(function(){
 		// ページトップへ戻るの表示
 		{
 			// ある程度スクロールしたら表示する
-			if ( now >= 300 )
+			if ( now >= 100 )
 				$("#topscroll img").fadeIn();
 			else
 				$("#topscroll img").fadeOut();
@@ -49,10 +53,10 @@ $(function(){
 				$("html,body").animate({"scrollTop": 0}, 500, "swing");
 			})
 			.mouseenter(function(){
-					$(this).stop().transition({"opacity": 0.5, "rotate": "180deg"});
+				$(this).stop().transition({"opacity": 0.5, "rotate": "180deg"});
 			})
 			.mouseleave(function(){
-					$(this).stop().transition({"opacity": 0.3, "rotate": "0deg"});
+				$(this).stop().transition({"opacity": 0.3, "rotate": "0deg"});
 			});
 	}
 
