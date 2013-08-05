@@ -8,20 +8,60 @@
 				"margin-top"
 			],
 			[
-				"v",
-				"vertical-align"
+				"twitter",
+				"twitter"
 			],
 			[
-				"w",
-				"width"
+				"ba",
+				"background-color"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"flo",
+				"float"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"li",
+				"lighten	lighten"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ma",
+				"margin-top"
 			],
 			[
 				"p",
 				"padding"
 			],
 			[
-				"li",
-				"li	Tag"
+				"v",
+				"vertical-align"
+			],
+			[
+				"w",
+				"width"
 			],
 			[
 				"nav",
@@ -38,18 +78,6 @@
 			[
 				"opa",
 				"opacity"
-			],
-			[
-				"ba",
-				"background"
-			],
-			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"pa",
@@ -83,7 +111,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2501,
+				"buffer_size": 5343,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/default.js",
+			"settings":
+			{
+				"buffer_size": 704,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,8 +127,32 @@
 			"file": "compass/sass/default.scss",
 			"settings":
 			{
-				"buffer_size": 1258,
+				"buffer_size": 3289,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "compass/sass/toppage.scss",
+			"settings":
+			{
+				"buffer_size": 257,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/font_icons.css",
+			"settings":
+			{
+				"buffer_size": 1838,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/978.css",
+			"settings":
+			{
+				"buffer_size": 2000,
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -107,15 +167,7 @@
 			"file": "compass/sass/_twinkle.scss",
 			"settings":
 			{
-				"buffer_size": 642,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/onepcssgrid.css",
-			"settings":
-			{
-				"buffer_size": 1583,
+				"buffer_size": 666,
 				"line_ending": "Windows"
 			}
 		},
@@ -123,7 +175,7 @@
 			"file": "compass/sass/_scalar.scss",
 			"settings":
 			{
-				"buffer_size": 125,
+				"buffer_size": 170,
 				"line_ending": "Windows"
 			}
 		},
@@ -131,7 +183,7 @@
 			"file": "compass/sass/_color.scss",
 			"settings":
 			{
-				"buffer_size": 112,
+				"buffer_size": 289,
 				"line_ending": "Windows"
 			}
 		}
@@ -139,15 +191,19 @@
 	"build_system": "Packages/Compass/Compass.sublime-build",
 	"command_palette":
 	{
-		"height": 217.0,
+		"height": 117.0,
 		"selected_items":
 		[
 			[
-				"inst",
+				"insta",
 				"Package Control: Install Package"
 			],
 			[
-				"insta",
+				"package ",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
 				"Package Control: Install Package"
 			],
 			[
@@ -179,10 +235,6 @@
 				"Tag: Insert as Tag"
 			],
 			[
-				"package ",
-				"Package Control: Remove Package"
-			],
-			[
 				"html5",
 				"Set Syntax: HTML5"
 			],
@@ -199,7 +251,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 368.0
+		"width": 392.0
 	},
 	"console":
 	{
@@ -216,6 +268,8 @@
 	},
 	"file_history":
 	[
+		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/js/footerFixed.js",
+		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/css/onepcssgrid.css",
 		"/D/Users/Takuto/Desktop/onepcssgrid/grid_test.html",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/compass/sass/_setting.scss",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/js/default.js",
@@ -276,6 +330,22 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"twitter",
+			"css(\"display\", \"none\");",
+			"hideSmallScreen",
+			"getElementsByTagName(\"footer\")",
+			"getElementById(footerId)",
+			"footerId",
+			"s_base",
+			"000000",
+			";\n",
+			"6",
+			"\n			",
+			"383434",
+			"#383434",
+			"right",
+			"div",
+			"col",
 			"<div></div>",
 			"div",
 			"a",
@@ -333,7 +403,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -341,15 +411,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2501,
+						"buffer_size": 5343,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								804,
-								804
+								4700,
+								4700
 							]
 						],
 						"settings":
@@ -358,6 +428,33 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false,
 							"word_wrap": false
+						},
+						"translation.x": 105.0,
+						"translation.y": 2365.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/default.js",
+					"settings":
+					{
+						"buffer_size": 704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								83,
+								83
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -372,19 +469,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "compass/sass/default.scss",
 					"settings":
 					{
-						"buffer_size": 1258,
+						"buffer_size": 3289,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								519,
-								519
+								342,
+								342
 							]
 						],
 						"settings":
@@ -394,13 +491,93 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 120.0,
+						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
+					"file": "compass/sass/toppage.scss",
+					"settings":
+					{
+						"buffer_size": 257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								257,
+								257
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/font_icons.css",
+					"settings":
+					{
+						"buffer_size": 1838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1740,
+								1747
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/978.css",
+					"settings":
+					{
+						"buffer_size": 2000,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1299,
+								1299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "compass/sass/_debug.scss",
 					"settings":
 					{
@@ -411,8 +588,8 @@
 						"selection":
 						[
 							[
-								374,
-								374
+								175,
+								175
 							]
 						],
 						"settings":
@@ -427,19 +604,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 7,
 					"file": "compass/sass/_twinkle.scss",
 					"settings":
 					{
-						"buffer_size": 642,
+						"buffer_size": 666,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								642,
-								642
+								565,
+								579
 							]
 						],
 						"settings":
@@ -455,46 +632,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "css/onepcssgrid.css",
-					"settings":
-					{
-						"buffer_size": 1583,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								800,
-								800
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 8,
 					"file": "compass/sass/_scalar.scss",
 					"settings":
 					{
-						"buffer_size": 125,
+						"buffer_size": 170,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								125,
-								125
+								166,
+								166
 							]
 						],
 						"settings":
@@ -509,19 +659,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 9,
 					"file": "compass/sass/_color.scss",
 					"settings":
 					{
-						"buffer_size": 112,
+						"buffer_size": 289,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								110,
-								110
+								76,
+								69
 							]
 						],
 						"settings":
@@ -566,7 +716,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.609375,
 			1.0
 		],
 		"rows":

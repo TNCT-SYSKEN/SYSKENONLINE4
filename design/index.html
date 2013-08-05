@@ -79,6 +79,8 @@
 		--><li><a href="/link">		Link		<span>関連リンク</span>			</a></li>
 	</ul>
 </nav>
+<!-- ダミー -->
+<div id="dummy"></div>
 
 <!-- ココから適当 -->
 <div id="topimg">
@@ -86,7 +88,7 @@
 </div>
 
 <div id="contents" class="container">
-	<div class="col_9">
+	<div id="main" class="col_9">
 		<h2>新着情報</h2>
 		<ul>
 			<li>アリス・カータレットちゃん！</li>
@@ -103,16 +105,41 @@
 			<li>アリス・カータレットちゃん！</li>
 			<li>アリス・カータレットちゃん！</li>
 			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
+			<li>アリス・カータレットちゃん！</li>
 		</ul>
 	</div>
-	<div class="col_3">
+	<div id="sidebar" class="col_3">
 		<h4>サイド</h4>
 		<p>ヘイタイショー ラーメン１つ</p>
 		<p>ｧｲ ﾗｧｪﾝｧｲﾘﾏｧｽｯ！！</p>
 		<p>ホットでお願いしマス！！</p>
+
+		<!-- Twitter Widgets -->
+		<div id="twitter-widgets">
+			<h4><i class="icon-twitter"></i>Twitter</h4>
+			<a class="twitter-timeline" href="https://twitter.com/sysken" height="200" data-widget-id="364209088126664704" data-chrome="noheader nofooter noborders">@sysken からのツイート</a>
+			<div id="follow_me">by @<a href="//twitter.com/sysken">sysken</a></div>
+		</div>
+		<p>ああ</p>
+		ああああ
+		ああああ
 	</div>
 </div>
-<!-- ココまで適当 -->
 
 <footer>
 	<div class="container">
@@ -128,7 +155,13 @@
 	</div>
 </footer>
 
-<script type="text/javascript" src="./js/footerFixed.js"></script>
+<div id="topscroll"><a href="#"><img src="/img/topscroll.png"></a></div>
 
+<!-- ロードするJavaScriptは以下に書くことをおすすめします-->
+<!--<script type="text/javascript" src="./js/footerFixed.js"></script>-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./js/jquery.transit.min.js"></script>
+<script src="./js/default.js"></script>
 </body>
 </html>

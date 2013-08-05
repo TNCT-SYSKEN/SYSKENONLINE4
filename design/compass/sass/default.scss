@@ -7,6 +7,9 @@
 @import "_twinkle.scss";
 @import "_scalar.scss";
 @import "_color.scss";
+
+// 便宜上別ファイルにわけたもの
+@import "_dynamic.scss";
 //@import "_debug.scss";
 
 * {
@@ -20,7 +23,7 @@ html {
 }
 
 body {
-	margin: 10px 0 0 0;
+	margin: 0;
 	padding: 0;
 	height: 100%;
 	background: $c_page_bg;
@@ -124,7 +127,7 @@ nav {
 					color: lighten($c_menu_text, 20%);
 				}
 				&:hover, &:focus, &:active {
-					box-shadow: 0 0 2px $c_menu_border inset;
+					box-shadow: 0 0 3px $c_menu_border inset;
 				}
 			}
 			&#home {
@@ -141,11 +144,51 @@ nav {
 	}
 }
 
+// 追従
+.fixed_navi {
+	position: fixed;
+	top: 0;
+	margin: 0;
+}
+
+// 追従時のダミー
+#dummy {
+	display: none;
+	height: $s_menu_height;
+	margin: 10px 0;
+}
+
 div#contents {
+	@include clearfix();
 	margin: 10px auto;
 	padding: 0;
-	div {
+	#main, #sidebar {
 		background-color: #CCC;
+		@include equalHeightBox();
+	}
+}
+
+// サイドバー
+#sidebar {
+	h4 {
+		margin: 0;
+		padding: 10px 5px;
+	}
+
+	// Twitterウィジェット(カス)
+	#twitter-widgets {
+		background-color: #AAA;
+	}
+	#twitter-widget-0 {
+		width: 95%;
+		margin: 0px 2.5%;
+		background-color: #FFF;
+	}
+	#follow_me {
+		margin-top: -8px;
+		padding: 5px;
+		font-size: .8em;
+		text-align: right;
 	}
 }
 
@@ -156,7 +199,7 @@ footer {
 	display: block;
 	width: 100%;
 	height: $s_footer_height;
-	margin: 10px 0 0 0;
+	margin: 20px 0 0 0;
 	padding: 10px 0;
 	color: $c_footer_text;
 	border-top: 1px solid $c_footer_border;

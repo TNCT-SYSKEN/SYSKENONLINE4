@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*
+ *
+ *	動的コンテンツ用CSS
+ *
+ */
+
+// 追従
+.fixed_navi {
+	position: fixed;
+	top: 0;
+	margin: 0;
+}
+
+// 追従時のダミー
+#dummy {
+	display: none;
+	height: $s_menu_height;
+	margin: 10px 0;
+}
+
+// トップへ戻る
+#topscroll {
+	$width: $s_content_width + (75+30)*2;
+	position: fixed;
+	bottom: 10px;
+	left: 50%;
+	width: $width;
+	margin-left: -$width/2;
+	text-align: right;
+	img {
+		display: none;
+		@include opacity(0.3);
+	}
+}
