@@ -26,7 +26,7 @@ body {
 }
 
 a {
-	@include setLinkColor($c_link);
+	@include setLinkColor($c_link, none, none);
 }
 
 img {
@@ -87,6 +87,7 @@ header {
 // メニューバー
 nav {
 	@include clearfix();
+	z-index: 10;
 	display: block;
 	width: 100%;
 	height: $s_menu_height;	
@@ -147,7 +148,6 @@ nav {
 	position: fixed;
 	top: 0;
 	margin: 0;
-	z-index: 10;
 }
 
 // 追従時のダミー
@@ -158,8 +158,10 @@ nav {
 }
 
 div#contents {
-	margin: 30px auto;
-	padding: 0;
+	margin: 0;
+	padding: 30px 0;
+	background: $c_contents_bg;
+	box-shadow: 0 0 5px 2px darken($c_contents_bg, 10%);
 	// 諸事情によりclearfix方法が変更
 	&:after {
 		content: ""; 
@@ -173,10 +175,10 @@ div#contents {
 
 // メイン
 #main {
-	background: $c_main_bg;
-	box-shadow: 0px 0px 20px -5px darken($c_main_bg, 30%);
-	article {
+	.abox {
+		margin-bottom: 30px;
 		padding: 20px 20px;
+		background: $c_main_bg;
 	}
 	h2, h3, h4, h5 {
 		margin: 0 0 0.5em 0;
@@ -186,6 +188,9 @@ div#contents {
 			@include setLinkColor(#000, none, none, 20%);
 		}
 	}
+	h2 {
+		text-shadow: 0px 1px 2px lighten(#000, 60%);
+	}
 	p {
 		margin: 0.5em 0;
 	}
@@ -193,27 +198,62 @@ div#contents {
 
 // サイドバー
 #sidebar {
-	h4 {
-		margin: 0;
-		padding: 10px 5px;
+	.sidebox {
+		margin-bottom: 30px;
+		padding: 10px;
+		font-size: .85em;
+		background-color: $c_main_bg;
+
+		h4 {
+			font-size: 1.1em;
+			margin: 0;
+			padding: 0;
+		}
+
+		p, div {
+			margin: .3em 0;
+		}
+	}
+	.picbox {
+		margin-bottom: 30px;
+		padding: 0;
+		&#square {
+			height: 222px;
+		}
 	}
 
 	// Twitterウィジェット(カス)
 	#tw-widgets {
-		background-color: #AAA;
+		background-color: #00ACED;
+		color: #FFFFFF;
+		h4 {
+			margin: 0;
+			padding: 10px 5px;
+		}
+		a {
+			@include setLinkColor(#FFFFFF, none, underline);
+		}
+		.icon-twitter:before {
+			color: #FFFFFF;
+			font-weight: normal;
+		}
+		.twitter-timeline {
+			width: 95%;
+			height: 200px;
+			margin: 0px 2.5%;
+			background-color: #FFF;
+		}
+		#tw-account {
+			margin-top: -8px;
+			padding: 5px;
+			font-size: .8em;
+			text-align: right;
+		}
 	}
-	.twitter-timeline {
-		width: 95%;
-		height: 200px;
-		margin: 0px 2.5%;
-		background-color: #FFF;
-	}
-	#tw-account {
-		margin-top: -8px;
-		padding: 5px;
-		font-size: .8em;
-		text-align: right;
-	}
+}
+
+.shadow {
+	box-shadow: 0px 0px 20px -3px darken($c_main_bg, 30%);
 }
 
 // フッター
@@ -226,9 +266,7 @@ footer {
 	margin: 20px 0 0 0;
 	padding: 10px 0;
 	color: $c_footer_text;
-	border-top: 1px solid $c_footer_border;
 	background: $c_footer_bg;
-	box-shadow: 0 -2px 5px darken($c_footer_bg, 10%);
 
 	// アリスカータレットちゃん！
 	#alice_carteret {
@@ -243,5 +281,6 @@ footer {
 }
 
 // 便宜上別ファイルにわけたもの
+@import "_form.scss";
 @import "_dynamic.scss";
 //@import "_debug.scss";

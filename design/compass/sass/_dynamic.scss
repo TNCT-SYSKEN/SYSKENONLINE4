@@ -31,15 +31,15 @@
 
 // トップへ戻る
 #topscroll {
-	$width: $s_content_width + (75+30)*2;
 	position: fixed;
 	bottom: 10px;
-	left: 50%;
-	width: $width;
-	margin-left: -$width/2;
+	right: 20px;
 	text-align: right;
 	img {
 		display: none;
 		@include opacity(0.3);
+	}
+	a {
+		outline: none;
 	}
 }

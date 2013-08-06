@@ -5,14 +5,16 @@
 	color: $text_color;
 	background: $bg_color;
 	text-decoration: $text_deco;
+	outline: none;
 
 	&:link, &:visited {
 		color: $text_color;
 		background: $bg_color;
 		text-decoration: $text_deco;
+		outline: none;
 	}
 
-	&:hover, &:focus, &:active {
+	&:hover, &:active {
 		color: lighten($text_color, $light);
 		@if $bg_color == none {
 			background: none;
@@ -24,6 +26,7 @@
 		} @else {
 			text-decoration: none;
 		}
+		outline: none;
 	}
 }
 
