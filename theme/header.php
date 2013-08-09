@@ -35,13 +35,11 @@
 
 	<link rel="stylesheet" href ="<?php bloginfo('stylesheet_url'); ?>">
 
-<!-- あとで個別に読みこむように
-	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="./css/font_icons.css">
-	<link rel="stylesheet" type="text/css" href="./css/978.css">
-	<link rel="stylesheet" type="text/css" href="./css/default.css">
-	<link rel="stylesheet" type="text/css" href="./css/toppage.css">
--->
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/font_icons.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/978.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/default.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/toppage.css">
 
 	<meta name="viewport" content="width=device-width">
 	<?php wp_head(); ?>
@@ -65,7 +63,7 @@
 </header>
 
 <!-- とりあえずころしておく
-<?php wp_nav_menu(array('theme_location'  => 'main_navi', 'container' => 'nav')); ?>
+<?php //wp_nav_menu(array('theme_location'  => 'main_navi', 'container' => 'nav')); ?>
 -->
 
 <!-- メニュー -->
