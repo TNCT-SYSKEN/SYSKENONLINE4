@@ -4,119 +4,7 @@
 		"selected_items":
 		[
 			[
-				"te",
-				"text-transform"
-			],
-			[
-				"font",
-				"font-weight"
-			],
-			[
-				"pad",
-				"padding"
-			],
-			[
 				"mar",
-				"margin-bottom"
-			],
-			[
-				"c_",
-				"c_main_bg"
-			],
-			[
-				"_b",
-				"_button_bg_color"
-			],
-			[
-				"border-c",
-				"border-color"
-			],
-			[
-				"back",
-				"background-color"
-			],
-			[
-				"max",
-				"max-width"
-			],
-			[
-				"bor",
-				"border"
-			],
-			[
-				"fot",
-				"font-size"
-			],
-			[
-				"padd",
-				"padding-left"
-			],
-			[
-				"inline",
-				"inline-block"
-			],
-			[
-				"tex",
-				"text-align"
-			],
-			[
-				"p",
-				"padding"
-			],
-			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"ba",
-				"background-color"
-			],
-			[
-				"fade",
-				"fadeIn	jQuery"
-			],
-			[
-				"mouse",
-				"mousedown	jQuery"
-			],
-			[
-				"w",
-				"width"
-			],
-			[
-				"ri",
-				"right"
-			],
-			[
-				"di",
-				"display"
-			],
-			[
-				"opa",
-				"opacity"
-			],
-			[
-				"remo",
-				"removeClass	jQuery"
-			],
-			[
-				"twitter",
-				"twitter"
-			],
-			[
-				"flo",
-				"float"
-			],
-			[
-				"li",
-				"lighten	lighten"
-			],
-			[
-				"box",
-				"box-shadow"
-			],
-			[
-				"ma",
 				"margin-top"
 			],
 			[
@@ -124,12 +12,44 @@
 				"vertical-align"
 			],
 			[
+				"w",
+				"width"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
 				"nav",
 				"nav	<nav>"
 			],
 			[
+				"tex",
+				"text-align"
+			],
+			[
 				"bac",
 				"background"
+			],
+			[
+				"opa",
+				"opacity"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"te",
+				"text-align"
 			],
 			[
 				"pa",
@@ -163,15 +83,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 7145,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/default.js",
-			"settings":
-			{
-				"buffer_size": 2113,
+				"buffer_size": 7142,
 				"line_ending": "Windows"
 			}
 		},
@@ -184,26 +96,10 @@
 			}
 		},
 		{
-			"file": "compass/sass/_form.scss",
+			"file": "compass/sass/_debug.scss",
 			"settings":
 			{
-				"buffer_size": 1342,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "compass/sass/toppage.scss",
-			"settings":
-			{
-				"buffer_size": 1554,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "compass/sass/_dynamic.scss",
-			"settings":
-			{
-				"buffer_size": 553,
+				"buffer_size": 403,
 				"line_ending": "Windows"
 			}
 		},
@@ -212,6 +108,14 @@
 			"settings":
 			{
 				"buffer_size": 847,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/onepcssgrid.css",
+			"settings":
+			{
+				"buffer_size": 1583,
 				"line_ending": "Windows"
 			}
 		},
@@ -235,16 +139,16 @@
 	"build_system": "Packages/Compass/Compass.sublime-build",
 	"command_palette":
 	{
-		"height": 117.0,
+		"height": 370.0,
 		"selected_items":
 		[
 			[
-				"insta",
-				"Package Control: Install Package"
+				"pacage",
+				"Package Control: List Packages"
 			],
 			[
-				"package ",
-				"Package Control: Remove Package"
+				"insta",
+				"Package Control: Install Package"
 			],
 			[
 				"inst",
@@ -279,6 +183,10 @@
 				"Tag: Insert as Tag"
 			],
 			[
+				"package ",
+				"Package Control: Remove Package"
+			],
+			[
 				"html5",
 				"Set Syntax: HTML5"
 			],
@@ -295,7 +203,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 392.0
+		"width": 480.0
 	},
 	"console":
 	{
@@ -312,19 +220,7 @@
 	},
 	"file_history":
 	[
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/css/978.css",
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/compass/sass/_debug.scss",
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/css/font_icons_.css",
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/css/font_icons.css",
-		"/D/Users/Takuto/Desktop/fontello-6aa52bd2/css/font_icons.css",
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/compass/sass/toppage.scss",
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/compass/sass/IE.scss",
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/css/IE.css",
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/twitter/widget.html",
-		"/D/Users/Takuto/Documents/GitHub/foxjump/js/upload.js",
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/js/jquery.transit.min.js",
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/js/footerFixed.js",
-		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/css/onepcssgrid.css",
+		"/C/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/hoge.html",
 		"/D/Users/Takuto/Desktop/onepcssgrid/grid_test.html",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/compass/sass/_setting.scss",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/js/default.js",
@@ -385,35 +281,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"outline",
-			"\n		font-size: .8em;",
-			"welcome",
-			";\n",
-			"DDD",
-			"/",
-			"&.",
-			"();\n",
-			"setLinkColor",
-			"setHover",
-			";\n",
-			";",
-			"tweet",
-			"twitter",
-			"css(\"display\", \"none\");",
-			"hideSmallScreen",
-			"getElementsByTagName(\"footer\")",
-			"getElementById(footerId)",
-			"footerId",
-			"s_base",
-			"000000",
-			";\n",
-			"6",
-			"\n			",
-			"383434",
-			"#383434",
-			"right",
-			"div",
-			"col",
+			"  ",
+			"col_1",
+			"col_5",
+			"col_1",
 			"<div></div>",
 			"div",
 			"a",
@@ -479,15 +350,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 7145,
+						"buffer_size": 7142,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6503,
-								6503
+								7086,
+								7086
 							]
 						],
 						"settings":
@@ -498,35 +369,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3683.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/default.js",
-					"settings":
-					{
-						"buffer_size": 2113,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								923,
-								923
-							]
-						],
-						"settings":
-						{
-							"is_xml": false,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 463.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -538,7 +381,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "compass/sass/default.scss",
 					"settings":
 					{
@@ -549,8 +392,36 @@
 						"selection":
 						[
 							[
-								3208,
-								3208
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"class_or_id": "home",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 400.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "compass/sass/_debug.scss",
+					"settings":
+					{
+						"buffer_size": 403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								374,
+								374
 							]
 						],
 						"settings":
@@ -559,29 +430,30 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1215.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "compass/sass/_form.scss",
+					"file": "compass/sass/_twinkle.scss",
 					"settings":
 					{
-						"buffer_size": 1342,
+						"buffer_size": 847,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1141,
-								1141
+								0,
+								0
 							]
 						],
 						"settings":
 						{
+							"class_or_id": "home",
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -593,23 +465,24 @@
 				},
 				{
 					"buffer": 4,
-					"file": "compass/sass/toppage.scss",
+					"file": "css/onepcssgrid.css",
 					"settings":
 					{
-						"buffer_size": 1554,
+						"buffer_size": 1583,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								606,
-								606
+								800,
+								800
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -619,62 +492,6 @@
 				},
 				{
 					"buffer": 5,
-					"file": "compass/sass/_dynamic.scss",
-					"settings":
-					{
-						"buffer_size": 553,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								155,
-								155
-							]
-						],
-						"settings":
-						{
-							"class_or_id": "home",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "compass/sass/_twinkle.scss",
-					"settings":
-					{
-						"buffer_size": 847,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								450,
-								450
-							]
-						],
-						"settings":
-						{
-							"class_or_id": "home",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "compass/sass/_scalar.scss",
 					"settings":
 					{
@@ -685,8 +502,8 @@
 						"selection":
 						[
 							[
-								67,
-								67
+								0,
+								0
 							]
 						],
 						"settings":
@@ -701,7 +518,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 6,
 					"file": "compass/sass/_color.scss",
 					"settings":
 					{
@@ -712,8 +529,8 @@
 						"selection":
 						[
 							[
-								239,
-								239
+								0,
+								0
 							]
 						],
 						"settings":
@@ -758,7 +575,7 @@
 		"cols":
 		[
 			0.0,
-			0.599479166667,
+			0.5,
 			1.0
 		],
 		"rows":
