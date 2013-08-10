@@ -15,9 +15,9 @@
 			<div class="warp">
 				<div id="contact" class="col_8">
 					動作確認済みブラウザ
-					<i class="icon-ie"></i> <a href="windows.microsoft.com/ja-jp/internet-explorer/download-ie">InternetExplorer</a> 9+
+					<i class="icon-ie"></i> <a href="//windows.microsoft.com/ja-jp/internet-explorer/download-ie">InternetExplorer</a> 9+
 					<i class="icon-firefox"></i> <a href="//getfirefox.jp">Firefox</a> 21+
-					<i class="icon-chrome"></i> <a href="http://www.google.co.jp/intl/ja/chrome/">Google Chrome</a> 28+
+					<i class="icon-chrome"></i> <a href="//www.google.co.jp/intl/ja/chrome/">Google Chrome</a> 28+
 				</div>
 				<div id="copyright" class="col_4">&copy; 2004-2013 SYSKEN</div>
 			</div>
