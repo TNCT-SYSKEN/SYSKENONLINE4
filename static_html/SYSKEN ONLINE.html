@@ -181,16 +181,62 @@
 		
 		<!-- サイドバー(右) ここから -->
 		<div id="sidebar" class="col_3">
-			<div class="picbox shadow" id="square"><a href="http://localhost/radio"><img src="./SYSKEN ONLINE_files/sysken_radio.png" width="222" height="222"></a></div>
-
-			<aside>
-				<!-- Twitter Widgets -->
-				<div id="tw-widgets" class="shadow">
-					<h4><i class="icon-twitter"></i>Twitter</h4>
-					<iframe id="twitter-widget-0" class="twitter-timeline twitter-timeline-rendered" scrolling="no" frameborder="0" allowtransparency="true" title="Twitter Timeline Widget" style="border: none; max-width: 100%; min-width: 180px; display: inline;" width="222" height="200"></iframe>
-					<div id="tw-loading" style="display: none;"><a href="http://twitter.com/sysken">Twitterへ</a></div>
-					<div id="tw-account">by @<a href="http://twitter.com/sysken">sysken</a></div>
-				</div>
+			<aside id="recent-posts-3" class="widget widget_recent_entries">
+				<h2 class="widget-title">最近の投稿</h2>
+				<ul>
+					<li>
+						<a href="http://localhost/wordpress/?p=72" title="いろいろなタグテスト">いろいろなタグテスト</a>
+						<span class="post-date">(8/10)</span>
+					</li>
+					<li>
+						<a href="http://localhost/wordpress/?p=69" title="あああああああ">あああああああ</a>
+						<span class="post-date">(8/9)</span>
+					</li>
+					<li>
+						<a href="http://localhost/wordpress/?p=67" title="親子カテゴリテストです">親子カテゴリテストです</a>
+						<span class="post-date">(8/9)</span>
+					</li>
+					<li>
+						<a href="http://localhost/wordpress/?p=24" title="記事かさ増し">記事かさ増し</a>
+						<span class="post-date">(7/8)</span>
+					</li>
+					<li>
+						<a href="http://localhost/wordpress/?p=7" title="続きを読むテスト">続きを読むテスト</a>
+						<span class="post-date">(6/19)</span>
+					</li>
+				</ul>
+			</aside>
+			<aside id="categories-3" class="widget widget_categories"><h2 class="widget-title">カテゴリー</h2>
+				<ul>
+					<li class="cat-item cat-item-9"><a href="http://localhost/wordpress/?cat=9" title="プログラミング に含まれる投稿をすべて表示">プログラミング</a> (1)
+						<ul class='children'>
+							<li class="cat-item cat-item-10"><a href="http://localhost/wordpress/?cat=10" title="C++ に含まれる投稿をすべて表示">C++</a> (1)
+							</li>
+						</ul>
+					</li>
+					<li class="cat-item cat-item-6"><a href="http://localhost/wordpress/?cat=6" title="リレーブログ に含まれる投稿をすべて表示">リレーブログ</a> (1)
+					</li>
+					<li class="cat-item cat-item-1"><a href="http://localhost/wordpress/?cat=1" title="未分類 に含まれる投稿をすべて表示">未分類</a> (4)
+					</li>
+				</ul>
+			</aside>
+			<aside id="archives-3" class="widget widget_archive">
+				<h2 class="widget-title">月別アーカイブ</h2>	
+				<ul>
+					<li><a href='http://localhost/wordpress/?m=201308' title='2013年8月'>2013年8月</a>&nbsp;(3)</li>
+					<li><a href='http://localhost/wordpress/?m=201307' title='2013年7月'>2013年7月</a>&nbsp;(1)</li>
+					<li><a href='http://localhost/wordpress/?m=201306' title='2013年6月'>2013年6月</a>&nbsp;(1)</li>
+					<li><a href='http://localhost/wordpress/?m=201305' title='2013年5月'>2013年5月</a>&nbsp;(1)</li>
+				</ul>
+			</aside>
+			<aside id="search-3" class="widget widget_search">
+				<h2 class="widget-title">検索</h2>
+				<form role="search" method="get" id="searchform" action="http://localhost/wordpress/" >
+					<div><label class="screen-reader-text" for="s">検索:</label>
+						<input type="text" value="" name="s" id="s" />
+						<input type="submit" id="searchsubmit" value="検索" />
+					</div>
+				</form>
 			</aside>
 		</div>
 		<!-- サイドバー(右) ここまで -->
