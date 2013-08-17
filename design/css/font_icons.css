@@ -60,3 +60,5 @@
 .icon-github:before { content: '\e801'; color: #363636; } /* '' */
 .icon-facebook-squared:before { content: '\e802'; color: #3B5998; } /* '' */
 .icon-search:before { content: '\e809'; } /* '' */
+.icon-quote-left:before { content: '\e80b'; } /* '' */
+.icon-quote-right:before { content: '\e80a'; } /* '' */

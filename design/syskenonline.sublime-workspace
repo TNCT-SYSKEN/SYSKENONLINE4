@@ -88,10 +88,42 @@
 			}
 		},
 		{
+			"file": "blog.html",
+			"settings":
+			{
+				"buffer_size": 9607,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/static_html/SYSKEN ONLINE.html",
+			"settings":
+			{
+				"buffer_size": 10455,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "compass/sass/default.scss",
 			"settings":
 			{
 				"buffer_size": 4552,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "compass/sass/blog.scss",
+			"settings":
+			{
+				"buffer_size": 142,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "compass/sass/toppage.scss",
+			"settings":
+			{
+				"buffer_size": 1554,
 				"line_ending": "Windows"
 			}
 		},
@@ -108,14 +140,6 @@
 			"settings":
 			{
 				"buffer_size": 847,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/onepcssgrid.css",
-			"settings":
-			{
-				"buffer_size": 1583,
 				"line_ending": "Windows"
 			}
 		},
@@ -220,6 +244,8 @@
 	},
 	"file_history":
 	[
+		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/css/onepcssgrid.css",
+		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/compass/sass/blog.scss",
 		"/C/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/hoge.html",
 		"/D/Users/Takuto/Desktop/onepcssgrid/grid_test.html",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/compass/sass/_setting.scss",
@@ -342,7 +368,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -357,8 +383,8 @@
 						"selection":
 						[
 							[
-								7086,
-								7086
+								0,
+								7142
 							]
 						],
 						"settings":
@@ -369,7 +395,63 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1020.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "blog.html",
+					"settings":
+					{
+						"buffer_size": 9607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3752,
+								3752
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1751.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/static_html/SYSKEN ONLINE.html",
+					"settings":
+					{
+						"buffer_size": 10455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7948,
+								3522
+							]
+						],
+						"settings":
+						{
+							"is_xml": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 160.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -377,11 +459,11 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 3,
 					"file": "compass/sass/default.scss",
 					"settings":
 					{
@@ -398,18 +480,71 @@
 						],
 						"settings":
 						{
-							"class_or_id": "home",
 							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 400.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
+					"file": "compass/sass/blog.scss",
+					"settings":
+					{
+						"buffer_size": 142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "compass/sass/toppage.scss",
+					"settings":
+					{
+						"buffer_size": 1554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								141,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "compass/sass/_debug.scss",
 					"settings":
 					{
@@ -436,7 +571,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 7,
 					"file": "compass/sass/_twinkle.scss",
 					"settings":
 					{
@@ -464,34 +599,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "css/onepcssgrid.css",
-					"settings":
-					{
-						"buffer_size": 1583,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								800,
-								800
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 8,
 					"file": "compass/sass/_scalar.scss",
 					"settings":
 					{
@@ -518,7 +626,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 9,
 					"file": "compass/sass/_color.scss",
 					"settings":
 					{
