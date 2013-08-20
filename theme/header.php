@@ -35,11 +35,12 @@
 
 	<link rel="stylesheet" href ="<?php bloginfo('stylesheet_url'); ?>">
 
+	<?php //あとで条件判断で ?>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/font_icons.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/978.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/default.css">
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/toppage.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/blog.css">
 
 	<meta name="viewport" content="width=device-width">
 	<?php wp_head(); ?>

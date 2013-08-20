@@ -15,15 +15,21 @@ get_header();?>
 				<?php while (have_posts()) : the_post() ?>
 					<?php //量が多くなればcontent.phpとして分割 ?>
 					<article id="post-<?php the_ID(); ?>" class="post abox shadow" <?php //post_class('abox shadow');?>>
-						<div class="entry-date"><?php the_time('Y'); ?>年<?php the_time('n'); ?>月<?php the_time('j') ?>日</div>
+						<div class="entry-date">
+							<!-- <span class="year"><?php the_time('Y'); ?>年</span> -->
+							<span class="month"><?php the_time('n'); ?>月</span>
+							<span class="day"><?php the_time('j'); ?></span>
+						</div>
 						<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<div class="entry-content">
 							<?php the_content(); ?>
 						</div>
 						<div class="entry-meta">
-							<span class="author">書いた人:<?php the_author(); ?></span>
+							<span class="date"><?php echo get_the_date(); ?></span>
 							<span class="sep"> | </span>
-							<span class="category">カテゴリー:<?php the_category(', '); ?></span>
+							<span class="author">by <?php the_author(); ?></span>
+							<span class="sep"> | </span>
+							<span class="category"><?php the_category(' '); ?></span>
 							<span class="sep"> | </span>
 							<?php //左から0件の場合、1件の場合、それ以上の場合 ?>
 							<span class="comment"><?php comments_popup_link('コメントをどうぞ', '1件のコメント', '%件のコメント'); ?></span>
@@ -33,7 +39,7 @@ get_header();?>
 			<?php //記事が存在しない場合 ?>
 			<?php else : ?>
 				<article id="post-0" class="abox shadow">
-					<h2 class="entry-title">あぼーん</h2>
+					<h2 class="entry-title">404 Not found</h2>
 					<div class="entry-content">
 						お探しの記事は見つかりませんでした。
 					</div>
