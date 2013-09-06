@@ -59,6 +59,9 @@ div#contents {
   color: #d3d5d8;
   z-index: -1;
 }
+.post .entry-content .more-link {
+  font-size: .9em;
+}
 .post .entry-meta {
   text-align: right;
   font-size: 0.8em;
@@ -87,4 +90,8 @@ div#contents {
   background: #1b9ad7;
   text-decoration: underline;
   outline: none;
+}
+.post .entry-meta i[class^="icon-"] {
+  font-size: 1.2em;
+  margin-right: .2em;
 }

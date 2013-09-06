@@ -243,6 +243,9 @@ div#contents {
 			margin: 0px 2.5%;
 			background-color: #FFF;
 		}
+		#tw-loading {
+			color: #FFF;
+		}
 		#tw-account {
 			margin-top: -8px;
 			padding: 5px;
@@ -279,6 +282,12 @@ footer {
 		}
 	}
 }
+
+// font_icons color
+.icon-twitter:before { color: #00ACED; }
+.icon-github:before { color: #363636; }
+.icon-rss:before { color: #E4711B; }
+.icon-facebook-squared:before { color: #3B5998; }
 
 // 便宜上別ファイルにわけたもの
 @import "_form.scss";

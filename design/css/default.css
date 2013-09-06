@@ -287,6 +287,9 @@ div#contents:after {
   margin: 0px 2.5%;
   background-color: #FFF;
 }
+#sidebar #tw-widgets #tw-loading {
+  color: #FFF;
+}
 #sidebar #tw-widgets #tw-account {
   margin-top: -8px;
   padding: 5px;
@@ -317,6 +320,22 @@ footer #alice_carteret {
 }
 footer #alice_carteret #copyright {
   text-align: right;
+}
+
+.icon-twitter:before {
+  color: #00ACED;
+}
+
+.icon-github:before {
+  color: #363636;
+}
+
+.icon-rss:before {
+  color: #E4711B;
+}
+
+.icon-facebook-squared:before {
+  color: #3B5998;
 }
 
 input::-moz-focus-inner {

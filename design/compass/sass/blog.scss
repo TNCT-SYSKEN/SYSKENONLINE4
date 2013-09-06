@@ -69,6 +69,9 @@ div#contents {
 				z-index: -1;
 			}
 		}
+		.more-link {
+			font-size: .9em;
+		}
 
 	}
 	.entry-meta {
@@ -87,5 +90,18 @@ div#contents {
 			padding: 0.1em 0.5em;
 			@include setLinkColor(#FFF, $c_category_blog, none);
 		}
+		i[class^="icon-"] {
+			font-size: 1.2em;
+			margin-right: .2em;
+		}
+	}
+}
+
+#pager {
+	.prev {
+		
+	}
+	.next {
+		
 	}
 }
