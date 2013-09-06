@@ -4,8 +4,60 @@
 		"selected_items":
 		[
 			[
-				"mar",
+				"tex",
+				"text-align"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"margin",
 				"margin-top"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"rig",
+				"right"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-size"
 			],
 			[
 				"v",
@@ -20,16 +72,8 @@
 				"padding"
 			],
 			[
-				"li",
-				"li	Tag"
-			],
-			[
 				"nav",
 				"nav	<nav>"
-			],
-			[
-				"tex",
-				"text-align"
 			],
 			[
 				"bac",
@@ -42,14 +86,6 @@
 			[
 				"ba",
 				"background"
-			],
-			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"te",
-				"text-align"
 			],
 			[
 				"pa",
@@ -70,10 +106,6 @@
 			[
 				"html",
 				"html	html"
-			],
-			[
-				"he",
-				"header	Tag"
 			]
 		]
 	},
@@ -83,7 +115,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 7142,
+				"buffer_size": 7252,
 				"line_ending": "Windows"
 			}
 		},
@@ -91,7 +123,7 @@
 			"file": "blog.html",
 			"settings":
 			{
-				"buffer_size": 9607,
+				"buffer_size": 13707,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,7 +131,7 @@
 			"file": "/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/static_html/SYSKEN ONLINE.html",
 			"settings":
 			{
-				"buffer_size": 10455,
+				"buffer_size": 12154,
 				"line_ending": "Windows"
 			}
 		},
@@ -107,7 +139,7 @@
 			"file": "compass/sass/default.scss",
 			"settings":
 			{
-				"buffer_size": 4552,
+				"buffer_size": 4777,
 				"line_ending": "Windows"
 			}
 		},
@@ -115,7 +147,15 @@
 			"file": "compass/sass/blog.scss",
 			"settings":
 			{
-				"buffer_size": 142,
+				"buffer_size": 1961,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/font_icons.css",
+			"settings":
+			{
+				"buffer_size": 2279,
 				"line_ending": "Windows"
 			}
 		},
@@ -155,7 +195,7 @@
 			"file": "compass/sass/_color.scss",
 			"settings":
 			{
-				"buffer_size": 656,
+				"buffer_size": 729,
 				"line_ending": "Windows"
 			}
 		}
@@ -244,6 +284,12 @@
 	},
 	"file_history":
 	[
+		"/D/Users/Takuto/Desktop/fontello-dab0d9ce/css/animation.css",
+		"/D/Users/Takuto/Desktop/404.html",
+		"/D/Users/Takuto/Desktop/404.jpg",
+		"/D/Users/Takuto/Desktop/fontello-4df24874/css/font_icons.css",
+		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/css/font_icons_.css",
+		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/css/font_icons.css",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/css/onepcssgrid.css",
 		"/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/compass/sass/blog.scss",
 		"/C/Users/Takuto/Documents/GitHub/SYSKENONLINE4/design/hoge.html",
@@ -307,6 +353,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"2013年8月9日",
+			"<i class=\"icon-clock\"></i> ",
+			"class=\"category\"",
+			"category",
+			"author",
+			"tw-loading",
+			"480",
+			"div",
+			"*/\n",
+			"書いた人:",
+			"カテゴリー:",
 			"  ",
 			"col_1",
 			"col_5",
@@ -359,7 +416,7 @@
 		[
 			"header_size_hegiht"
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -368,7 +425,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -376,15 +433,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 7142,
+						"buffer_size": 7252,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								7142
+								1425,
+								1425
 							]
 						],
 						"settings":
@@ -395,7 +452,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1020.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -405,25 +462,26 @@
 					"file": "blog.html",
 					"settings":
 					{
-						"buffer_size": 9607,
+						"buffer_size": 13707,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3752,
-								3752
+								5503,
+								5503
 							]
 						],
 						"settings":
 						{
 							"is_xml": false,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1751.0,
+						"translation.y": 2085.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -433,15 +491,15 @@
 					"file": "/D/Users/Takuto/Documents/GitHub/SYSKENONLINE4/static_html/SYSKEN ONLINE.html",
 					"settings":
 					{
-						"buffer_size": 10455,
+						"buffer_size": 12154,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7948,
-								3522
+								1122,
+								1122
 							]
 						],
 						"settings":
@@ -451,7 +509,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 160.0,
+						"translation.y": 1657.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -467,15 +525,15 @@
 					"file": "compass/sass/default.scss",
 					"settings":
 					{
-						"buffer_size": 4552,
+						"buffer_size": 4777,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3956,
+								3956
 							]
 						],
 						"settings":
@@ -484,7 +542,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 4455.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -494,15 +552,15 @@
 					"file": "compass/sass/blog.scss",
 					"settings":
 					{
-						"buffer_size": 142,
+						"buffer_size": 1961,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								142,
-								142
+								1296,
+								1296
 							]
 						],
 						"settings":
@@ -511,13 +569,45 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1271.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
+					"file": "css/font_icons.css",
+					"settings":
+					{
+						"buffer_size": 2279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1624,
+								1689
+							],
+							[
+								2113,
+								2036
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 960.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "compass/sass/toppage.scss",
 					"settings":
 					{
@@ -528,8 +618,8 @@
 						"selection":
 						[
 							[
-								141,
-								0
+								80,
+								82
 							]
 						],
 						"settings":
@@ -544,7 +634,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "compass/sass/_debug.scss",
 					"settings":
 					{
@@ -571,7 +661,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "compass/sass/_twinkle.scss",
 					"settings":
 					{
@@ -599,7 +689,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "compass/sass/_scalar.scss",
 					"settings":
 					{
@@ -626,19 +716,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "compass/sass/_color.scss",
 					"settings":
 					{
-						"buffer_size": 656,
+						"buffer_size": 729,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								559,
+								565
 							]
 						],
 						"settings":
@@ -683,7 +773,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.629166666667,
 			1.0
 		],
 		"rows":
