@@ -50,6 +50,7 @@ div#contents {
 		p {
 			line-height: 1.6em;
 		}
+		// 引用(長文)
 		blockquote {
 			overflow: hidden;
 			position: relative;
@@ -69,8 +70,9 @@ div#contents {
 				z-index: -1;
 			}
 		}
-		.more-link {
-			font-size: .9em;
+		// 引用(短文)
+		q {
+			border-bottom: 1px dotted $c_blockquote_border;
 		}
 		// 画像リンク
 		.wp-caption {
@@ -90,7 +92,10 @@ div#contents {
 				padding: 0;
 			}
 		}
-
+		// 続きを読む
+		.more-link {
+			font-size: .9em;
+		}
 	}
 	.entry-meta {
 		$s_sep_margin: 0.2em;
@@ -117,11 +122,40 @@ div#contents {
 	}
 }
 
+// ページ送り クラス名と内容が一致していないとは
 #pager {
-	.prev {
-		
-	}
+	text-align: center;
+	// 「前ページヘ」
 	.next {
-		
+		display: inline-block;
+		margin-right: 1em;
+	}
+	// 「次ページへ」
+	.prev {
+		display: inline-block;
+		margin-left: 1em;
+	}
+}
+
+// サイドバー
+.widget {
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+		padding: 0;
+		li {
+			margin: .3em 0;
+		}
+	}
+	&.widget_categories {
+		ul.children {
+			li:before {
+				content: "└";
+				margin: 0 .4em;
+			}
+		}
+	}
+	.post-date {
+		font-size: .8em;
 	}
 }
