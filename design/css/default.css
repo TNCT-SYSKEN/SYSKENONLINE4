@@ -232,11 +232,11 @@ div#contents:after {
 
 #sidebar .sidebox {
   margin-bottom: 30px;
-  padding: 10px;
+  padding: 20px 15px;
   font-size: .85em;
   background-color: #fafafa;
 }
-#sidebar .sidebox h4 {
+#sidebar .sidebox h2, #sidebar .sidebox h4 {
   font-size: 1.1em;
   margin: 0;
   padding: 0;

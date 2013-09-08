@@ -4,23 +4,23 @@
 
 	<meta charset="UTF-8">
 	
-	<title>SYSKEN ONLINE - 津山高専システム研究部</title>
+	<title>しすけんぶろぐ♪ - SYSKEN ONLINE</title>
 
 	<!-- SEO -->
 	<meta name="author" content="津山高専システム研究部">
-	<meta name="title" CONTENT="SYSKEN ONLINE">
-	<meta name="keywords" content="sysken,シス研,しすけん,シスケン,システム研究部,津山高専,津山工業高等専門学校">
-	<meta name="description" content="SYSKEN ONLINEは津山高専「システム研究部」の公式ウェブサイトです。">
+	<meta name="title" CONTENT="しすけんぶろぐ♪">
+	<meta name="keywords" content="シス研ブログ,シス研,syskenblog,システム研究部">
+	<meta name="description" content="しすけんぶろぐはここだ！">
 	<meta name="robots" content="index,follow">
 	<meta name="build" content="2003.4.1">
 	<meta name="copyright" content="&copy; 2003 SYSKEN">
 
 	<!-- OGP Settings -->
-	<meta property="og:title" content="SYSKEN ONLINE">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://sysken.org/">
+	<meta property="og:title" content="しすけんぶろぐ♪">
+	<meta property="og:type" content="blog">
+	<meta property="og:url" content="http://sysken.org/blog/">
 	<meta property="og:image" content="http://sysken.org/img/??????.jpg"><!-- 300x300 over size image please! -->
-	<meta property="og:description" content="SYSKEN ONLINEは津山高専「システム研究部」のオフィシャルWebサイトです。">
+	<meta property="og:description" content="しすけんぶろぐはここだ！">
 
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,24 +37,6 @@
 
 </head>
 <body>
-
-<!-- デバッグ用のグリッド表示です。そのうち消えます。 -->
-<div id="fakegrid" class="container">
-	<div class="row">
-		<div class="col_1"></div><!--
-		--><div class="col_1"></div><!--
-		--><div class="col_1"></div><!--
-		--><div class="col_1"></div><!--
-		--><div class="col_1"></div><!--
-		--><div class="col_1"></div><!--
-		--><div class="col_1"></div><!--
-		--><div class="col_1"></div><!--
-		--><div class="col_1"></div><!--
-		--><div class="col_1"></div><!--
-		--><div class="col_1"></div><!--
-		--><div class="col_1"></div>
-	</div>
-</div>
 
 <!-- ヘッダー -->
 <header>
@@ -115,6 +97,7 @@
 					引用です引用です引用です引用です引用です引用です<br>
 					引用です引用です引用です引用です引用です引用です
 					</blockquote>
+					<q>短い引用はqタグを使います！</q>
 					<p>ｐタグは自動で</p>
 				</div>
 				<div class="entry-meta">
@@ -132,7 +115,7 @@
 				<h2 class="entry-title"><a href="http://localhost/wordpress/?p=69">あああああああ</a></h2>
 				<div class="entry-content">
 					<p>画像テスト</p>
-					<div id="attachment_88" class="wp-caption alignnone" style="width: 650px"><a href="./img/fe29b663.jpg"><img src="./img/fe29b663.jpg" alt="altです" width="640" height="338" class="size-full wp-image-88"></a><p class="wp-caption-text">画像の説明が入るところです</p></div>
+					<figure id="attachment_88" class="wp-caption alignnone" style="width: 650px;"><a href="./img/fe29b663.jpg"><img src="./img/fe29b663.jpg" alt="altです" width="640" height="338" class="size-full wp-image-88"></a><figcaption class="wp-caption-text">画像の説明が入るところです</figcaption></figure>
 					<p>その後のテキスト</p>
 				</div>
 				<div class="entry-meta">
@@ -195,18 +178,22 @@
 					<span class="comment"><i class="icon-comment"></i><a href="http://localhost/wordpress/?p=7#respond" title="続きを読むテスト へのコメント">コメントをどうぞ</a></span>
 				</div>
 			</article>
-			<div id="pager" class=" abox shadow">
-				<div class="prev"><a href="http://localhost/wordpress/?paged=2">次ページへ »</a></div>
+			<div id="pager" class="abox shadow">
 				<div class="next"><a href="http://localhost/wordpress/?paged=2">« 前ページへ</a></div>
+				<div class="prev"><a href="http://localhost/wordpress/?paged=2">次ページへ »</a></div>
 			</div>
 		</div>
 		<!-- メインバー(左) ここまで -->
 
 		<!-- サイドバー(右) ここから -->
 		<div id="sidebar" class="col_3">
-			<aside id="recent-posts-3" class="widget widget_recent_entries">
+			<aside id="recent-posts-3" class="widget widget_recent_entries sidebox shadow">
 				<h2 class="widget-title">最近の投稿</h2>
 				<ul>
+					<li>
+						<a href="http://localhost/wordpress/?p=72" title="いろいろなタグテスト">やはり俺のブログタイトルがこんなに長いわけがないのは間違っている</a>
+						<span class="post-date">(8/10)</span>
+					</li>
 					<li>
 						<a href="http://localhost/wordpress/?p=72" title="いろいろなタグテスト">いろいろなタグテスト</a>
 						<span class="post-date">(8/10)</span>
@@ -229,10 +216,13 @@
 					</li>
 				</ul>
 			</aside>
-			<aside id="categories-3" class="widget widget_categories"><h2 class="widget-title">カテゴリー</h2>
+			<aside id="categories-3" class="widget widget_categories sidebox shadow">
+				<h2 class="widget-title">カテゴリー</h2>
 				<ul>
 					<li class="cat-item cat-item-9"><a href="http://localhost/wordpress/?cat=9" title="プログラミング に含まれる投稿をすべて表示">プログラミング</a> (1)
 						<ul class='children'>
+							<li class="cat-item cat-item-10"><a href="http://localhost/wordpress/?cat=10" title="C++ に含まれる投稿をすべて表示">C++</a> (1)
+							</li>
 							<li class="cat-item cat-item-10"><a href="http://localhost/wordpress/?cat=10" title="C++ に含まれる投稿をすべて表示">C++</a> (1)
 							</li>
 						</ul>
@@ -243,7 +233,7 @@
 					</li>
 				</ul>
 			</aside>
-			<aside id="archives-3" class="widget widget_archive">
+			<aside id="archives-3" class="widget widget_archive sidebox shadow">
 				<h2 class="widget-title">月別アーカイブ</h2>	
 				<ul>
 					<li><a href='http://localhost/wordpress/?m=201308' title='2013年8月'>2013年8月</a>&nbsp;(3)</li>
@@ -252,7 +242,7 @@
 					<li><a href='http://localhost/wordpress/?m=201305' title='2013年5月'>2013年5月</a>&nbsp;(1)</li>
 				</ul>
 			</aside>
-			<aside id="search-3" class="widget widget_search">
+			<aside id="search-3" class="widget widget_search sidebox shadow">
 				<h2 class="widget-title">検索</h2>
 				<form role="search" method="get" id="searchform" action="http://localhost/wordpress/" >
 					<div><label class="screen-reader-text" for="s">検索:</label>
