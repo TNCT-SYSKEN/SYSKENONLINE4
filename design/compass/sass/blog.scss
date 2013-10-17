@@ -50,6 +50,7 @@ div#contents {
 		p {
 			line-height: 1.6em;
 		}
+		// 引用(長文)
 		blockquote {
 			overflow: hidden;
 			position: relative;
@@ -69,7 +70,32 @@ div#contents {
 				z-index: -1;
 			}
 		}
-
+		// 引用(短文)
+		q {
+			border-bottom: 1px dotted $c_blockquote_border;
+		}
+		// 画像リンク
+		.wp-caption {
+			margin: 0 auto;
+			padding: 0;
+			text-align: center;
+			a {
+				margin: 0;
+				padding: 0;
+			}
+			img {
+				margin: 0;
+				padding: 0;
+			}
+			.wp-caption-text {
+				margin: 0;
+				padding: 0;
+			}
+		}
+		// 続きを読む
+		.more-link {
+			font-size: .9em;
+		}
 	}
 	.entry-meta {
 		$s_sep_margin: 0.2em;
@@ -85,7 +111,51 @@ div#contents {
 			display: inline-block;
 			margin: 0 $s_sep_margin;
 			padding: 0.1em 0.5em;
+			font-size: .94em;
+			border-radius: 2px;
 			@include setLinkColor(#FFF, $c_category_blog, none);
 		}
+		i[class^="icon-"] {
+			font-size: 1.2em;
+			margin-right: .2em;
+		}
+	}
+}
+
+// ページ送り クラス名と内容が一致していないとは
+#pager {
+	text-align: center;
+	// 「前ページヘ」
+	.next {
+		display: inline-block;
+		margin-right: 1em;
+	}
+	// 「次ページへ」
+	.prev {
+		display: inline-block;
+		margin-left: 1em;
+	}
+}
+
+// サイドバー
+.widget {
+	ul {
+		list-style: none;
+		margin-bottom: 0;
+		padding: 0;
+		li {
+			margin: .3em 0;
+		}
+	}
+	&.widget_categories {
+		ul.children {
+			li:before {
+				content: "└";
+				margin: 0 .4em;
+			}
+		}
+	}
+	.post-date {
+		font-size: .8em;
 	}
 }
