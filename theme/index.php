@@ -25,14 +25,26 @@ get_header();?>
 							<?php the_content(); ?>
 						</div>
 						<div class="entry-meta">
-							<span class="date"><?php echo get_the_date(); ?></span>
+							<span class="date">
+								<i class="icon-clock"></i>
+								<?php echo get_the_date(); ?>
+							</span>
 							<span class="sep"> | </span>
-							<span class="author">by <?php the_author(); ?></span>
+							<span class="author">
+								<i class="icon-user"></i>
+								<?php the_author(); ?>
+							</span>
 							<span class="sep"> | </span>
-							<span class="category"><?php the_category(' '); ?></span>
+							<span class="category">
+								<i class="icon-tags"></i>
+								<?php the_category(' '); ?>
+							</span>
 							<span class="sep"> | </span>
 							<?php //左から0件の場合、1件の場合、それ以上の場合 ?>
-							<span class="comment"><?php comments_popup_link('コメントをどうぞ', '1件のコメント', '%件のコメント'); ?></span>
+							<span class="comment">
+								<i class="icon-comment"></i>
+								<?php comments_popup_link('コメントをどうぞ', '1件のコメント', '%件のコメント'); ?>
+							</span>
 						</div>
 					</article>
 				<?php endwhile; ?>

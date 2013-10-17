@@ -12,7 +12,6 @@
 	
 	<title><?php if (!is_front_page()) wp_title('|', true, 'right'); bloginfo('name'); ?></title>
 
-	<!-- 順次テンプレタグ挟んでいく -->
 	<!-- SEO -->
 	<meta name="author" content="津山高専システム研究部">
 	<meta name="title" CONTENT="SYSKEN ONLINE">
@@ -40,7 +39,12 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/font_icons.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/978.css">
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/default.css">
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/blog.css">
+	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/animation.css">
+	<?php if (is_front_page()) : ?>
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/toppage.css">
+	<?php else : ?>
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/blog.css">
+	<?php endif; ?>
 
 	<meta name="viewport" content="width=device-width">
 	<?php wp_head(); ?>
@@ -70,11 +74,11 @@
 <!-- メニュー -->
 <nav>
 	<ul>
-		<li id="home"><a href="//sysken.org"><i class="icon-home"></i></a></li><!-- 
+		<li id="home"><a href="<?php echo home_url('/') ?>"><i class="icon-home"></i></a></li><!-- 
 		--><li><a href="/about">	About		<span>システム研究部とは</span>	</a></li><!--
 		--><li><a href="/active">	Active		<span>最近の活動報告</span>		</a></li><!--
 		--><li><a href="/member">	Member		<span>シス研部員名簿</span>		</a></li><!--
-		--><li><a href="/blog">		Blog		<span>しすけんぶろぐ♪</span>	</a></li><!--
+		--><li><a href="blog">		Blog		<span>しすけんぶろぐ♪</span>	</a></li><!--
 		--><li><a href="/product">	Product		<span>部員のつくったもの</span>	</a></li><!--
 		--><li><a href="/link">		Link		<span>関連リンク</span>			</a></li>
 	</ul>

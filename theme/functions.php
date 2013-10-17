@@ -41,10 +41,17 @@
 register_sidebar(array(
 	'name' => 'メインサイドバー',
 	'id' => 'sidebar-1',
-	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'before_widget' => '<aside id="%1$s" class="widget %2$s sidebox shadow">',
 	'after_widget' => '</aside>',
 	'before_title' => '<h2 class="widget-title">',
 	'after_title' => '</h2>',
 ));
+
+//relのあれ
+add_filter('the_category', 'remove_rel');
+function remove_rel( $text ) {
+	$text = str_replace(' rel="category tag"', 'rel="category"', $text);
+	return $text;
+}
 
 ?>

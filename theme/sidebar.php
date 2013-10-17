@@ -6,11 +6,8 @@
 
 <!-- サイドバー(右) ここから -->
 <div id="sidebar" class="col_3">
-	<?php if (is_active_sidebar('sidebar-1')) : ?>
-		<?php /*WP内で動的にサイドバーの小物を変えてます タグを追加するか悩みどころ*/?>
-		<?php dynamic_sidebar('sidebar-1'); ?>
-	<?php else: ?>
-		<div class="picbox shadow" id="square"><a href="/radio"><img src="<?php bloginfo('template_url'); ?>/img/sysken_radio.png" width="222" height="222"></a></div>
+	<?php if (is_page()) : ?>
+		<div class="picbox shadow" id="square"><a href="radio"><img src="<?php bloginfo('template_url'); ?>/img/sysken_radio.png" width="222" height="222"></a></div>
 
 		<aside>
 			<!-- Twitter Widgets -->
@@ -21,6 +18,9 @@
 				<div id="tw-account">by @<a href="//twitter.com/sysken">sysken</a></div>
 			</div>
 		</aside>
+	<?php else : ?>
+		<!-- TODO:あれあれ -->
+		<?php dynamic_sidebar('sidebar-1'); ?>
 	<?php endif; ?>
 </div>
 <!-- サイドバー(右) ここまで -->
