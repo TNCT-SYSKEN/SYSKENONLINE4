@@ -9,7 +9,9 @@
 <footer>
 	<div class="container">
 		<div id="contents_list" class="warp">
-			多分この辺りにページの一覧的なものが入ると思いたい
+			<!--多分この辺りにページの一覧的なものが入ると思いたい-->
+			<!-- WPの吐くクラス名長すぎひぎい -->
+			<?php wp_nav_menu(array('theme_location' => 'footer-navi', 'container' => '', /*'items_wrap' => '<ul><li id="item-id"></li>%3$s</ul>'*/)); ?>
 		</div>
 		<div id="alice_carteret">
 			<div class="warp">

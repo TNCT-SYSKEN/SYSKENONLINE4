@@ -38,6 +38,11 @@
 // }
 
 add_theme_support('post-thumbnails');
+add_theme_support('menus');
+
+register_nav_menu('footer-navi', 'フッターナビ');
+
+//register_nav_menus(array);
 
 //サイドバーを定義 
 register_sidebar(array(

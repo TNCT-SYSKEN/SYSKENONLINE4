@@ -17,7 +17,7 @@ get_header();?>
 						<h3 class="entry-title"><?php the_title(); ?></a></h2>
 						<?php the_post_thumbnail(); ?>
 						<?php the_content(); ?>
-						<span class="author"><?php the_author(); ?></span>
+						<span class="author">製作者:<?php the_author(); ?></span>
 						<!--<span class="download">download</span>-->
 					</div>
 				<?php endwhile; ?>

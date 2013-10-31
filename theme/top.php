@@ -31,13 +31,17 @@ get_header();?>
 					<dl>
 						<?php if(get_post_type() == 'product'): ?>
 						<dt class="product">product</dt>
+						<dd>
+							<a href="<?php bloginfo('url'); ?>/product"><?php the_title(); ?></a>
 						<?php elseif(get_post_type() == 'active'): ?>
 						<dt class="active">active</dt>
+						<dd>
+							<a href="<?php bloginfo('url'); ?>/active"><?php the_title(); ?></a>
 						<?php else: ?>
 						<dt class="blog">blog</dt>
-						<?php endif; ?>
 						<dd>
 							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						<?php endif; ?>
 							<span class="date"><?php the_time('Y.n.j'); ?>
 						</dd>
 					</dl>
@@ -45,7 +49,7 @@ get_header();?>
 				<?php wp_reset_query(); ?>
 
 				<div id="last">
-					<div id="rss-read"><i class="icon-rss"></i><a href="/rss.rdf">このサイトのRSSを購読する</a></div>
+					<div id="rss-read"><i class="icon-rss"></i><a href="<?php bloginfo('rss2_url'); ?>">このサイトのRSSを購読する</a></div>
 					<!--いつかできる-->
 					<!--<div id="whats-new"><a href="#">過去の更新情報</a><i class="icon-arrow-right"></i></div>-->
 				</div>
@@ -60,6 +64,7 @@ get_header();?>
 					<input type="text" name="s">
 					<input type="submit" value="検索">
 				</form>
+				<?//php get_search_form(); ?>
 			</div>
 
 			<div class="abox shadow" id="facebook-likes">
