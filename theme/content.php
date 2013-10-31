@@ -1,10 +1,10 @@
 <?php 
 /*
-	content.php 記事一つ分をパーツ化！
+	content.php 記事(ぶろぐ)一つ分をパーツ化！
 */
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="post abox shadow" <?php //post_class('abox shadow');?>>
+<article id="post-<?php the_ID(); ?>" class="post abox shadow">
 	<div class="entry-date">
 		<!-- YOJOOOO -->
 		<!-- <span class="year"><?php the_time('Y'); ?>年</span> -->

@@ -19,52 +19,35 @@ get_header();?>
 			<!-- 新着情報 ここから -->
 			<article id="news" class="abox shadow">
 				<h2>SYSKEN ONLINE 新着情報</h2>
-				<dl>
-					<dt class="blog">blog</dt>
-					<dd>
-						<a href="/blog/20130730_001.html">タブレットでDebian、タブレットでoneko</a>
-						<span class="date">2013.07.30</span>
-					</dd>
-				</dl>
-				<dl>
-					<dt class="blog">blog</dt>
-					<dd>
-						<a href="/blog/20130722_001.html">Windows8.1を使ってみて</a>
-						<span class="date">2013.07.22</span>
-					</dd>
-				</dl>
-				<dl>
-					<dt class="member">member</dt>
-					<dd>
-						<a href="/member/">部員一覧が更新されました</a>
-						<span class="date">2013.07.18</span>
-					</dd>
-				</dl>
-				<dl>
-					<dt class="other">ohter</dt>
-					<dd>
-						<a href="/radio/">しすけんらじお特設ページを公開しました</a>
-						<span class="date">2013.05.16</span>
-					</dd>
-				</dl>
-				<dl>
-					<dt class="product">product</dt>
-					<dd>
-						<a href="/product/anime_sidonia.html">シドニアの騎士をネット公開しました</a>
-						<span class="date">2013.03.12</span>
-					</dd>
-				</dl>
-				<dl>
-					<dt class="active">active</dt>
-					<dd>
-						<a href="/active/computerfes2013.html">コンピュータフェスティバルに参加しました</a>
-						<span class="date">2013.03.12</span>
-					</dd>
-				</dl>
+				<?php 
+				$args = array(
+					'post_type' => array('post', 'product', 'active'),
+					'posts_per_page' => 5,
+				);
+				?>
+				<?php query_posts($args); ?>
+				<?//php query_posts( 'posts_per_page=5' ); ?>
+				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+					<dl>
+						<?php if(get_post_type() == 'product'): ?>
+						<dt class="product">product</dt>
+						<?php elseif(get_post_type() == 'active'): ?>
+						<dt class="active">active</dt>
+						<?php else: ?>
+						<dt class="blog">blog</dt>
+						<?php endif; ?>
+						<dd>
+							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+							<span class="date"><?php the_time('Y.n.j'); ?>
+						</dd>
+					</dl>
+				<?php endwhile; endif; ?>
+				<?php wp_reset_query(); ?>
 
 				<div id="last">
 					<div id="rss-read"><i class="icon-rss"></i><a href="/rss.rdf">このサイトのRSSを購読する</a></div>
-					<div id="whats-new"><a href="#">過去の更新情報</a><i class="icon-arrow-right"></i></div>
+					<!--いつかできる-->
+					<!--<div id="whats-new"><a href="#">過去の更新情報</a><i class="icon-arrow-right"></i></div>-->
 				</div>
 
 			</article>

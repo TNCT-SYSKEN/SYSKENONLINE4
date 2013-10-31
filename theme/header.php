@@ -75,12 +75,12 @@
 <nav>
 	<ul>
 		<li id="home"><a href="<?php echo home_url('/') ?>"><i class="icon-home"></i></a></li><!-- 
-		--><li><a href="/about">	About		<span>システム研究部とは</span>	</a></li><!--
-		--><li><a href="/active">	Active		<span>最近の活動報告</span>		</a></li><!--
-		--><li><a href="/member">	Member		<span>シス研部員名簿</span>		</a></li><!--
-		--><li><a href="blog">		Blog		<span>しすけんぶろぐ♪</span>	</a></li><!--
-		--><li><a href="/product">	Product		<span>部員のつくったもの</span>	</a></li><!--
-		--><li><a href="/link">		Link		<span>関連リンク</span>			</a></li>
+		--><li><a href="<?php echo home_url('/') ?>about">	About		<span>システム研究部とは</span>	</a></li><!--
+		--><li><a href="<?php echo home_url('/') ?>active">	Active		<span>最近の活動報告</span>		</a></li><!--
+		--><li><a href="<?php echo home_url('/') ?>member">	Member		<span>シス研部員名簿</span>		</a></li><!--
+		--><li><a href="<?php echo home_url('/') ?>blog">		Blog		<span>しすけんぶろぐ♪</span>	</a></li><!--
+		--><li><a href="<?php echo home_url('/') ?>product">	Product		<span>部員のつくったもの</span>	</a></li><!--
+		--><li><a href="<?php echo home_url('/') ?>link">		Link		<span>関連リンク</span>			</a></li>
 	</ul>
 </nav>
 <!-- ダミー -->
