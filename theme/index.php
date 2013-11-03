@@ -13,27 +13,13 @@ get_header();?>
 			<?php //記事が存在する場合、メインループ開始 ?>
 			<?php if (have_posts()) : ?>
 				<?php while (have_posts()) : the_post() ?>
+					<?php get_template_part( 'content', get_post_format() ); ?>
 					<?php //量が多くなればcontent.phpとして分割 ?>
-					<article id="post-<?php the_ID(); ?>" class="post abox shadow" <?php //post_class('abox shadow');?>>
-						<div class="entry-date"><?php the_time('Y'); ?>年<?php the_time('n'); ?>月<?php the_time('j') ?>日</div>
-						<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<div class="entry-content">
-							<?php the_content(); ?>
-						</div>
-						<div class="entry-meta">
-							<span class="author">書いた人:<?php the_author(); ?></span>
-							<span class="sep"> | </span>
-							<span class="category">カテゴリー:<?php the_category(', '); ?></span>
-							<span class="sep"> | </span>
-							<?php //左から0件の場合、1件の場合、それ以上の場合 ?>
-							<span class="comment"><?php comments_popup_link('コメントをどうぞ', '1件のコメント', '%件のコメント'); ?></span>
-						</div>
-					</article>
 				<?php endwhile; ?>
 			<?php //記事が存在しない場合 ?>
 			<?php else : ?>
 				<article id="post-0" class="abox shadow">
-					<h2 class="entry-title">あぼーん</h2>
+					<h2 class="entry-title">404 Not found</h2>
 					<div class="entry-content">
 						お探しの記事は見つかりませんでした。
 					</div>
@@ -41,9 +27,9 @@ get_header();?>
 			<?php endif; ?>
 			<?php //記事が1ページに表示できる数を超えたら、ページャーを表示 ?>
 			<?php if ($wp_query->max_num_pages > 1) : ?>
-				<div id="pager">
-					<div class="prev"><?php next_posts_link(); ?></div>
+				<div id="pager" class="abox shadow">
 					<div class="next"><?php previous_posts_link(); ?></div>
+					<div class="prev"><?php next_posts_link(); ?></div>
 				</div>
 			<?php endif; ?>
 		</div>
