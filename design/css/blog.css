@@ -146,3 +146,31 @@ div#contents {
 .widget .post-date {
   font-size: .8em;
 }
+
+.commentlist {
+  margin: 0;
+  padding: .5em 1em;
+  list-style: none;
+}
+.commentlist ul, .commentlist ol {
+  list-style: none;
+}
+.commentlist .vcard {
+  display: inline-block;
+  line-height: 32px;
+}
+.commentlist .vcard img {
+  margin-right: .3em;
+  vertical-align: bottom;
+}
+.commentlist .vcard cite.fn {
+  font-style: normal;
+}
+.commentlist .commentmetadata {
+  display: inline-block;
+  font-size: .8em;
+}
+.commentlist .reply {
+  text-align: right;
+  font-size: .92em;
+}

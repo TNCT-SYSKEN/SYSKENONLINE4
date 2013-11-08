@@ -159,3 +159,39 @@ div#contents {
 		font-size: .8em;
 	}
 }
+
+.commentlist {
+	margin: 0;
+	padding: .5em 1em;
+	list-style: none;
+	ul, ol {
+		list-style: none;
+	}
+	.vcard {
+		display: inline-block;
+		line-height: 32px;
+		img {
+			margin-right: .3em;
+			vertical-align: bottom;
+		}
+		cite.fn {
+			font-style: normal;
+		}
+	}
+	.commentmetadata {
+		display: inline-block;
+		font-size: .8em;
+	}
+	.comment-edit-link {
+
+	}
+	.reply {
+		text-align: right;
+		font-size: .92em;
+	}
+}
+
+#respond {
+	#comment {
+	}
+}
