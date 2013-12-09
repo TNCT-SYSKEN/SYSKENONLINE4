@@ -70,12 +70,13 @@ header ul#social_link li {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  width: 50px;
   height: 50px;
   margin: 28px 5px 0 0;
   padding: 0;
   line-height: 50px;
   text-align: center;
+}
+header ul#social_link li i {
   font-size: 35px;
 }
 header ul#social_link li:last-child {
@@ -312,6 +313,30 @@ footer {
   padding: 10px 0;
   color: #585858;
   background: #fafafa;
+}
+footer #contents_list h5 {
+  margin: 0 0 1em 0;
+  padding: 0;
+  font-size: .9em;
+}
+footer #contents_list #item {
+  margin: 0;
+  padding: 0;
+  height: 110px;
+  overflow: hidden;
+}
+footer #contents_list ul.line {
+  width: 28%;
+  height: 140px;
+  margin: 0 10px;
+  padding: 0 12px;
+  border-left: 1px solid #CCC;
+  float: left;
+}
+footer #contents_list ul.line li {
+  list-style: none;
+  font-size: 0.9em;
+  line-height: 1.9;
 }
 footer #alice_carteret {
   position: absolute;
