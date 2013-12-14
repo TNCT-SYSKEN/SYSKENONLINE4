@@ -13,7 +13,7 @@ div#contents {
 	box-shadow: none;
 }
 
-.post {
+.post, .custom-post {
 	.entry-date {
 		float: left;
 		width: 50px;
@@ -106,8 +106,13 @@ div#contents {
 			margin: 0 $s_sep_margin;
 			color: #AAA;
 		}
+		// アイコンについて
+		i[class^="icon-"] {
+			font-size: 1.2em;
+			margin-right: .2em;
+		}
 		// カテゴリ
-		.category a[rel="category"] {
+		.category a[rel="category"]{
 			display: inline-block;
 			margin: 0 $s_sep_margin;
 			padding: 0.1em 0.5em;
@@ -115,19 +120,14 @@ div#contents {
 			border-radius: 2px;
 			@include setLinkColor(#FFF, $c_category_blog, none);
 		}
-		i[class^="icon-"] {
-			font-size: 1.2em;
-			margin-right: .2em;
-		}
+
 	}
 }
 
 // カスタム投稿（主にproduct）
 .custom-post {
-	.author {
-		$s_sep_margin: 0.2em;
-		text-align: right;
-		font-size: 0.8em;
+	.entry-title {
+		line-height: 1;
 	}
 }
 

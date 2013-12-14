@@ -3,7 +3,7 @@ div#contents {
   box-shadow: none;
 }
 
-.post .entry-date {
+.post .entry-date, .custom-post .entry-date {
   float: left;
   width: 50px;
   height: 50px;
@@ -13,7 +13,7 @@ div#contents {
   background: #FFF;
   box-shadow: 0 2px 5px #BBB;
 }
-.post .entry-date .month {
+.post .entry-date .month, .custom-post .entry-date .month {
   border-radius: 5px 5px 0 0;
   display: block;
   height: 15px;
@@ -22,26 +22,26 @@ div#contents {
   background: #3A9FEB;
   color: #FFF;
 }
-.post .entry-date .day {
+.post .entry-date .day, .custom-post .entry-date .day {
   display: block;
   font-size: 30px;
   height: 35px;
   line-height: 35px;
   font-weight: bold;
 }
-.post .entry-title {
+.post .entry-title, .custom-post .entry-title {
   overflow: hidden;
   *zoom: 1;
   line-height: 50px;
   margin: 0.5em 0;
 }
-.post .entry-content {
+.post .entry-content, .custom-post .entry-content {
   margin: 1em 0.5em;
 }
-.post .entry-content p {
+.post .entry-content p, .custom-post .entry-content p {
   line-height: 1.6em;
 }
-.post .entry-content blockquote {
+.post .entry-content blockquote, .custom-post .entry-content blockquote {
   overflow: hidden;
   position: relative;
   margin: 0.5em;
@@ -50,7 +50,7 @@ div#contents {
   background: #eeeff0;
   z-index: 1;
 }
-.post .entry-content blockquote:after {
+.post .entry-content blockquote:after, .custom-post .entry-content blockquote:after {
   font-family: "font_icons";
   content: "\e80a";
   position: absolute;
@@ -60,38 +60,42 @@ div#contents {
   color: #d3d5d8;
   z-index: -1;
 }
-.post .entry-content q {
+.post .entry-content q, .custom-post .entry-content q {
   border-bottom: 1px dotted #aaaaaa;
 }
-.post .entry-content .wp-caption {
+.post .entry-content .wp-caption, .custom-post .entry-content .wp-caption {
   margin: 0 auto;
   padding: 0;
   text-align: center;
 }
-.post .entry-content .wp-caption a {
+.post .entry-content .wp-caption a, .custom-post .entry-content .wp-caption a {
   margin: 0;
   padding: 0;
 }
-.post .entry-content .wp-caption img {
+.post .entry-content .wp-caption img, .custom-post .entry-content .wp-caption img {
   margin: 0;
   padding: 0;
 }
-.post .entry-content .wp-caption .wp-caption-text {
+.post .entry-content .wp-caption .wp-caption-text, .custom-post .entry-content .wp-caption .wp-caption-text {
   margin: 0;
   padding: 0;
 }
-.post .entry-content .more-link {
+.post .entry-content .more-link, .custom-post .entry-content .more-link {
   font-size: .9em;
 }
-.post .entry-meta {
+.post .entry-meta, .custom-post .entry-meta {
   text-align: right;
   font-size: 0.8em;
 }
-.post .entry-meta .sep {
+.post .entry-meta .sep, .custom-post .entry-meta .sep {
   margin: 0 0.2em;
   color: #AAA;
 }
-.post .entry-meta .category a[rel="category"] {
+.post .entry-meta i[class^="icon-"], .custom-post .entry-meta i[class^="icon-"] {
+  font-size: 1.2em;
+  margin-right: .2em;
+}
+.post .entry-meta .category a[rel="category"], .custom-post .entry-meta .category a[rel="category"] {
   display: inline-block;
   margin: 0 0.2em;
   padding: 0.1em 0.5em;
@@ -102,26 +106,21 @@ div#contents {
   text-decoration: none;
   outline: none;
 }
-.post .entry-meta .category a[rel="category"]:link, .post .entry-meta .category a[rel="category"]:visited {
+.post .entry-meta .category a[rel="category"]:link, .post .entry-meta .category a[rel="category"]:visited, .custom-post .entry-meta .category a[rel="category"]:link, .custom-post .entry-meta .category a[rel="category"]:visited {
   color: white;
   background: #188ac0;
   text-decoration: none;
   outline: none;
 }
-.post .entry-meta .category a[rel="category"]:hover, .post .entry-meta .category a[rel="category"]:active {
+.post .entry-meta .category a[rel="category"]:hover, .post .entry-meta .category a[rel="category"]:active, .custom-post .entry-meta .category a[rel="category"]:hover, .custom-post .entry-meta .category a[rel="category"]:active {
   color: white;
   background: #1b9ad7;
   text-decoration: underline;
   outline: none;
 }
-.post .entry-meta i[class^="icon-"] {
-  font-size: 1.2em;
-  margin-right: .2em;
-}
 
-.custom-post .author {
-  text-align: right;
-  font-size: 0.8em;
+.custom-post .entry-title {
+  line-height: 1;
 }
 
 #pager {
