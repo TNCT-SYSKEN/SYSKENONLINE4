@@ -119,6 +119,11 @@ div#contents {
   margin-right: .2em;
 }
 
+.custom-post .author {
+  text-align: right;
+  font-size: 0.8em;
+}
+
 #pager {
   text-align: center;
 }

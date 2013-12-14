@@ -122,6 +122,15 @@ div#contents {
 	}
 }
 
+// カスタム投稿（主にproduct）
+.custom-post {
+	.author {
+		$s_sep_margin: 0.2em;
+		text-align: right;
+		font-size: 0.8em;
+	}
+}
+
 // ページ送り クラス名と内容が一致していないとは
 #pager {
 	text-align: center;
