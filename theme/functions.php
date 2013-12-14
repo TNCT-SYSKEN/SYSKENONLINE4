@@ -147,4 +147,14 @@ function chample_latest_posts( $wp_query ) {
 add_action( 'parse_query', 'chample_latest_posts' ); 
 */
 
+// ユーザ登録情報にいろいろ追加
+function update_profile_fields( $contactmethods ) {
+	$contactmethods['twitter'] = 'Twitter';
+	$contactmethods['facebook'] = 'Facebook';
+	$contactmethods['github'] = 'GitHub';
+	
+	return $contactmethods;
+}
+add_filter('user_contactmethods','update_profile_fields',10,1);
+
 ?>
