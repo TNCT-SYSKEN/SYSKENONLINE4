@@ -16,7 +16,9 @@ get_header();?>
 					<div class="next"><?php previous_post_link('%link', '&laquo; %title'); ?></div>
 					<div class="prev"><?php next_post_link('%link', '%title &raquo;'); ?></div>
 				</div>
-				<?php comments_template(); ?>
+				<div class="abox shadow">
+					<?php comments_template(); ?>
+				</div>
 			<?php endwhile; ?>
 		</div>
 		<!-- メインバー(左) ここまで -->

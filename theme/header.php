@@ -10,19 +10,21 @@
 
 	<meta charset="UTF-8">
 	
-	<title><?php if (!is_front_page()) wp_title('|', true, 'right'); bloginfo('name'); ?></title>
+	<title><?php if (!is_front_page()) wp_title('-', true, 'right'); bloginfo('name'); ?></title>
 
 	<!-- SEO -->
+	<?php if (is_front_page()) : ?>
 	<meta name="author" content="津山高専システム研究部">
 	<meta name="title" CONTENT="SYSKEN ONLINE">
 	<meta name="keywords" content="sysken,シス研,しすけん,シスケン,システム研究部,津山高専,津山工業高等専門学校">
 	<meta name="description" content="SYSKEN ONLINEは津山高専「システム研究部」の公式ウェブサイトです。">
-	<meta name="robots" content="index,follow">
 	<meta name="build" content="2003.4.1">
 	<meta name="copyright" content="&copy; 2003 SYSKEN">
+	<?php endif ?>
+	<meta name="robots" content="index,follow">
 
 	<!-- OGP Settings -->
-	<meta property="og:title" content="SYSKEN ONLINE">
+	<meta property="og:title" content="<?php if (!is_front_page()) wp_title('-', true, 'right'); bloginfo('name'); ?>">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://sysken.org/">
 	<meta property="og:image" content="http://sysken.org/img/??????.jpg"><!-- 300x300 over size image please! -->
