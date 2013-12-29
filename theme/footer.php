@@ -19,7 +19,7 @@
 					'items_wrap' => '<ul id="item">%3$s</ul>',
 				);
 			?>
-			<?php wp_nav_menu(array($args)); ?>
+			<?php wp_nav_menu($args); ?>
 		</div>
 		<div id="alice_carteret">
 			<div class="warp">

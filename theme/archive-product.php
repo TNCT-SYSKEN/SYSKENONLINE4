@@ -17,9 +17,9 @@ get_header();?>
 			<?php while (have_posts()) : the_post() ?>
 				<div class="abox shadow custom-post">
 					<h3 class="entry-title">
-						<?php if(has_term('game', 'category')) : ?>
+						<?php if(has_term('game', 'cate')) : ?>
 							<i class="icon-game"></i>
-						<?php elseif(has_term('movie', 'category')): ?>
+						<?php elseif(has_term('movie', 'cate')): ?>
 							<i class="icon-video"></i>
 						<?php endif; ?>
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -30,11 +30,11 @@ get_header();?>
 						<span class="creater"><i class="icon-user"></i><?php the_author(); ?></span>
 						<span class="sep">|</span>
 						<span class="taxonomy">
-							<?php if(has_term('game', 'category')) : ?>
+							<?php if(has_term('game', 'cate')) : ?>
 								<i class="icon-game"></i>
 								<!-- <a href="" rel="">ゲーム</a> リンクはとりあえず先送りで-->
 								ゲーム
-							<?php elseif(has_term('movie', 'category')): ?>
+							<?php elseif(has_term('movie', 'cate')): ?>
 								<i class="icon-video"></i>
 								<!-- <a href="" rel="">動画</a> -->
 								動画

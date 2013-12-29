@@ -36,7 +36,7 @@
 		<meta property="og:type" content="article">
 		<?php if(have_posts()) : while(have_posts()): the_post(); //?>
 			<meta property="og:url" content="<?php the_permalink(); ?>">
-			<meta property="og:description" content="<?php the_excerpt(); //抜粋を(100語なので100文字ぐらいにカットしてもいいかも)?>">
+			<meta property="og:description" content="<?php echo get_the_excerpt(); //抜粋を?>">
 			<?php if(has_post_thumbnail()) ://サムネイル ?>
 				<meta property="og:image" content="<?php the_post_thumbnail()?>">
 			<?php else : ?>

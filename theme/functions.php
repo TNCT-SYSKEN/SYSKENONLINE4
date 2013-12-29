@@ -107,9 +107,9 @@ function add_custom() {
 			'with_front' => false
 		)
 	));
-	//WPのカスタム投稿productにcategoryっていうタクソノミー(分類)を追加する
+	//WPのカスタム投稿productにcate(分類)を追加する
 	register_taxonomy(
-		'category',
+		'cate',//categoryにするとカテゴリ機能が飛ぶ
 		'product',
 		array(
 			'label' => 'カテゴリ分け',
