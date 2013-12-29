@@ -95,7 +95,7 @@ function add_custom() {
 		'public' => true,
 		'menu_position' => 5,
 		'has_archive' => true,
-		'hierarchical' => true,
+		'hierarchical' => true,//これ追加しないとチェックボックスな選択が出来ない
 		'supports' => array(
 			'title',
 			'editor',
@@ -107,8 +107,9 @@ function add_custom() {
 			'with_front' => false
 		)
 	));
+	//WPのカスタム投稿productにcategoryっていうタクソノミー(分類)を追加する
 	register_taxonomy(
-		'cate',
+		'category',
 		'product',
 		array(
 			'label' => 'カテゴリ分け',
@@ -134,6 +135,7 @@ function add_custom() {
 			'with_front' => false,
 		)
 	));
+	//flush_rewrite_rules();
 }
 add_action('init', 'add_custom');
 

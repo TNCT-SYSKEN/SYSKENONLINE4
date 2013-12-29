@@ -12,16 +12,40 @@ get_header();?>
 		<div id="main" class="col_9">
 			<div class="abox shadow">
 				<h2>作ったものなど</h2>
-				<?php while (have_posts()) : the_post() ?>
-					<div class="custom-post">
-						<h3 class="entry-title"><?php the_title(); ?></a></h2>
-						<?php the_post_thumbnail(); ?>
-						<?php the_content(); ?>
-						<span class="author">製作者:<?php the_author(); ?></span>
-						<!--<span class="download">download</span>-->
-					</div>
-				<?php endwhile; ?>
+				<p>ここでは部員の製作した作品を公開しています。</p>
 			</div>
+			<?php while (have_posts()) : the_post() ?>
+				<div class="abox shadow custom-post">
+					<h3 class="entry-title">
+						<?php if(has_term('game', 'category')) : ?>
+							<i class="icon-game"></i>
+						<?php elseif(has_term('movie', 'category')): ?>
+							<i class="icon-video"></i>
+						<?php endif; ?>
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					</h3>
+					<?php the_post_thumbnail(); ?>
+					<?php the_content(); ?>
+					<div class="entry-meta">
+						<span class="creater"><i class="icon-user"></i><?php the_author(); ?></span>
+						<span class="sep">|</span>
+						<span class="taxonomy">
+							<?php if(has_term('game', 'category')) : ?>
+								<i class="icon-game"></i>
+								<!-- <a href="" rel="">ゲーム</a> リンクはとりあえず先送りで-->
+								ゲーム
+							<?php elseif(has_term('movie', 'category')): ?>
+								<i class="icon-video"></i>
+								<!-- <a href="" rel="">動画</a> -->
+								動画
+							<?php endif; ?>
+						</span>
+						<span class="sep">|</span>
+						<span class="permalink"><i class="icon-link"></i><a href="<?php the_permalink(); ?>">Permalink</a></span>
+					</div>
+					<!--<span class="download">download</span>-->
+				</div>
+			<?php endwhile; ?>
 		</div>
 		<!-- メインバー(左) ここまで -->
 

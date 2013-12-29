@@ -6,6 +6,7 @@
 get_header();?>
 
 <div id="topimg">
+	<!-- ここなんとかしなくては -->
 	<img src="http://sysken.org/images/topimage/706C7567696D616E.jpg">
 </div>
 

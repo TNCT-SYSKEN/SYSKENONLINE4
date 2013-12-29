@@ -65,7 +65,7 @@ $(function(){
 	{
 		// 多分生まれてから初めてdo/while文をまともに使ったかもしれない
 		do {
-				$("#item").children(".page_item:lt(4)").wrapAll('<ul class="line"></ul>')
+				$("#item").children(".menu-item:lt(4)").wrapAll('<ul class="line"></ul>')
 		} while ( $("#item").children("li").length );
 	}
 

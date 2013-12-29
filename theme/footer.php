@@ -9,9 +9,17 @@
 <footer>
 	<div class="container">
 		<div id="contents_list" class="warp">
+			<h5>SYSKEN ONLINE - 津山高専システム研究部公式ウェブサイト</h5>
 			<!--多分この辺りにページの一覧的なものが入ると思いたい-->
 			<!-- WPの吐くクラス名長すぎひぎい -->
-			<?php wp_nav_menu(array('theme_location' => 'footer-navi', 'container' => '', /*'items_wrap' => '<ul><li id="item-id"></li>%3$s</ul>'*/)); ?>
+			<?php 
+				$args = array(
+					'theme_location' => 'footer-navi',
+					'container' => false,
+					'items_wrap' => '<ul id="item">%3$s</ul>',
+				);
+			?>
+			<?php wp_nav_menu(array($args)); ?>
 		</div>
 		<div id="alice_carteret">
 			<div class="warp">
