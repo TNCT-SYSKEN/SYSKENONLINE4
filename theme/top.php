@@ -6,8 +6,8 @@
 get_header();?>
 
 <div id="topimg">
-	<!-- ここなんとかしなくては -->
-	<img src="http://sysken.org/images/topimage/706C7567696D616E.jpg">
+	<!-- だみー -->
+	<img src="<?php bloginfo('template_url')?>/img/top_image.png">
 </div>
 
 <!-- メインコンテンツ群 -->
@@ -68,9 +68,11 @@ get_header();?>
 				<?//php get_search_form(); ?>
 			</div>
 
+<!--
 			<div class="abox shadow" id="facebook-likes">
 				<p>Facebookの「○○人がいいねと言っています」を置く候補地</p>
 			</div>
+-->
 
 		</div>
 		<!-- メインバー(左) ここまで -->

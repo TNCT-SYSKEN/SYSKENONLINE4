@@ -40,6 +40,7 @@
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
 
+//register_nav_menu('main-navi', 'メインナビ' );
 register_nav_menu('footer-navi', 'フッターナビ');
 
 //register_nav_menus(array);
@@ -100,7 +101,8 @@ function add_custom() {
 			'title',
 			'editor',
 			'author',
-			'thumbnail'
+			'thumbnail',
+			'comments'
 		),
 		'rewrite' => array(
 			'slug' => 'product',
@@ -158,5 +160,22 @@ function update_profile_fields( $contactmethods ) {
 	return $contactmethods;
 }
 add_filter('user_contactmethods','update_profile_fields',10,1);
+
+/*
+function custom_wp_nav_menu()
+{
+	$args = array(
+		'theme_location' => 'main-navi',
+		'container' => false,
+		'container_class' => " ",
+		'items_wrap' => '%3$s',
+		'echo' => false,
+	);
+	$nav = wp_nav_menu($args);
+	$nav = str_replace('class=" "', '', $nav);
+	$nav = '<nav><ul><li id="home"><a href="<?php echo home_url('/') ?>"><i class="icon-home"></i></a></li>' . $nav . '</ul></nav>'
+	return $nav;
+}
+*/
 
 ?>
