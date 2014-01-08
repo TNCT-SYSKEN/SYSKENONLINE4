@@ -7,7 +7,7 @@ get_header();?>
 
 <div id="topimg">
 	<!-- だみー -->
-	<img src="<?php bloginfo('template_url')?>/img/top_image.png">
+	<img src="<?php /* bloginfo('template_url')*/ ?>/wp-content/_img/top_image1.jpg">
 </div>
 
 <!-- メインコンテンツ群 -->
