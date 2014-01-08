@@ -6,8 +6,7 @@
 get_header();?>
 
 <div id="topimg">
-	<!-- だみー -->
-	<img src="<?php /* bloginfo('template_url')*/ ?>/wp-content/_img/top_image1.jpg">
+	<?php the_post_thumbnail(); ?>
 </div>
 
 <!-- メインコンテンツ群 -->
