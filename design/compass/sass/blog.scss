@@ -45,8 +45,11 @@ div#contents {
 		line-height: 50px;
 		margin: 0.5em 0;
 	}
+	h3.entry-title {
+		margin-top: .2em !important;
+	}
 	.entry-content {
-		margin: 1em 0.5em;
+		margin: 1em 0;
 		p {
 			line-height: 1.6em;
 		}
@@ -92,9 +95,17 @@ div#contents {
 				padding: 0;
 			}
 		}
+		// thumb
+		.attachment-post-thumbnail {
+			display: block;
+			margin: 0 auto;
+		}
 		// 続きを読む
 		.more-link {
 			font-size: .9em;
+		}
+		ul {
+			margin: 0.5em 0;
 		}
 	}
 	.entry-meta {
@@ -121,6 +132,10 @@ div#contents {
 			@include setLinkColor(#FFF, $c_category_blog, none);
 		}
 
+	}
+	.active-date {
+		font-size: .9em;
+		text-align: right;
 	}
 }
 

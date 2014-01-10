@@ -35,8 +35,11 @@ div#contents {
   line-height: 50px;
   margin: 0.5em 0;
 }
+.post h3.entry-title, .custom-post h3.entry-title {
+  margin-top: .2em !important;
+}
 .post .entry-content, .custom-post .entry-content {
-  margin: 1em 0.5em;
+  margin: 1em 0;
 }
 .post .entry-content p, .custom-post .entry-content p {
   line-height: 1.6em;
@@ -80,8 +83,15 @@ div#contents {
   margin: 0;
   padding: 0;
 }
+.post .entry-content .attachment-post-thumbnail, .custom-post .entry-content .attachment-post-thumbnail {
+  display: block;
+  margin: 0 auto;
+}
 .post .entry-content .more-link, .custom-post .entry-content .more-link {
   font-size: .9em;
+}
+.post .entry-content ul, .custom-post .entry-content ul {
+  margin: 0.5em 0;
 }
 .post .entry-meta, .custom-post .entry-meta {
   text-align: right;
@@ -117,6 +127,10 @@ div#contents {
   background: #1b9ad7;
   text-decoration: underline;
   outline: none;
+}
+.post .active-date, .custom-post .active-date {
+  font-size: .9em;
+  text-align: right;
 }
 
 .custom-post .entry-title {

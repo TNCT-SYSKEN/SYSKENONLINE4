@@ -24,8 +24,10 @@ get_header();?>
 						<?php endif; ?>
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					</h3>
-					<?php the_post_thumbnail(); ?>
-					<?php the_content(); ?>
+					<div class="entry-content">
+						<div class="thumbnail"><?php the_post_thumbnail(); ?></div>
+						<?php the_content(); ?>
+					</div>
 					<div class="entry-meta">
 						<span class="creater"><i class="icon-user"></i><?php the_author(); ?></span>
 						<span class="sep">|</span>

@@ -11,13 +11,17 @@ get_header();?>
 		<div id="main" class="col_9">
 			<div class="abox shadow">
 				<h2>活動報告</h2>
-				<?php while (have_posts()) : the_post() ?>
-					<div class="custom-post">
-						<h3 class="entry-title"><?php the_title(); ?></a></h2>
+				<p>システム研究部として参加した大会などの活動一覧です。</p>
+			</div>
+			<?php while (have_posts()) : the_post() ?>
+				<div class="abox shadow custom-post">
+					<h3 class="entry-title"><?php the_title(); ?></h3>
+					<div class="entry-content">
 						<?php the_content(); ?>
 					</div>
-				<?php endwhile; ?>
-			</div>
+					<div class="entry-meta">活動日 <i class="icon-calendar"></i><?php echo get_the_date(); ?></div>
+				</div>
+			<?php endwhile; ?>
 		</div>
 		<!-- メインバー(左) ここまで -->
 
