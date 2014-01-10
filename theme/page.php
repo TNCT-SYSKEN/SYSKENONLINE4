@@ -12,7 +12,9 @@ get_header();?>
 			<?php while (have_posts()) : the_post() ?>
 				<article id="post-<?php the_ID(); ?>" class="post abox shadow">
 					<h2><?php the_title(); ?></h2>
-					<?php the_content(); ?>
+					<div class="entry-content">
+						<?php the_content(); ?>
+					</div>
 				</article>
 			<?php endwhile; ?>
 		</div>
