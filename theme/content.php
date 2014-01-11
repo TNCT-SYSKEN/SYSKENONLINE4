@@ -21,7 +21,7 @@
 	<div class="entry-meta">
 		<span class="date">
 			<i class="icon-clock"></i>
-			<?php echo get_the_date(); ?>
+			<?php echo get_the_date() . " " . get_the_time(); ?>
 		</span>
 		<span class="sep"> | </span>
 		<span class="author">
