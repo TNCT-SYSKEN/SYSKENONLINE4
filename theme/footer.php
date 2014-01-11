@@ -10,8 +10,6 @@
 	<div class="container">
 		<div id="contents_list" class="warp">
 			<h5>SYSKEN ONLINE - 津山高専システム研究部公式ウェブサイト</h5>
-			<!--多分この辺りにページの一覧的なものが入ると思いたい-->
-			<!-- WPの吐くクラス名長すぎひぎい -->
 			<?php 
 				$args = array(
 					'theme_location' => 'footer-navi',
@@ -29,7 +27,7 @@
 					<i class="icon-firefox"></i> <a href="//getfirefox.jp">Firefox</a> 21+
 					<i class="icon-chrome"></i> <a href="//www.google.co.jp/intl/ja/chrome/">Google Chrome</a> 28+
 				</div>
-				<div id="copyright" class="col_4">&copy; 2004-<?php echo date('Y'); ?> SYSKEN</div>
+				<div id="copyright" class="col_4">&copy; 2003-<?php echo date('Y'); ?> SYSKEN</div>
 			</div>
 		</div>
 	</div>
@@ -37,8 +35,7 @@
 
 <div id="topscroll"><a href="javascript:void(0);"><img src="<?php bloginfo('template_url'); ?>/img/topscroll.png"></a></div>
 
-<!-- ロードするJavaScriptは以下に書くことをおすすめします-->
-<!--<script type="text/javascript" src="./js/footerFixed.js"></script>-->
+<?php /* 読み込むJavaScriptはヘッダーではなく以下に書き込む */ ?>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.transit.min.js"></script>

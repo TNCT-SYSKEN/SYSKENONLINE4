@@ -6,13 +6,13 @@
 
 <article id="post-<?php the_ID(); ?>" class="post abox shadow">
 	<div class="entry-date">
-		<!-- YOJOOOO -->
 		<!-- <span class="year"><?php the_time('Y'); ?>年</span> -->
 		<span class="month"><?php the_time('n'); ?>月</span>
 		<span class="day"><?php the_time('j'); ?></span>
 	</div>
 	<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	<div class="entry-content">
+		<?php if(has_post_thumbnail()) ://サムネイル ?><div class="thumbnail"><?php the_post_thumbnail(); ?></div><?php else : ?>
 		<?php the_content('続きを読む &raquo;'); ?>
 	</div>
 	<div class="entry-meta">

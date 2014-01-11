@@ -14,7 +14,7 @@ get_header();?>
 				<p>システム研究部として参加した大会などの活動一覧です。</p>
 			</div>
 			<?php while (have_posts()) : the_post() ?>
-				<div class="abox shadow custom-post">
+				<div id="post-<?php the_ID(); ?>" class="abox shadow custom-post">
 					<h3 class="entry-title"><?php the_title(); ?></h3>
 					<div class="entry-content">
 						<?php the_content(); ?>

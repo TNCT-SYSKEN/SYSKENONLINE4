@@ -22,7 +22,7 @@ get_header();?>
 				<?php 
 				$args = array(
 					'post_type' => array('post', 'product', 'active'),
-					'posts_per_page' => 5,
+					'posts_per_page' => 10,
 				);
 				?>
 				<?php query_posts($args); ?>
@@ -32,11 +32,11 @@ get_header();?>
 						<?php if(get_post_type() == 'product'): ?>
 						<dt class="product">product</dt>
 						<dd>
-							<a href="<?php bloginfo('url'); ?>/product"><?php the_title(); ?></a>
+							<a href="<?php bloginfo('url'); ?>/product/"><?php the_title(); ?></a>
 						<?php elseif(get_post_type() == 'active'): ?>
 						<dt class="active">active</dt>
 						<dd>
-							<a href="<?php bloginfo('url'); ?>/active"><?php the_title(); ?></a>
+							<a href="<?php bloginfo('url'); ?>/active/#post-<?php the_ID(); ?>"><?php the_title(); ?></a>
 						<?php else: ?>
 						<dt class="blog">blog</dt>
 						<dd>

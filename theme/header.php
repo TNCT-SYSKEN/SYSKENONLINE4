@@ -28,7 +28,6 @@
 		<meta property="og:title" content="<?php bloginfo('name'); ?>">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="http://sysken.org/">
-		<!-- 300x300 over size image please! -->
 		<meta property="og:image" content="<?php bloginfo('template_url'); ?>/img/logo.png">
 		<meta property="og:description" content="<?php bloginfo('description') ?>">
 	<?php elseif(is_single()) :?>
@@ -76,9 +75,7 @@
 		</h1>
 		<div class="col_3 space"></div>
 		<ul id="social_link" class="col_4">
-			<li id="twitter"><a href="//twitter.com/sysken"><i class="icon-twitter"></i>SYSKEN on Twitter</a></li><!--
-			<li id="facebook"><a href="//www.facebook.com/sysken.tnct"><i class="icon-facebook-squared"></i></a></li>
-			<li id="github"><i class="icon-github"></i></li>-->
+			<li id="twitter"><a href="//twitter.com/sysken"><i class="icon-twitter"></i>SYSKEN on Twitter</a></li>
 		</ul>
 	</div>
 </header>
