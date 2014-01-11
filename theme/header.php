@@ -37,7 +37,7 @@
 			<meta property="og:url" content="<?php the_permalink(); ?>">
 			<meta property="og:description" content="<?php echo get_the_excerpt(); //抜粋を?>">
 			<?php if(has_post_thumbnail()) ://サムネイル ?>
-				<meta property="og:image" content="<?php the_post_thumbnail()?>">
+				<meta property="og:image" content="<?php get_thumbnail_image_url(); ?>">
 			<?php else : ?>
 				<meta property="og:image" content="<?php bloginfo('template_url'); ?>/img/no_image.png">
 			<?php endif; ?>

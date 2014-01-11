@@ -161,6 +161,13 @@ function update_profile_fields( $contactmethods ) {
 }
 add_filter('user_contactmethods','update_profile_fields',10,1);
 
+// Get the thumbnail image URL
+function get_thumbnail_image_url() {
+    $image_id = get_post_thumbnail_id();
+    $image_url = wp_get_attachment_image_src($image_id,'thumbnail', true);
+    echo $image_url[0];
+}
+
 /*
 function custom_wp_nav_menu()
 {
