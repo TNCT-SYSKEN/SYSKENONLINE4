@@ -24,18 +24,10 @@ $(function(){
 			})
 		})
 
-		// Firefoxだと更新した時に追従していない(読み込み直後だとscrollTopが0になっている)のでページ読み込み完了時に再取得させる
-		var userAgent = window.navigator.userAgent.toLowerCase();
-		if ( userAgent.indexOf("firefox") != -1 || userAgent.indexOf('gecko') != -1 ) {
-			showFixedNavigation($(this).scrollTop());
-		}
-
 	});
 
 	$(window).scroll(function(){
 		var now = $(this).scrollTop();
-		// 追従ヘッダー
-		showFixedNavigation(now);
 		// ページトップへ戻るの表示
 		{
 			// ある程度スクロールしたら表示する
