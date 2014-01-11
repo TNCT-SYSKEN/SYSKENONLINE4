@@ -29,7 +29,7 @@
 					<i class="icon-firefox"></i> <a href="//getfirefox.jp">Firefox</a> 21+
 					<i class="icon-chrome"></i> <a href="//www.google.co.jp/intl/ja/chrome/">Google Chrome</a> 28+
 				</div>
-				<div id="copyright" class="col_4">&copy; 2004-2013 SYSKEN</div>
+				<div id="copyright" class="col_4">&copy; 2004-<?php echo date('Y'); ?> SYSKEN</div>
 			</div>
 		</div>
 	</div>

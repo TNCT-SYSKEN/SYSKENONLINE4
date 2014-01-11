@@ -12,10 +12,10 @@ $(function(){
 					$("#tw-loading").hide();
 					$(".twitter-timeline").fadeIn();
 					$(iframe).contents() // twitterウィジェットのスタイルの変更
-						.find(".header").css({"padding": "0px"}).end()
+						.find(".header").css({"padding": "0px", "min-height": "0px"}).end()
 						.find(".timeline").css({"border-radius": "0px", "margin-bottom": "0"}).end()
 						.find(".u-photo.avatar").css({"display": "none"}).end()
-						.find(".p-author").css({"min-height": "14px", "padding": "0"}).end()
+						.find(".p-author").css({"padding": "0"}).end()
 						.find(".p-nickname").css({"display": "none"}).end()
 						.find(".footer").css({"display": "none"}).end()
 						.find(".h-entry").css({"padding": "8px 5px", "border-bottom": "1px dotted #CCC"}).end()
