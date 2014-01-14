@@ -40,6 +40,8 @@
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
 
+add_image_size( 'eye-catch', 682, 383, true );
+
 //register_nav_menu('main-navi', 'メインナビ' );
 register_nav_menu('footer-navi', 'フッターナビ');
 
