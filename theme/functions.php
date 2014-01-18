@@ -91,7 +91,6 @@ register_taxonomy(
 );
 */
 
-
 function add_custom() {
 	register_post_type('product', array(
 		'label' => '作ったもの',
@@ -140,6 +139,10 @@ function add_custom() {
 		)
 	));
 	//flush_rewrite_rules();
+	
+	//WordTwitでpost_typeに対応させるため
+	global $wp_post_types;
+	$wp_post_types["post"]->labels->singular_name= "ブログ";
 }
 add_action('init', 'add_custom');
 
