@@ -32,9 +32,9 @@ $(function(){
 		{
 			// ある程度スクロールしたら表示する
 			if ( now >= 100 )
-				$("#topscroll img").stop(true, true).fadeIn();
+				$("#topscroll img").fadeIn();
 			else
-				$("#topscroll img").stop(true, true).fadeOut();
+				$("#topscroll img").fadeOut();
 		}
 	});
 
@@ -42,10 +42,10 @@ $(function(){
 	{
 		$(".thumbnail")
 			.mouseleave(function(){
-				$(this).find(".original-image-link").stop(true, true).fadeOut();
+				$(this).find(".original-image-link").fadeOut();
 			})
 			.mouseenter(function(){
-				$(this).find(".original-image-link").stop(true, true).fadeIn();
+				$(this).find(".original-image-link").fadeIn();
 			});
 	}
 	// ページトップへ戻る関連
