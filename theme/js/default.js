@@ -38,6 +38,16 @@ $(function(){
 		}
 	});
 
+	// 元画像を表示を表示
+	{
+		$(".thumbnail")
+			.mouseleave(function(){
+				$(this).find(".original-image-link").fadeOut();
+			})
+			.mouseenter(function(){
+				$(this).find(".original-image-link").fadeIn();
+			});
+	}
 	// ページトップへ戻る関連
 	{
 		// マウスオーバーで色を濃くしてついでに回転もする

@@ -98,8 +98,23 @@ div#contents {
 		// thumb
 		.thumbnail {
 			display: block;
+			position: relative;
 			margin: 0 auto;
 			text-align: center;
+			// 元画像へのリンク
+			.original-image-link {
+				display: none;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 100px;
+				height: 25px;
+				font-size: 0.8em;
+				line-height: 25px;
+				color: #FFF;
+				background: rgba( 0, 0, 0, 0.6 );
+				border-radius: 3px; 
+			}
 		}
 		// 続きを読む
 		.more-link {

@@ -14,7 +14,7 @@
 	<h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	<div class="entry-content">
 		<?php if ( has_post_thumbnail()) : ?>
-		<div class="thumbnail"><a href="<?php get_thumbnail_image_url('full'); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('eye-catch'); ?></a></div>
+		<div class="thumbnail"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('eye-catch'); ?></a><a href="<?php get_thumbnail_image_url('full'); ?>" class="original-link">元画像を表示</a></div>
 		<?php endif; ?>
 		<?php the_content('続きを読む &raquo;'); ?>
 	</div>
