@@ -146,6 +146,22 @@ function add_custom() {
 }
 add_action('init', 'add_custom');
 
+// カスタム投稿をRSSで表示
+// http://weble.org/2011/02/17/wordpress-custom-post-type-rss
+function custom_post_rss_set($query) {
+	if(is_feed()) {
+		$query->set('post_type',
+			Array(
+				'post',
+				'product',
+				'active'
+			)
+		);
+		return $query;
+	}
+}
+add_filter('pre_get_posts', 'custom_post_rss_set');
+
 //コピペ http://www.warna.info/archives/1703/
 /*
 function chample_latest_posts( $wp_query ) {
