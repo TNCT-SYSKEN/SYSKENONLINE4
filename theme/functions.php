@@ -60,7 +60,7 @@ register_sidebar(array(
 //relのあれ
 add_filter('the_category', 'remove_rel');
 function remove_rel( $text ) {
-	$text = str_replace(' rel="category tag"', 'rel="category"', $text);
+	$text = str_replace(' rel="category tag"', ' rel="category"', $text);
 	return $text;
 }
 
