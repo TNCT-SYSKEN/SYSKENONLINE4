@@ -41,26 +41,26 @@ get_header();?>
 						<?php if ( $user->user_description ): ?>
 							<p><?php echo $user->user_description; ?>
 						<?php else: ?>
-							<p class="descrip-none">自己紹介はありません</p>
+							<p class="descrip-none">自己紹介文はありません</p>
 						<?php endif; ?>
 					</div>
 					<div class="user-meta">
 						<div class="blog-post-count">
 							<?php if ( count_user_posts($uid) > 0 ): ?>
-								<a href="<?php echo home_url('/')."?author=".$user->ID ?>">記事の投稿数 <?php echo count_user_posts($uid); ?>件</a>
+								<a href="<?php echo home_url('/')."?author=".$user->ID ?>">このユーザが書いた記事を読む(<?php echo count_user_posts($uid); ?>件)</a>
 							<?php else: ?>
 								このユーザはまだ記事を書いていません
 							<?php endif; ?>
 						</div>
 						<div class="social-account">
 							<?php if ( $user->twitter ): // Twitterアカウント ?>
-								<i class="icon-twitter"></i> <a href="https://twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a>
+								<i class="icon-twitter"></i><a href="https://twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a>
 							<?php endif; ?>
 							<?php if ( $user->facebook ): // Facebookアカウント ?>
-								<i class="icon-facebook-squared"></i> <a href="https://www.facebook.com/<?php echo $user->facebook ?>"><?php echo $user->facebook ?></a>
+								<i class="icon-facebook-squared"></i><a href="https://www.facebook.com/<?php echo $user->facebook ?>"><?php echo $user->facebook ?></a>
 							<?php endif; ?>
 							<?php if ( $user->github ): // GitHubアカウント ?>
-								<i class="icon-github"></i> <a href="https://github.com/<?php echo $user->github ?>"><?php echo $user->github ?></a>
+								<i class="icon-github"></i><a href="https://github.com/<?php echo $user->github ?>"><?php echo $user->github ?></a>
 							<?php endif; ?>
 						</div>
 					</div>
