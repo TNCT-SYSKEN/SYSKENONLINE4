@@ -228,6 +228,38 @@ div#contents:after {
   margin: 0.5em 0;
   text-align: justify;
 }
+#main .profile-box .profile {
+  min-height: 96px;
+}
+#main .profile-box .name {
+  display: inline-block;
+  margin-right: 1em;
+}
+#main .profile-box .grade {
+  display: inline-block;
+  font-size: .95em;
+}
+#main .profile-box .avatar {
+  float: left;
+  margin-right: 1em;
+}
+#main .profile-box .user-meta {
+  overflow: hidden;
+  *zoom: 1;
+}
+#main .profile-box .user-meta .blog-post-count {
+  float: left;
+  font-size: .9em;
+}
+#main .profile-box .user-meta .social-account {
+  text-align: right;
+}
+#main .profile-box .user-meta .social-account i:before {
+  font-size: 1.2em;
+}
+#main .profile-box .descrip-none {
+  color: #888;
+}
 
 #sidebar .sidebox {
   margin-bottom: 30px;

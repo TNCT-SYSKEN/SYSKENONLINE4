@@ -31,27 +31,38 @@ get_header();?>
 			<?php foreach ($users as $user): ?>
 				<?php $grade = get_user_grade($user); if( !$grade ) continue; ?>
 				<?php $uid = $user->ID; $userData = get_userdata($uid); ?>
-				<div class="abox shadow profile">
+				<div class="abox shadow profile-box">
 
-					<div>
-						<h3><?php echo $user->display_name; ?></h3><div class="grade"><?php echo $grade; ?></div>
+					<div class="name-grade-box">
+						<h3 class="name"><?php echo $user->display_name; ?></h3><div class="grade"><?php echo $grade; ?></div>
 					</div>
+					<?php echo get_avatar( $uid ); ?>
 					<div class="profile">
-						<?php echo get_avatar( $uid ); ?>
-						<p><?php if ( $user->user_description ) echo $user->user_description; else echo "自己紹介はありません" ?></p>
-						<div class="blog-post-count">しすけんぶろぐへの投稿数 <?php echo count_user_posts($uid); ?>件</div>
+						<?php if ( $user->user_description ): ?>
+							<p><?php echo $user->user_description; ?>
+						<?php else: ?>
+							<p class="descrip-none">自己紹介はありません</p>
+						<?php endif; ?>
 					</div>
-
-					<div class="social-account">
-						<?php if ( $user->twitter ): // Twitterアカウント ?>
-							<i class="icon-twitter"></i> <a href="https://twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a>
-						<?php endif; ?>
-						<?php if ( $user->facebook ): // Facebookアカウント ?>
-							<i class="icon-facebook-squared"></i> <a href="https://www.facebook.com/<?php echo $user->facebook ?>"><?php echo $user->facebook ?></a>
-						<?php endif; ?>
-						<?php if ( $user->github ): // GitHubアカウント ?>
-							<i class="icon-github"></i> <a href="https://github.com/<?php echo $user->github ?>"><?php echo $user->github ?></a>
-						<?php endif; ?>
+					<div class="user-meta">
+						<div class="blog-post-count">
+							<?php if ( count_user_posts($uid) > 0 ): ?>
+								<a href="<?php echo home_url('/')."?author=".$user->ID ?>">記事の投稿数 <?php echo count_user_posts($uid); ?>件</a>
+							<?php else: ?>
+								このユーザはまだ記事を書いていません
+							<?php endif; ?>
+						</div>
+						<div class="social-account">
+							<?php if ( $user->twitter ): // Twitterアカウント ?>
+								<i class="icon-twitter"></i> <a href="https://twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a>
+							<?php endif; ?>
+							<?php if ( $user->facebook ): // Facebookアカウント ?>
+								<i class="icon-facebook-squared"></i> <a href="https://www.facebook.com/<?php echo $user->facebook ?>"><?php echo $user->facebook ?></a>
+							<?php endif; ?>
+							<?php if ( $user->github ): // GitHubアカウント ?>
+								<i class="icon-github"></i> <a href="https://github.com/<?php echo $user->github ?>"><?php echo $user->github ?></a>
+							<?php endif; ?>
+						</div>
 					</div>
 				</div>
 			<?php endforeach; ?>

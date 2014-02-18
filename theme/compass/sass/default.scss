@@ -197,6 +197,41 @@ div#contents {
 		margin: 0.5em 0;
 		text-align: justify; // 左右均等揃え
 	}
+
+	// 部員紹介ページ用
+	.profile-box {
+		.profile {
+			min-height: 96px;
+		}
+		.name {
+			display: inline-block;
+			margin-right: 1em;
+		}
+		.grade {
+			display: inline-block;
+			font-size: .95em;
+		}
+		.avatar {
+			float: left;
+			margin-right: 1em;
+		}
+		.user-meta {
+			@include clearfix();
+			.blog-post-count {
+				float: left;
+				font-size: .9em;
+			}
+			.social-account {
+				text-align: right;
+				i:before {
+					font-size: 1.2em;
+				}
+			}
+		}
+		.descrip-none {
+			color: #888;
+		}
+	}
 }
 
 // サイドバー
