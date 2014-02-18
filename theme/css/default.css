@@ -249,15 +249,9 @@ div#contents:after {
 }
 #main .profile-box .user-meta {
   text-align: right;
-}
-#main .profile-box .user-meta .blog-post-count {
   font-size: .9em;
-  margin: .3em 0;
 }
-#main .profile-box .user-meta .social-account {
-  margin: .3em 0;
-}
-#main .profile-box .user-meta .social-account i:before {
+#main .profile-box .user-meta i:before {
   font-size: 1.2em;
 }
 #main .profile-box .descrip-none {
