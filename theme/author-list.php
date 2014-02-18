@@ -35,7 +35,22 @@ get_header();?>
 					<?php echo get_avatar( $uid ); ?>
 					<div class="profile">
 						<div class="name-grade-box">
-							<h3 class="name"><?php echo $user->display_name; ?></h3><div class="grade"><?php echo $grade; ?></div>
+							<h3 class="name"><?php echo $user->display_name; ?></h3>
+							<div class="grade"><?php echo $grade; ?></div>
+							<div class="social-accounts">
+								<?php if ( $user->twitter ): // Twitterアカウント ?>
+									<i class="icon-twitter"></i><a href="https://twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a>
+								<?php endif; ?>
+								<?php if ( $user->facebook ): // Facebookアカウント ?>
+									<i class="icon-facebook-squared"></i><a href="https://www.facebook.com/<?php echo $user->facebook ?>"><?php echo $user->facebook ?></a>
+								<?php endif; ?>
+								<?php if ( $user->github ): // GitHubアカウント ?>
+									<i class="icon-github"></i><a href="https://github.com/<?php echo $user->github ?>"><?php echo $user->github ?></a>
+								<?php endif; ?>
+								<?php if ( $user->tumblr ): // Tumblrアカウント ?>
+									<i class="icon-tumblr-squared"></i><a href="http://<?php echo $user->tumblr ?>.tumblr.com/"><?php echo $user->tumblr ?></a>
+								<?php endif; ?>
+							</div>
 						</div>
 						<?php if ( $user->user_description ): ?>
 							<p><?php echo $user->user_description; ?>
@@ -48,18 +63,7 @@ get_header();?>
 							<?php else: ?>
 								この部員はまだ記事を書いていません
 							<?php endif; ?>
-							<?php if ( $user->twitter ): // Twitterアカウント ?>
-								<i class="icon-twitter"></i><a href="https://twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a>
-							<?php endif; ?>
-							<?php if ( $user->facebook ): // Facebookアカウント ?>
-								<i class="icon-facebook-squared"></i><a href="https://www.facebook.com/<?php echo $user->facebook ?>"><?php echo $user->facebook ?></a>
-							<?php endif; ?>
-							<?php if ( $user->github ): // GitHubアカウント ?>
-								<i class="icon-github"></i><a href="https://github.com/<?php echo $user->github ?>"><?php echo $user->github ?></a>
-							<?php endif; ?>
-							<?php if ( $user->tumblr ): // Tumblrアカウント ?>
-								<i class="icon-tumblr-squared"></i><a href="http://<?php echo $user->tumblr ?>.tumblr.com/"><?php echo $user->tumblr ?></a>
-							<?php endif; ?>
+
 						</div>
 					</div>
 				</div>

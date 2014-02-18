@@ -242,6 +242,11 @@ div#contents:after {
 #main .profile-box .name-grade-box .grade {
   display: inline-block;
   font-size: .95em;
+  margin-right: 1em;
+}
+#main .profile-box .name-grade-box .social-accounts {
+  display: inline-block;
+  font-size: .9em;
 }
 #main .profile-box .avatar {
   float: left;

@@ -213,7 +213,12 @@ div#contents {
 			.grade {
 				display: inline-block;
 				font-size: .95em;
-			}			
+				margin-right: 1em;
+			}
+			.social-accounts {
+				display: inline-block;
+				font-size: .9em;
+			}
 		}
 		.avatar {
 			float: left;
