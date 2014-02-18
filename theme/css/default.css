@@ -231,11 +231,15 @@ div#contents:after {
 #main .profile-box .profile {
   min-height: 96px;
 }
-#main .profile-box .name {
+#main .profile-box .name-grade-box {
+  max-height: 2em;
+}
+#main .profile-box .name-grade-box .name {
+  margin-bottom: .3em;
   display: inline-block;
   margin-right: 1em;
 }
-#main .profile-box .grade {
+#main .profile-box .name-grade-box .grade {
   display: inline-block;
   font-size: .95em;
 }
@@ -244,15 +248,14 @@ div#contents:after {
   margin-right: 1em;
 }
 #main .profile-box .user-meta {
-  overflow: hidden;
-  *zoom: 1;
+  text-align: right;
 }
 #main .profile-box .user-meta .blog-post-count {
-  float: left;
   font-size: .9em;
+  margin: .3em 0;
 }
 #main .profile-box .user-meta .social-account {
-  text-align: right;
+  margin: .3em 0;
 }
 #main .profile-box .user-meta .social-account i:before {
   font-size: 1.2em;
@@ -397,6 +400,10 @@ footer #alice_carteret #copyright {
 
 .icon-facebook-squared:before {
   color: #3B5998;
+}
+
+.icon-tumblr-squared:before {
+  color: #2C4762;
 }
 
 input::-moz-focus-inner {

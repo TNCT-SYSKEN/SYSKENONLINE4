@@ -177,6 +177,7 @@ function update_profile_fields( $contactmethods ) {
 	$contactmethods['twitter'] = 'Twitter';
 	$contactmethods['facebook'] = 'Facebook';
 	$contactmethods['github'] = 'GitHub';
+	$contactmethods['tumblr'] = 'Tumblr';
 
 	$contactmethods['enterYear'] = "本科入学年(西暦)";
 	$contactmethods['enterYearAdv'] = "専攻科入学年(西暦)";
@@ -223,21 +224,21 @@ function get_user_grade($user) {
 		$grade = "副部長";
 	}
 	// 専攻科
-	else if ( $date[mon] <= 3 && $user->enterYearAdv && $user->enterYearAdv - $date[year] <= 2 ) {
+	else if ( $date[mon] <= 3 && is_numeric($user->enterYearAdv) && $user->enterYearAdv - $date[year] <= 2 ) {
 		$grade = "専攻科" . $date[year] - $user->enterYear . "年生";
 	}
-	else if ( $date[mon] <= 4 && $user->enterYearAdv && $user->enterYearAdv - $date[year] <= 1 ) {
+	else if ( $date[mon] <= 4 && is_numeric($user->enterYearAdv) && $user->enterYearAdv - $date[year] <= 1 ) {
 		$grade = "専攻科" . $date[year] - $user->enterYear + 1 . "年生";
 	}
 	// 本科 3月以前
-	else if ( $date[mon] <= 3 && $date[year] - $user->enterYear <= 5 ) {
+	else if ( $date[mon] <= 3 && is_numeric($user->enterYear) && $date[year] - $user->enterYear <= 5 ) {
 		$grade = $date[year] - $user->enterYear . "年生";
 	}
 	// 本科 4月以降
-	else if ( $date >= 4 && $date[year] - $user->enterYear <= 4 ) {
+	else if ( $date >= 4 && is_numeric($user->enterYear) && $date[year] - $user->enterYear <= 4 ) {
 		$grade = $date[year] - $user->enterYear + 1 . "年生";
 	}
-	// それ以外の人(値が未入力など)はスキップします
+	// それ以外の人(値が未入力など)は0を返すようになります
 	return $grade;
 }
 

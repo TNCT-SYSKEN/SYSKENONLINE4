@@ -12,8 +12,8 @@ get_header();?>
 		<!-- メインバー(左) ここから -->
 		<div id="main" class="col_9">
 			<div class="abox shadow profile">
-				<h2>部員一覧</h2>
-				<p>システム研究部の部員一覧です。</p>
+				<h2>部員名簿</h2>
+				<p>システム研究部に在籍している部員の一覧です。</p>
 			</div>
 
 			<?php
@@ -30,29 +30,24 @@ get_header();?>
 			?>
 			<?php foreach ($users as $user): ?>
 				<?php $grade = get_user_grade($user); if( !$grade ) continue; ?>
-				<?php $uid = $user->ID; $userData = get_userdata($uid); ?>
+				<?php $uid = $user->ID; ?>
 				<div class="abox shadow profile-box">
-
-					<div class="name-grade-box">
-						<h3 class="name"><?php echo $user->display_name; ?></h3><div class="grade"><?php echo $grade; ?></div>
-					</div>
 					<?php echo get_avatar( $uid ); ?>
 					<div class="profile">
+						<div class="name-grade-box">
+							<h3 class="name"><?php echo $user->display_name; ?></h3><div class="grade"><?php echo $grade; ?></div>
+						</div>
 						<?php if ( $user->user_description ): ?>
 							<p><?php echo $user->user_description; ?>
 						<?php else: ?>
 							<p class="descrip-none">自己紹介文はありません</p>
 						<?php endif; ?>
-					</div>
-					<div class="user-meta">
-						<div class="blog-post-count">
+						<div class="user-meta">
 							<?php if ( count_user_posts($uid) > 0 ): ?>
-								<a href="<?php echo home_url('/')."?author=".$user->ID ?>">このユーザが書いた記事を読む(<?php echo count_user_posts($uid); ?>件)</a>
+								<i class="icon-article"></i><a href="<?php echo home_url('/')."?author=".$user->ID ?>">この部員が書いた記事(<?php echo count_user_posts($uid); ?>件)</a>
 							<?php else: ?>
-								このユーザはまだ記事を書いていません
+								この部員はまだ記事を書いていません
 							<?php endif; ?>
-						</div>
-						<div class="social-account">
 							<?php if ( $user->twitter ): // Twitterアカウント ?>
 								<i class="icon-twitter"></i><a href="https://twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a>
 							<?php endif; ?>
@@ -61,6 +56,9 @@ get_header();?>
 							<?php endif; ?>
 							<?php if ( $user->github ): // GitHubアカウント ?>
 								<i class="icon-github"></i><a href="https://github.com/<?php echo $user->github ?>"><?php echo $user->github ?></a>
+							<?php endif; ?>
+							<?php if ( $user->tumblr ): // Tumblrアカウント ?>
+								<i class="icon-tumblr-squared"></i><a href="http://<?php echo $user->tumblr ?>.tumblr.com/"><?php echo $user->tumblr ?></a>
 							<?php endif; ?>
 						</div>
 					</div>
