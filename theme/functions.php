@@ -177,6 +177,10 @@ function update_profile_fields( $contactmethods ) {
 	$contactmethods['twitter'] = 'Twitter';
 	$contactmethods['facebook'] = 'Facebook';
 	$contactmethods['github'] = 'GitHub';
+
+	$contactmethods['enterYear'] = "本科入学年(西暦)";
+	$contactmethods['enterYearAdv'] = "専攻科入学年(西暦)";
+
 	
 	return $contactmethods;
 }
