@@ -208,16 +208,19 @@ div#contents {
 			.name {
 				margin-bottom: .3em;
 				display: inline-block;
-				margin-right: 1em;
+				margin-right: .7em;
 			}
 			.grade {
 				display: inline-block;
 				font-size: .95em;
-				margin-right: 1em;
+				margin-right: .5em;
 			}
 			.social-accounts {
 				display: inline-block;
 				font-size: .9em;
+				i:before {
+					margin-left: .5em;
+				}
 			}
 		}
 		.avatar {
@@ -227,9 +230,9 @@ div#contents {
 		.user-meta {
 			text-align: right;
 			font-size: .9em;
-			i:before {
-				font-size: 1.2em;
-			}
+		}
+		i:before {
+			font-size: 1.2em;
 		}
 		.descrip-none {
 			color: #888;

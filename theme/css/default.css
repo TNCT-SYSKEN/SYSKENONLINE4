@@ -237,16 +237,19 @@ div#contents:after {
 #main .profile-box .name-grade-box .name {
   margin-bottom: .3em;
   display: inline-block;
-  margin-right: 1em;
+  margin-right: .7em;
 }
 #main .profile-box .name-grade-box .grade {
   display: inline-block;
   font-size: .95em;
-  margin-right: 1em;
+  margin-right: .5em;
 }
 #main .profile-box .name-grade-box .social-accounts {
   display: inline-block;
   font-size: .9em;
+}
+#main .profile-box .name-grade-box .social-accounts i:before {
+  margin-left: .5em;
 }
 #main .profile-box .avatar {
   float: left;
@@ -256,7 +259,7 @@ div#contents:after {
   text-align: right;
   font-size: .9em;
 }
-#main .profile-box .user-meta i:before {
+#main .profile-box i:before {
   font-size: 1.2em;
 }
 #main .profile-box .descrip-none {
