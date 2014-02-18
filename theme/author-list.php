@@ -11,49 +11,36 @@ get_header();?>
 
 		<!-- メインバー(左) ここから -->
 		<div id="main" class="col_9">
+			<div class="abox shadow profile">
+				<h2>部員一覧</h2>
+				<p>システム研究部の部員一覧です。</p>
+			</div>
 
-			<?php $users = get_users( array('orderby'=>ID,'order'=>ASC ) ); ?>
+			<?php
+				/* 入学年(enterYear)をキーにソートする */
+				$args = array('fields' => 'all_with_meta');
+				$users = get_users($args);
+				function cmp($a, $b){
+					if ($a->enterYear == $b->enterYear) {
+						return ($a->ID < $b->ID ? -1 : 1);
+					}
+					return ($a->enterYear < $b->enterYear ? -1 : 1);
+				}
+				usort($users, 'cmp');
+			?>
 			<?php foreach ($users as $user): ?>
-				<?php
-					/*
-						学校にまだ在籍しているかどうかをなんとかして見極めます。
-					*/
-					$date = getdate();
-					$grade = 0;
-					// 本科 3月以前
-					if ( $date[mon] <= 3 && $date[year] - $user->enterYear <= 5 ) {
-						$grade = $date[year] - $user->enterYear . "年生";
-					}
-					// 本科 4月以降
-					else if ( $date >= 4 && $date[year] - $user->enterYear <= 4 ) {
-						$grade = $date[year] - $user->enterYear + 1 . "年生";
-					}
-					// 専攻科
-					else if ( $date[mon] <= 3 && $user->enterYear && $user->enterYearAdv - $date[year] <= 2 ) {
-						$grade = "専攻科" . $date[year] - $user->enterYear . "年生";
-					}
-					else if ( $date[mon] <= 4 && $user->enterYear && $user->enterYearAdv - $date[year] <= 1 ) {
-						$grade = "専攻科" . $date[year] - $user->enterYear + 1 . "年生";
-					}
-					// 部長
-					else if ( $user->enterYear == 1 ) {
-						$grade = "部長";
-					}
-					// 副部長
-					else if ( $user->enterYear == 2 ) {
-						$grade = "副部長";
-					}
-					// それ以外の人(値が未入力など)はスキップします
-					else { continue };
-				?>
+				<?php $grade = get_user_grade($user); if( !$grade ) continue; ?>
 				<?php $uid = $user->ID; $userData = get_userdata($uid); ?>
-				<div class="abox shadow">
+				<div class="abox shadow profile">
 
-					<h3><?php echo $user->display_name."(".$user->ID.")"; ?></h3><span><?php echo $grade; ?></span>
-					<?php echo get_avatar( $uid ); ?>
-					<p><?php echo $user->user_description ?></p>
-
-					<p>しすけんぶろぐへの投稿数 <?php echo count_user_posts($uid); ?>件</p>
+					<div>
+						<h3><?php echo $user->display_name; ?></h3><div class="grade"><?php echo $grade; ?></div>
+					</div>
+					<div class="profile">
+						<?php echo get_avatar( $uid ); ?>
+						<p><?php if ( $user->user_description ) echo $user->user_description; else echo "自己紹介はありません" ?></p>
+						<div class="blog-post-count">しすけんぶろぐへの投稿数 <?php echo count_user_posts($uid); ?>件</div>
+					</div>
 
 					<div class="social-account">
 						<?php if ( $user->twitter ): // Twitterアカウント ?>

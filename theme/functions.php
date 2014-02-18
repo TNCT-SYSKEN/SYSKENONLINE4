@@ -210,4 +210,35 @@ function custom_wp_nav_menu()
 }
 */
 
+// ユーザ情報から学年を得る
+function get_user_grade($user) {
+	$date = getdate();
+	$grade = 0;
+	// 部長
+	if ( $user->enterYear == 1 ) {
+		$grade = "部長";
+	}
+	// 副部長
+	else if ( $user->enterYear == 2 ) {
+		$grade = "副部長";
+	}
+	// 専攻科
+	else if ( $date[mon] <= 3 && $user->enterYearAdv && $user->enterYearAdv - $date[year] <= 2 ) {
+		$grade = "専攻科" . $date[year] - $user->enterYear . "年生";
+	}
+	else if ( $date[mon] <= 4 && $user->enterYearAdv && $user->enterYearAdv - $date[year] <= 1 ) {
+		$grade = "専攻科" . $date[year] - $user->enterYear + 1 . "年生";
+	}
+	// 本科 3月以前
+	else if ( $date[mon] <= 3 && $date[year] - $user->enterYear <= 5 ) {
+		$grade = $date[year] - $user->enterYear . "年生";
+	}
+	// 本科 4月以降
+	else if ( $date >= 4 && $date[year] - $user->enterYear <= 4 ) {
+		$grade = $date[year] - $user->enterYear + 1 . "年生";
+	}
+	// それ以外の人(値が未入力など)はスキップします
+	return $grade;
+}
+
 ?>
