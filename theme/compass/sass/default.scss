@@ -204,7 +204,6 @@ div#contents {
 			min-height: 96px;
 		}
 		.name-grade-box {
-			max-height: 2em;
 			.name {
 				margin-bottom: .3em;
 				display: inline-block;
@@ -216,10 +215,13 @@ div#contents {
 				margin-right: .5em;
 			}
 			.social-accounts {
-				display: inline-block;
+				display: inline;
 				font-size: .9em;
-				i:before {
-					margin-left: .5em;
+				.social-account {
+					display: inline-block;
+					i:before {
+						margin-left: .5em;
+					}
 				}
 			}
 		}

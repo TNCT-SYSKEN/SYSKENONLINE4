@@ -231,9 +231,6 @@ div#contents:after {
 #main .profile-box .profile {
   min-height: 96px;
 }
-#main .profile-box .name-grade-box {
-  max-height: 2em;
-}
 #main .profile-box .name-grade-box .name {
   margin-bottom: .3em;
   display: inline-block;
@@ -245,10 +242,13 @@ div#contents:after {
   margin-right: .5em;
 }
 #main .profile-box .name-grade-box .social-accounts {
-  display: inline-block;
+  display: inline;
   font-size: .9em;
 }
-#main .profile-box .name-grade-box .social-accounts i:before {
+#main .profile-box .name-grade-box .social-accounts .social-account {
+  display: inline-block;
+}
+#main .profile-box .name-grade-box .social-accounts .social-account i:before {
   margin-left: .5em;
 }
 #main .profile-box .avatar {
