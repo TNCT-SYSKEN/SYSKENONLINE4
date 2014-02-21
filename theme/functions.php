@@ -200,7 +200,7 @@ function customize_admin_bar_menu($wp_admin_bar) {
 	    $wp_admin_bar->add_menu(array(
         'id'    => 'sysken-member',
         'title' => 'しすあぷ板＠2nd',
-        'href'  => 'home_url('/member/uploader/');'
+        'href'  => '/member/uploader/',
     ));
 }
 add_action('admin_bar_menu', 'customize_admin_bar_menu', 1000);
