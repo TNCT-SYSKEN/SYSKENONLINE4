@@ -194,6 +194,12 @@ function get_thumbnail_image_url( $size ) {
     echo $image_url[0];
 }
 
+// 管理用のツールバーに関する変更
+function customize_admin_bar_menu($wp_admin_bar) {
+	$wp_admin_bar->remove_node('wp-logo');
+}
+add_action('admin_bar_menu', 'customize_admin_bar_menu', 1000);
+
 /*
 function custom_wp_nav_menu()
 {
