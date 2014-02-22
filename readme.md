@@ -1,11 +1,11 @@
 SYSKEN ONLINE ver.4!
 ==================
-���̃��|�W�g����[SYSKEN ONLINE](http://sysken.org/)��WordPress�e�[�}���Ǘ����Ă��郊�|�W�g���ł��B
-�g���͎̂��R�ł����C���S�ȃI���I���d�l�̏�ɐ��藧���Ă���̂ŁC���ՂɎg���ĂƂ�ł��Ȃ����ƂɂȂ��Ă��ӔC�͎��܂���B
+このリポジトリは[SYSKEN ONLINE](http://sysken.org/)のWordPressテーマを管理しているリポジトリです。
+使うのは自由ですが，完全なオレオレ仕様の上に成り立っているので，安易に使ってとんでもないことになっても責任は取りません。
 
 Authors
 -------
-�������Ђ�
+つくったひと
 * [yashihei](http://github.com/yashihei) (Program)
 * [windyakin](http://github.com/windyakin) (Design)
 
