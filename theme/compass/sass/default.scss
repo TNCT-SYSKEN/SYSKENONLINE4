@@ -333,13 +333,14 @@ footer {
 	color: $c_footer_text;
 	background: $c_footer_bg;
 
+	h5 {
+		margin: 0 0 1em 0;
+		padding: 0;
+		font-size: .9em;
+	}
+
 	// コンテンツリスト
 	#contents_list {
-		h5 {
-			margin: 0 0 1em 0;
-			padding: 0;
-			font-size: .9em;
-		}
 		#item {
 			margin: 0;
 			padding: 0;
@@ -347,10 +348,10 @@ footer {
 			overflow: hidden;
 		}
 		ul.line {
-			width: 28%;
+			width: 39%;
 			height: 140px;
-			margin: 0 10px;
-			padding: 0 12px;
+			margin: 0 3%;
+			padding: 0 2%;
 			border-left: 1px solid #CCC;
 			float: left;
 			li {
@@ -361,11 +362,37 @@ footer {
 		}
 	}
 
+	#management {
+		height: 110px;
+		background: darken($c_footer_bg, 5%);
+		line-height: 110px;
+		text-align: center;
+	}
+
+
 	// アリスカータレットちゃん！
 	#alice_carteret {
 		position: absolute;
-		bottom: 10px;
+		bottom: 15px;
 		font-size: .8em;
+		dl {
+			margin: 0;
+			padding: 0;
+			dt {
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+				font-weight: bold;
+			}
+			dd {
+				display: inline-block;
+				margin: 0 1em 0 .3em;
+				padding: 0;
+				img {
+					vertical-align: bottom;
+				}
+			}
+		}
 		// コピーライト
 		#copyright {
 			text-align: right;

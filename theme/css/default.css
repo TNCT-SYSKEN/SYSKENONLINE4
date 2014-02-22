@@ -359,13 +359,13 @@ footer {
   position: relative;
   display: block;
   width: 100%;
-  height: 180px;
+  height: 200px;
   margin: 20px 0 0 0;
   padding: 10px 0;
   color: #585858;
   background: #fafafa;
 }
-footer #contents_list h5 {
+footer h5 {
   margin: 0 0 1em 0;
   padding: 0;
   font-size: .9em;
@@ -377,10 +377,10 @@ footer #contents_list #item {
   overflow: hidden;
 }
 footer #contents_list ul.line {
-  width: 28%;
+  width: 39%;
   height: 140px;
-  margin: 0 10px;
-  padding: 0 12px;
+  margin: 0 3%;
+  padding: 0 2%;
   border-left: 1px solid #CCC;
   float: left;
 }
@@ -389,10 +389,34 @@ footer #contents_list ul.line li {
   font-size: 0.9em;
   line-height: 1.9;
 }
+footer #management {
+  height: 110px;
+  background: #ededed;
+  line-height: 110px;
+  text-align: center;
+}
 footer #alice_carteret {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   font-size: .8em;
+}
+footer #alice_carteret dl {
+  margin: 0;
+  padding: 0;
+}
+footer #alice_carteret dl dt {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+footer #alice_carteret dl dd {
+  display: inline-block;
+  margin: 0 1em 0 .3em;
+  padding: 0;
+}
+footer #alice_carteret dl dd img {
+  vertical-align: bottom;
 }
 footer #alice_carteret #copyright {
   text-align: right;
