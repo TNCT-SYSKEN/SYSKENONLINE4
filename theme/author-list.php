@@ -12,8 +12,8 @@ get_header();?>
 		<!-- メインバー(左) ここから -->
 		<div id="main" class="col_9">
 			<div class="abox shadow profile">
-				<h2>部員名簿</h2>
-				<p>システム研究部に在籍している部員の一覧です。</p>
+				<h2><?php the_title(); ?></h2>
+				<?php the_content(); ?>
 			</div>
 
 			<?php
