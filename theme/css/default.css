@@ -228,8 +228,14 @@ div#contents:after {
   margin: 0.5em 0;
   text-align: justify;
 }
+#main .profile-box {
+  position: relative;
+}
 #main .profile-box .profile {
   min-height: 96px;
+}
+#main .profile-box .profile p:last-child {
+  padding-bottom: 1em;
 }
 #main .profile-box .name-grade-box .name {
   margin-bottom: .3em;
@@ -256,6 +262,9 @@ div#contents:after {
   margin-right: 1em;
 }
 #main .profile-box .user-meta {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
   text-align: right;
   font-size: .9em;
 }

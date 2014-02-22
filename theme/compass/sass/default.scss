@@ -200,8 +200,12 @@ div#contents {
 
 	// 部員紹介ページ用
 	.profile-box {
+		position: relative;
 		.profile {
 			min-height: 96px;
+			p:last-child {
+				padding-bottom: 1em;
+			}
 		}
 		.name-grade-box {
 			.name {
@@ -230,6 +234,9 @@ div#contents {
 			margin-right: 1em;
 		}
 		.user-meta {
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
 			text-align: right;
 			font-size: .9em;
 		}
