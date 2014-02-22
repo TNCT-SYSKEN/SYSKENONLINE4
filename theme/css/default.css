@@ -240,12 +240,13 @@ div#contents:after {
 #main .profile-box .name-grade-box .name {
   margin-bottom: .3em;
   display: inline-block;
-  margin-right: .7em;
+  margin-right: .3em;
 }
 #main .profile-box .name-grade-box .grade {
   display: inline-block;
   font-size: .95em;
-  margin-right: .5em;
+  margin-left: .3em;
+  margin-right: .3em;
 }
 #main .profile-box .name-grade-box .social-accounts {
   display: inline;
