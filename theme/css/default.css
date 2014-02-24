@@ -442,6 +442,10 @@ footer #alice_carteret #copyright {
   color: #2C4762;
 }
 
+.icon-hatena:before {
+  color: #5279E7;
+}
+
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
