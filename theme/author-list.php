@@ -41,19 +41,19 @@ get_header();?>
 							<div class="grade"><?php echo $grade; ?></div>
 							<div class="social-accounts">
 								<?php if ( $user->twitter ): // Twitterアカウント ?>
-									<span class="social-account"><i class="icon-twitter"></i><a href="https://twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a></span>
+									<span class="social-account"><i class="icon-twitter"></i><a href="//twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a></span>
 								<?php endif; ?>
 								<?php if ( $user->facebook ): // Facebookアカウント ?>
-									<span class="social-account"><i class="icon-facebook-squared"></i><a href="https://www.facebook.com/<?php echo $user->facebook ?>"><?php echo $user->facebook ?></a></span>
+									<span class="social-account"><i class="icon-facebook-squared"></i><a href="//www.facebook.com/<?php echo $user->facebook ?>"><?php echo $user->facebook ?></a></span>
 								<?php endif; ?>
 								<?php if ( $user->github ): // GitHubアカウント ?>
-									<span class="social-account"><i class="icon-github"></i><a href="https://github.com/<?php echo $user->github ?>"><?php echo $user->github ?></a></span>
+									<span class="social-account"><i class="icon-github"></i><a href="//github.com/<?php echo $user->github ?>"><?php echo $user->github ?></a></span>
 								<?php endif; ?>
 								<?php if ( $user->tumblr ): // Tumblrアカウント ?>
-									<span class="social-account"><i class="icon-tumblr-squared"></i><a href="http://<?php echo $user->tumblr ?>.tumblr.com/"><?php echo $user->tumblr ?></a></span>
+									<span class="social-account"><i class="icon-tumblr-squared"></i><a href="//<?php echo $user->tumblr ?>.tumblr.com/"><?php echo $user->tumblr ?></a></span>
 								<?php endif; ?>
 								<?php if ( $user->hatena ): // Hatenaアカウント ?>
-									<span class="social-account"><i class="icon-hatena"></i><a href="http://profile.hatena.ne.jp/<?php echo $user->hatena ?>/"><?php echo $user->hatena ?></a></span>
+									<span class="social-account"><i class="icon-hatena"></i><a href="//profile.hatena.ne.jp/<?php echo $user->hatena ?>/"><?php echo $user->hatena ?></a></span>
 								<?php endif; ?>
 							</div>
 						</div>
