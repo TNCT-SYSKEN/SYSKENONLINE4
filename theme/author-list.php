@@ -52,6 +52,9 @@ get_header();?>
 								<?php if ( $user->tumblr ): // Tumblrアカウント ?>
 									<span class="social-account"><i class="icon-tumblr-squared"></i><a href="http://<?php echo $user->tumblr ?>.tumblr.com/"><?php echo $user->tumblr ?></a></span>
 								<?php endif; ?>
+								<?php if ( $user->hatena ): // Hatenaアカウント ?>
+									<span class="social-account"><i class="icon-hatena"></i><a href="http://profile.hatena.ne.jp/<?php echo $user->hatena ?>/"><?php echo $user->hatena ?></a></span>
+								<?php endif; ?>
 							</div>
 						</div>
 						<?php if ( $user->user_description ): ?>
