@@ -178,7 +178,7 @@ function update_profile_fields( $contactmethods ) {
 	$contactmethods['facebook'] = 'Facebook';
 	$contactmethods['github'] = 'GitHub';
 	$contactmethods['tumblr'] = 'Tumblr';
-	$contactmethods['Hatena'] = 'Hatena';
+	$contactmethods['hatena'] = 'Hatena';
 
 	$contactmethods['enterYear'] = "本科入学年(西暦)";
 	$contactmethods['enterYearAdv'] = "専攻科入学年(西暦)";
