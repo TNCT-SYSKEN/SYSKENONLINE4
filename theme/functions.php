@@ -236,18 +236,18 @@ function get_user_grade($user) {
 		$grade = "副部長";
 	}
 	// 専攻科
-	else if ( $date[mon] <= 3 && is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv <= 7 ) {
+	else if ( $date[mon] <= 3 && is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv <= 7 && $date[year] - $user->enterYearAdv > 0 ) {
 		$grade = "専攻科" . ($date[year] - $user->enterYearAdv) . "年生";
 	}
-	else if ( $date[mon] <= 4 && is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv <= 1 ) {
+	else if ( $date[mon] >= 4 && is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv <= 1 && $date[year] - $user->enterYearAdv > 0 ) {
 		$grade = "専攻科" . ($date[year] - $user->enterYearAdv + 1) . "年生";
 	}
 	// 本科 3月以前
-	else if ( $date[mon] <= 3 && is_numeric($user->enterYear) && $date[year] - $user->enterYear <= 5 ) {
+	else if ( $date[mon] <= 3 && is_numeric($user->enterYear) && $date[year] - $user->enterYear <= 5 && $date[year] - $user->enterYear > 0 ) {
 		$grade = ($date[year] - $user->enterYear) . "年生";
 	}
 	// 本科 4月以降
-	else if ( $date >= 4 && is_numeric($user->enterYear) && $date[year] - $user->enterYear <= 4 ) {
+	else if ( $date[mon] >= 4 && is_numeric($user->enterYear) && $date[year] - $user->enterYear <= 4 && $date[year] - $user->enterYear > 0 ) {
 		$grade = ($date[year] - $user->enterYear + 1) . "年生";
 	}
 	// それ以外の人(値が未入力など)は0を返すようになります
