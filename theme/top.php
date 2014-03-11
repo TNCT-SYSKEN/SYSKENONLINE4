@@ -32,7 +32,7 @@ get_header();?>
 						<?php if(get_post_type() == 'product'): ?>
 						<dt class="product">product</dt>
 						<dd>
-							<a href="<?php bloginfo('url'); ?>/product/"><?php the_title(); ?></a>
+							<a href="<?php bloginfo('url'); ?>/product/<?php the_ID(); ?>"><?php the_title(); ?></a>
 						<?php elseif(get_post_type() == 'active'): ?>
 						<dt class="active">active</dt>
 						<dd>
