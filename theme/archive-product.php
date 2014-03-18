@@ -27,6 +27,7 @@ get_header();?>
 					</h3>
 					<div class="entry-content">
 						<?php if(has_post_thumbnail()) ://サムネイル ?><div class="thumbnail"><?php the_post_thumbnail(array(310, 310)); ?></div> <?php endif; ?>
+						<?php the_content(); ?>
 					</div>
 					<div class="entry-meta">
 						<span class="creater"><i class="icon-user"></i><?php the_author(); ?></span>

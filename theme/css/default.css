@@ -285,6 +285,9 @@ div#contents:after {
   float: left;
   margin-left: 26px;
 }
+#main #products .custom-post p {
+  display: none;
+}
 #main #products .custom-post #external_nico_0 {
   width: 310px;
   height: 200px;
