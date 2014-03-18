@@ -249,7 +249,7 @@ div#contents {
 		}
 	}
     //作ったもの用
-    .products {
+    #products {
         @include clearfix();
         margin-left: -26px;
         .custom-post {
