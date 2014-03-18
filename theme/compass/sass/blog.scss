@@ -124,6 +124,25 @@ div#contents {
 			margin: 0.5em 0;
 		}
 	}
+	.entry-author {
+		margin: 1em auto;
+		padding: 10px;
+		border: 2px solid #333;
+		background: #FFF;
+		h4 {
+			margin: -10px -10px 10px -10px !important;
+			padding: 10px !important;
+			color: #FFF;
+			background: #333;
+		}
+		h5 {
+			font-size: 1.17em;
+		}
+		.write-post-list-link {
+			text-align: right;
+			font-size: 0.9em;
+		}
+	}
 	.entry-meta {
 		$s_sep_margin: 0.2em;
 		text-align: right;

@@ -108,6 +108,25 @@ div#contents {
 .post .entry-content ul, .custom-post .entry-content ul {
   margin: 0.5em 0;
 }
+.post .entry-author, .custom-post .entry-author {
+  margin: 1em auto;
+  padding: 10px;
+  border: 2px solid #333;
+  background: #FFF;
+}
+.post .entry-author h4, .custom-post .entry-author h4 {
+  margin: -10px -10px 10px -10px !important;
+  padding: 10px !important;
+  color: #FFF;
+  background: #333;
+}
+.post .entry-author h5, .custom-post .entry-author h5 {
+  font-size: 1.17em;
+}
+.post .entry-author .write-post-list-link, .custom-post .entry-author .write-post-list-link {
+  text-align: right;
+  font-size: 0.9em;
+}
 .post .entry-meta, .custom-post .entry-meta {
   text-align: right;
   font-size: 0.8em;
