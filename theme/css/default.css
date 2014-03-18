@@ -276,12 +276,9 @@ div#contents:after {
   color: #888;
 }
 #main #products {
-  overflow: hidden;
-  *zoom: 1;
   margin-left: -34px;
 }
 #main #products .custom-post {
-  float: left;
   margin-left: 34px;
 }
 #main #products .custom-post p {

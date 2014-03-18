@@ -26,7 +26,9 @@ get_header();?>
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					</h3>
 					<div class="entry-content">
-						<?php if(has_post_thumbnail()) ://サムネイル ?><div class="thumbnail"><?php the_post_thumbnail(array(310, 310)); ?></div> <?php endif; ?>
+						<a href="<?php the_permalink(); ?>">
+							<?php if(has_post_thumbnail()) ://サムネイル ?><div class="thumbnail"><?php the_post_thumbnail(array(310, 310)); ?></div> <?php endif; ?>
+						</a>
 						<?php the_content(); ?>
 					</div>
 					<div class="entry-meta">
