@@ -278,12 +278,11 @@ div#contents:after {
 #main #products {
   overflow: hidden;
   *zoom: 1;
-  margin-left: -26px;
+  margin-left: -34px;
 }
 #main #products .custom-post {
-  width: 310px;
   float: left;
-  margin-left: 26px;
+  margin-left: 34px;
 }
 #main #products .custom-post p {
   display: none;

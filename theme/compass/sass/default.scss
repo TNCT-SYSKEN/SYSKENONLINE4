@@ -251,11 +251,10 @@ div#contents {
     //作ったもの用
     #products {
         @include clearfix();
-        margin-left: -26px;
+        margin-left: -34px;
         .custom-post {
-            width: 310px;
             float: left;
-            margin-left: 26px;
+            margin-left: 34px;
             p {
             	display: none;
             }

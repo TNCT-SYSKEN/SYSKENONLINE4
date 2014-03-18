@@ -16,7 +16,7 @@ get_header();?>
 			</div>
       <div id="products">
 			<?php while (have_posts()) : the_post() ?>
-				<div class="abox shadow custom-post">
+				<div class="abox shadow custom-post col_4">
 					<h3 class="entry-title">
 						<?php if(has_term('game', 'cate')) : ?>
 							<i class="icon-game"></i>
