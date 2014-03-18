@@ -14,6 +14,7 @@ get_header();?>
 				<h2>作ったものなど</h2>
 				<p>ここでは部員の製作した作品を公開しています。</p>
 			</div>
+      <div id="products">
 			<?php while (have_posts()) : the_post() ?>
 				<div class="abox shadow custom-post">
 					<h3 class="entry-title">
@@ -25,8 +26,7 @@ get_header();?>
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					</h3>
 					<div class="entry-content">
-						<?php if(has_post_thumbnail()) ://サムネイル ?><div class="thumbnail"><?php the_post_thumbnail('eye-catch'); ?></div><?php endif; ?>
-						<?php the_content(); ?>
+						<?php if(has_post_thumbnail()) ://サムネイル ?><div class="thumbnail"><?php the_post_thumbnail(array(310, 310)); ?></div> <?php endif; ?>
 					</div>
 					<div class="entry-meta">
 						<span class="creater"><i class="icon-user"></i><?php the_author(); ?></span>
@@ -48,7 +48,8 @@ get_header();?>
 					<!--<span class="download">download</span>-->
 				</div>
 			<?php endwhile; ?>
-		</div>
+			</div>
+    </div>
 		<!-- メインバー(左) ここまで -->
 
 		<?php get_sidebar() ?>

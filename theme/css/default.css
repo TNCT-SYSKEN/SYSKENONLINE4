@@ -275,6 +275,20 @@ div#contents:after {
 #main .profile-box .descrip-none {
   color: #888;
 }
+#main .products {
+  overflow: hidden;
+  *zoom: 1;
+  margin-left: -26px;
+}
+#main .products .custom-post {
+  width: 310px;
+  float: left;
+  margin-left: 26px;
+}
+#main .products .custom-post #external_nico_0 {
+  width: 310px;
+  height: 200px;
+}
 
 #sidebar .sidebox {
   margin-bottom: 30px;
