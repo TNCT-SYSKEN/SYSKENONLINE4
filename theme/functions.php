@@ -226,31 +226,47 @@ function custom_wp_nav_menu()
 // ユーザ情報から学年を得る
 function get_user_grade($user) {
 	$date = getdate();
-	$grade = 0;
+	// 年度(4月始まり)の考え方なので4月未満は年から1を引く(2014「年」の3月は2013「年度」の3月)
+	if ( $date[mon] <= 3 ) { $date[year] -= 1; }
+	// 戻り値とする連想配列の初期化
+	$grade = array(
+		'is_active'   => false,				// 現役部員フラグ この人は現役の部員かどうか
+		'is_graduate' => false,				// 卒業生フラグ   この人はすでに卒業しているかどうか
+		'grade_text'  => '在籍していない',	// 「4年生」とか「部長」とか「専攻科1年生」とかのテキスト
+	);
 	// 部長
-	if ( $user->enterYear == 1 ) {
-		$grade = "部長";
+	if ( $user->enterYearAdv == 1 ) {
+		$grade['is_active']   = true;
+		$grade['grade_text']  = "部長";
 	}
 	// 副部長
-	else if ( $user->enterYear == 2 ) {
-		$grade = "副部長";
+	else if ( $user->enterYearAdv == 2 ) {
+		$grade['is_active']   = true;
+		$grade['grade_text']  = "副部長";
 	}
 	// 専攻科
-	else if ( $date[mon] <= 3 && is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv <= 2 && $date[year] - $user->enterYearAdv > 0 ) {
-		$grade = "専攻科" . ($date[year] - $user->enterYearAdv) . "年生";
+	else if ( is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv > 0 ) {
+		if ( $date[year] - $user->enterYearAdv < 2 ) {
+			$grade['is_active']   = true;
+			$grade['grade_text'] = "専攻科" . ($date[year] - $user->enterYearAdv + 1) . "年生";
+		}
+		else if ( $date[year] - $user->enterYearAdv >= 2 ) {
+			$grade['is_graduate'] = true;
+			$grade['grade_text']  = ($user->enterYearAdv + 1)."年度卒業生(専攻科)";
+		}
 	}
-	else if ( $date[mon] >= 4 && is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv <= 1 && $date[year] - $user->enterYearAdv > 0 ) {
-		$grade = "専攻科" . ($date[year] - $user->enterYearAdv + 1) . "年生";
+	// 本科
+	else if ( is_numeric($user->enterYear) && $date[year] - $user->enterYear > 0 ) {
+		if ( $date[year] - $user->enterYear < 5 ) {
+			$grade['is_active']   = true;
+			$grade['grade_text']  = ($date[year] - $user->enterYear) . "年生";
+		}
+		else if ( $date[year] - $user->enterYear >= 5 ) {
+			$grade['is_graduate'] = true;
+			$grade['grade_text']  = ($user->enterYear + 4)."年度卒業生";
+		}
 	}
-	// 本科 3月以前
-	else if ( $date[mon] <= 3 && is_numeric($user->enterYear) && $date[year] - $user->enterYear <= 5 && $date[year] - $user->enterYear > 0 ) {
-		$grade = ($date[year] - $user->enterYear) . "年生";
-	}
-	// 本科 4月以降
-	else if ( $date[mon] >= 4 && is_numeric($user->enterYear) && $date[year] - $user->enterYear <= 4 && $date[year] - $user->enterYear > 0 ) {
-		$grade = ($date[year] - $user->enterYear + 1) . "年生";
-	}
-	// それ以外の人(値が未入力など)は0を返すようになります
+	// 連想配列を戻り値とする
 	return $grade;
 }
 

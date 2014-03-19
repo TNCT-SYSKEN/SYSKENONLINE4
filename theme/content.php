@@ -32,7 +32,7 @@
 		<div class="profile">
 			<div class="name-grade-box">
 				<h5 class="name"><?php echo $user->display_name; ?></h5>
-				<div class="grade"><?php echo $grade; ?></div>
+				<div class="grade"><?php echo $grade['grade_text']; ?></div>
 				<div class="social-accounts">
 					<?php if ( $user->twitter ): // Twitterアカウント ?>
 						<span class="social-account"><i class="icon-twitter"></i><a href="//twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a></span>

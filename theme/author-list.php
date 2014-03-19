@@ -31,14 +31,14 @@ get_header();?>
 				usort($users, 'cmp');
 			?>
 			<?php foreach ($users as $user): ?>
-				<?php $grade = get_user_grade($user); if( !$grade ) continue; ?>
+				<?php $grade = get_user_grade($user); if( !$grade['is_active'] || !$grade['is_graduate'] ) continue; ?>
 				<?php $uid = $user->ID; ?>
 				<div class="abox shadow profile-box">
 					<?php echo get_avatar( $uid ); ?>
 					<div class="profile">
 						<div class="name-grade-box">
 							<h3 class="name"><?php echo $user->display_name; ?></h3>
-							<div class="grade"><?php echo $grade; ?></div>
+							<div class="grade"><?php echo $grade['grade_text']; ?></div>
 							<div class="social-accounts">
 								<?php if ( $user->twitter ): // Twitterアカウント ?>
 									<span class="social-account"><i class="icon-twitter"></i><a href="//twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a></span>
