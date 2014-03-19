@@ -27,7 +27,7 @@ get_header();?>
 					</h3>
 					<div class="entry-content">
 						<a href="<?php the_permalink(); ?>">
-							<?php if(has_post_thumbnail()) ://サムネイル ?><div class="thumbnail"><?php the_post_thumbnail('eye-catch'); ?></div> <?php endif; ?>
+							<?php if(has_post_thumbnail()) ://サムネイル ?><div class="thumbnail"><?php the_post_thumbnail('product-eye-catch'); ?></div> <?php endif; ?>
 						</a>
 						<?php the_content(); ?>
 					</div>
