@@ -248,7 +248,7 @@ function get_user_grade($user) {
 	else if ( is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv > 0 ) {
 		if ( $date[year] - $user->enterYearAdv < 2 ) {
 			$grade['is_active']   = true;
-			$grade['grade_text'] = "専攻科" . ($date[year] - $user->enterYearAdv + 1) . "年生";
+			$grade['grade_text']  = "専攻科" . ($date[year] - $user->enterYearAdv + 1) . "年生";
 		}
 		else if ( $date[year] - $user->enterYearAdv >= 2 ) {
 			$grade['is_graduate'] = true;
@@ -259,7 +259,7 @@ function get_user_grade($user) {
 	else if ( is_numeric($user->enterYear) && $date[year] - $user->enterYear > 0 ) {
 		if ( $date[year] - $user->enterYear < 5 ) {
 			$grade['is_active']   = true;
-			$grade['grade_text']  = ($date[year] - $user->enterYear) . "年生";
+			$grade['grade_text']  = ($date[year] - $user->enterYear + 1) . "年生";
 		}
 		else if ( $date[year] - $user->enterYear >= 5 ) {
 			$grade['is_graduate'] = true;
