@@ -236,7 +236,7 @@ function get_user_grade($user) {
 		$grade = "副部長";
 	}
 	// 専攻科
-	else if ( $date[mon] <= 3 && is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv <= 7 && $date[year] - $user->enterYearAdv > 0 ) {
+	else if ( $date[mon] <= 3 && is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv <= 2 && $date[year] - $user->enterYearAdv > 0 ) {
 		$grade = "専攻科" . ($date[year] - $user->enterYearAdv) . "年生";
 	}
 	else if ( $date[mon] >= 4 && is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv <= 1 && $date[year] - $user->enterYearAdv > 0 ) {
