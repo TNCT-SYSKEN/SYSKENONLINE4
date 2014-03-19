@@ -3,40 +3,6 @@
  * function.php WordPressの設定を書き込むのデース
  */
 
-//管理バー非表示したいとき
-// function my_function_admin_bar() {
-// 	return false;
-// }
-// add_filter('show_admin_bar' ,'my_function_admin_bar');	
-
-//キャプション付き画像が吐くコードをHTML5化 
-// いろいろあってコメントアウト、後でなんとか
-// add_filter( 'img_caption_shortcode', 'my_img_caption_shortcode', 10, 3 );
-
-// function my_img_caption_shortcode($value, $attr, $content = null) {
-// 	extract(shortcode_atts(array(
-// 		'id'	=> '',
-// 		'align'	=> 'alignnone',
-// 		'width'	=> '',
-// 		'caption' => ''
-// 	), $attr));
-// 	if ( 1 > (int) $width || empty($caption) )
-// 		return $value;
-// 	if ( $id ) $id = 'id="' . esc_attr($id) . '" ';
-// 	return '<figure ' . $id . 'class="wp-caption ' . esc_attr($align) . '" style="width: ' . (10 + (int) $width) . 'px">'
-// 	. do_shortcode( $content ) . '<figcaption class="wp-caption-text">' . $caption . '</figcaption></figure>';
-// }
-
-// add_filter('disable_captions', create_function('','return true;'));
-
-//アクションフィック(image_add_captionがフックされてる)
-// add_filter('image_send_to_editor', 'my_image_send_to_ditor', 10, 8);
-// function my_image_send_to_ditor($html, $id, $caption, $title, $align, $url, $size, $alt = '') {
-// 	$caption = '<figcaption>' . $caption . '</figcaption>';
-// 	$html = '<figure>' . $html . $caption . '</figure>';
-// 	return $html;
-// }
-
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
 
@@ -64,33 +30,6 @@ function remove_rel( $text ) {
 	$text = str_replace(' rel="category tag"', ' rel="category"', $text);
 	return $text;
 }
-
-/*
-うあがー、プラグインが細かいところできないから
-function add_custom() {
-	register_post_type('member', array(
-		'label' => 'メンバー表',
-		'menu_position' => 5,
-		'public' => true,
-		'has_archive' => true,
-		'rewrite' => array(
-			'slug' => 'member',
-			'with_front' => false
-			)
-	));
-}
-add_action('init', 'add_custom');
-
-register_taxonomy(
-	'grade',
-	'member',
-	array(
-		'label' => '学年',
-		'hierarchical' => true,
-		'rewrite' => true
-	)
-);
-*/
 
 function add_custom() {
 	register_post_type('product', array(
@@ -163,16 +102,6 @@ function custom_post_rss_set($query) {
 }
 add_filter('pre_get_posts', 'custom_post_rss_set');
 
-//コピペ http://www.warna.info/archives/1703/
-/*
-function chample_latest_posts( $wp_query ) {
-    if ( is_home() && ! isset( $wp_query->query_vars['suppress_filters'] ) ) {
-        $wp_query->query_vars['post_type'] = array( 'post', 'product' );
-    }
-}
-add_action( 'parse_query', 'chample_latest_posts' ); 
-*/
-
 // ユーザ登録情報にいろいろ追加
 function update_profile_fields( $contactmethods ) {
 	$contactmethods['twitter'] = 'Twitter';
@@ -206,23 +135,6 @@ function customize_admin_bar_menu($wp_admin_bar) {
     ));
 }
 add_action('admin_bar_menu', 'customize_admin_bar_menu', 1000);
-
-/*
-function custom_wp_nav_menu()
-{
-	$args = array(
-		'theme_location' => 'main-navi',
-		'container' => false,
-		'container_class' => " ",
-		'items_wrap' => '%3$s',
-		'echo' => false,
-	);
-	$nav = wp_nav_menu($args);
-	$nav = str_replace('class=" "', '', $nav);
-	$nav = '<nav><ul><li id="home"><a href="<?php echo home_url('/') ?>"><i class="icon-home"></i></a></li>' . $nav . '</ul></nav>'
-	return $nav;
-}
-*/
 
 // ユーザ情報から学年を得る
 function get_user_grade($user) {
