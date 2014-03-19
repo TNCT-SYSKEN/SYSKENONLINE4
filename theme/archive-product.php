@@ -26,12 +26,13 @@ get_header();?>
 						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 					</h3>
 					<div class="entry-content">
+						<?php if(has_term('game', 'cate')): ?>
 						<a href="<?php the_permalink(); ?>">
 							<?php if(has_post_thumbnail()) ://サムネイル ?><div class="thumbnail"><?php the_post_thumbnail('product-eye-catch'); ?></div>
 							<?php else: ?><div class="thumbnail"><img src="<?php bloginfo('template_url'); ?>/img/no_image_product.png"></div>
 							<?php endif; ?>
 						</a>
-						<?php if(has_term('movie', 'cate')): ?> <?php the_content(); ?> <?php endif; ?>
+						<?php elseif(has_term('movie', 'cate')): ?> <?php the_content(); ?> <?php endif; ?>
 					</div>
 					<div class="entry-meta">
 						<span class="creater"><i class="icon-user"></i><?php the_author(); ?></span>
