@@ -31,7 +31,7 @@ get_header();?>
 				usort($users, 'cmp');
 			?>
 			<?php foreach ($users as $user): ?>
-				<?php $grade = get_user_grade($user); if( !$grade['is_active'] || !$grade['is_graduate'] ) continue; ?>
+				<?php $grade = get_user_grade($user); if ( !$grade['is_active'] || $grade['is_graduate'] ) continue; ?>
 				<?php $uid = $user->ID; ?>
 				<div class="abox shadow profile-box">
 					<?php echo get_avatar( $uid ); ?>
