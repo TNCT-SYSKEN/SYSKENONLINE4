@@ -235,17 +235,17 @@ function get_user_grade($user) {
 		'grade_text'  => '在籍していない',	// 「4年生」とか「部長」とか「専攻科1年生」とかのテキスト
 	);
 	// 部長
-	if ( $user->enterYearAdv == 1 ) {
+	if ( $user->enterYear == 1 ) {
 		$grade['is_active']   = true;
 		$grade['grade_text']  = "部長";
 	}
 	// 副部長
-	else if ( $user->enterYearAdv == 2 ) {
+	else if ( $user->enterYear == 2 ) {
 		$grade['is_active']   = true;
 		$grade['grade_text']  = "副部長";
 	}
 	// 専攻科
-	else if ( is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv > 0 ) {
+	else if ( is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv >= 0 ) {
 		if ( $date[year] - $user->enterYearAdv < 2 ) {
 			$grade['is_active']   = true;
 			$grade['grade_text']  = "専攻科" . ($date[year] - $user->enterYearAdv + 1) . "年生";
@@ -256,7 +256,7 @@ function get_user_grade($user) {
 		}
 	}
 	// 本科
-	else if ( is_numeric($user->enterYear) && $date[year] - $user->enterYear > 0 ) {
+	else if ( is_numeric($user->enterYear) && $date[year] - $user->enterYear >= 0 ) {
 		if ( $date[year] - $user->enterYear < 5 ) {
 			$grade['is_active']   = true;
 			$grade['grade_text']  = ($date[year] - $user->enterYear + 1) . "年生";
