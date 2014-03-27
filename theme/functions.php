@@ -182,5 +182,8 @@ function get_user_grade($user) {
 	// 連想配列を戻り値とする
 	return $grade;
 }
+// プロフィール欄内のHTMLを許可
+remove_filter('pre_user_description', 'wp_filter_kses');
+add_filter('pre_user_description', 'wp_filter_post_kses');
 
 ?>
