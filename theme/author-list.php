@@ -58,7 +58,7 @@ get_header();?>
 							</div>
 						</div>
 						<?php if ( $user->user_description ): ?>
-							<p><?php echo $user->user_description; ?>
+							<p><?php echo $user->user_description; ?></p>
 						<?php else: ?>
 							<p class="descrip-none">自己紹介文はありません</p>
 						<?php endif; ?>
