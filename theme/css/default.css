@@ -303,8 +303,6 @@ div#contents:after {
 #sidebar .picbox {
   margin-bottom: 30px;
   padding: 0;
-}
-#sidebar .picbox#square {
   height: 222px;
 }
 #sidebar label[for^="s"] {

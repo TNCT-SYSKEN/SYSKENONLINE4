@@ -24,6 +24,13 @@ register_sidebar(array(
 	'after_title' => '</h2>',
 ));
 
+register_sidebar(array(
+	'name' => '告知用',
+	'id' => 'sidebar-2',
+	'before_widget' => '<aside id="%1$s" class="widget %2$s picbox shadow">',
+	'after_widget' => '</aside>',
+));
+
 //relのあれ
 add_filter('the_category', 'remove_rel');
 function remove_rel( $text ) {
