@@ -75,7 +75,8 @@
 		</h1>
 		<div class="col_3 space"></div>
 		<ul id="social_link" class="col_4">
-			<li id="twitter"><a href="//twitter.com/sysken"><i class="icon-twitter"></i>SYSKEN on Twitter</a></li>
+			<li id="twitter"><a href="//twitter.com/sysken"><i class="icon-twitter"></i></a></li>
+			<li id="niconico"><a href="//com.nicovideo.jp/community/co281688"><i class="icon-niconico"></i></a></li>
 		</ul>
 	</div>
 </header>

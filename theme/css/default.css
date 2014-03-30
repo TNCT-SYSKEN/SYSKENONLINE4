@@ -459,6 +459,14 @@ footer #alice_carteret #copyright {
   color: #5279E7;
 }
 
+.icon-youtube:before {
+  color: #CD201f;
+}
+
+.icon-niconico:before {
+  color: #000000;
+}
+
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
