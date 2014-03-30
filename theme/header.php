@@ -61,7 +61,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/css/blog.css">
 	<?php endif; ?>
 
-	<meta name="viewport" content="width=device-width">
+	<!-- <meta name="viewport" content="width=device-width"> -->
 	<?php wp_head(); ?>
 </head>
 <body>
