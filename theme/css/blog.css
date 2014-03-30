@@ -124,7 +124,7 @@ div#contents {
   font-size: 1.17em;
 }
 .post .entry-author .profile, .custom-post .entry-author .profile {
-  width: 550px;
+  width: 550px !important;
 }
 .post .entry-author .write-post-list-link, .custom-post .entry-author .write-post-list-link {
   text-align: right;
