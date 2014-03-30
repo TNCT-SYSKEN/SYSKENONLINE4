@@ -230,8 +230,11 @@ div#contents:after {
 }
 #main .profile-box {
   position: relative;
+  overflow: hidden;
 }
 #main .profile-box .profile {
+  float: left;
+  width: 574px;
   min-height: 96px;
 }
 #main .profile-box .profile p:last-child {

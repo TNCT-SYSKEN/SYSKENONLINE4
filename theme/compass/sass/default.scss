@@ -201,7 +201,10 @@ div#contents {
 	// 部員紹介ページ用
 	.profile-box {
 		position: relative;
+		overflow: hidden;
 		.profile {
+			float: left;
+			width: 574px;
 			min-height: 96px;
 			p:last-child {
 				padding-bottom: 1.4em;
