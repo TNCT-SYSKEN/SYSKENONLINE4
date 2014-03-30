@@ -7,8 +7,7 @@
 <!-- サイドバー(右) ここから -->
 <div id="sidebar" class="col_3">
 	<?php if (is_page() || get_post_type() == 'active' || get_post_type() == 'product'): ?>
-		<div class="picbox shadow" id="square"><a href="<?php bloginfo('url');?>/radio"><img src="<?php bloginfo('template_url'); ?>/img/sysken_radio.png" width="222" height="222"></a></div>
-		<div class="picbox shadow" id="square"><a href="<?php bloginfo('url');?>/join-us/"><img src="<?php bloginfo('template_url'); ?>/img/join.png" width="222" height="222"></a></div>
+		<?php dynamic_sidebar('sidebar-2'); ?>
 	<?php else : ?>
 		<?php dynamic_sidebar('sidebar-1'); ?>
 	<?php endif; ?>
