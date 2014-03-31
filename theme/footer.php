@@ -56,6 +56,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/jquery.transit.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/default.js"></script>
+<!-- 2014.04.01 エイプリルフールネタ Marquee -->
+<script src="<?php bloginfo('template_url'); ?>/js/april.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
