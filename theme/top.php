@@ -42,7 +42,7 @@ get_header();?>
 						<dd>
 							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 						<?php endif; ?>
-							<span class="date"><?php the_time('Y.n.j'); ?>
+							<span class="date"><?php the_time('Y.n.j'); ?></span>
 						</dd>
 					</dl>
 				<?php endwhile; endif; ?>
@@ -50,8 +50,6 @@ get_header();?>
 
 				<div id="last">
 					<div id="rss-read"><i class="icon-rss"></i><a href="<?php bloginfo('rss2_url'); ?>">このサイトのRSSを購読する</a></div>
-					<!--いつかできる-->
-					<!--<div id="whats-new"><a href="#">過去の更新情報</a><i class="icon-arrow-right"></i></div>-->
 				</div>
 
 			</article>
@@ -64,14 +62,7 @@ get_header();?>
 					<input type="text" name="s">
 					<input type="submit" value="検索">
 				</form>
-				<?//php get_search_form(); ?>
 			</div>
-
-<!--
-			<div class="abox shadow" id="facebook-likes">
-				<p>Facebookの「○○人がいいねと言っています」を置く候補地</p>
-			</div>
--->
 
 		</div>
 		<!-- メインバー(左) ここまで -->
