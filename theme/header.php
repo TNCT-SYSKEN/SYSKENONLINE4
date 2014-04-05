@@ -75,8 +75,9 @@
 		</h1>
 		<div class="col_3 space"></div>
 		<ul id="social_link" class="col_4">
-			<li id="twitter"><a href="//twitter.com/sysken"><i class="icon-twitter"></i></a></li>
-			<li id="niconico"><a href="//com.nicovideo.jp/community/co281688"><i class="icon-niconico"></i></a></li>
+			<li id="twitter"><a href="//twitter.com/sysken"><i class="icon-twitter"></i></a></li><!--
+			--><li id="github"><a href="//github.com/TNCT-SYSKEN"><i class="icon-github"></i></a></li><!--
+			--><li id="niconico"><a href="//com.nicovideo.jp/community/co281688"><i class="icon-niconico"></i></a></li>
 		</ul>
 	</div>
 </header>
