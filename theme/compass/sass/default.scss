@@ -412,17 +412,9 @@ footer {
 	}
 }
 
-// font_icons color
-.icon-twitter:before { color: #00ACED; }
-.icon-github:before { color: #363636; }
-.icon-rss:before { color: #E4711B; }
-.icon-facebook-squared:before { color: #3B5998; }
-.icon-tumblr-squared:before { color: #2C4762; }
-.icon-hatena:before { color: #5279E7; }
-.icon-youtube:before { color: #CD201f; }
-.icon-niconico:before { color: #000000; }
 
 // 便宜上別ファイルにわけたもの
 @import "_form.scss";
 @import "_dynamic.scss";
+@import "_font_icons_color.scss";
 //@import "_debug.scss";

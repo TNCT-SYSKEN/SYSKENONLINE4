@@ -433,38 +433,6 @@ footer #alice_carteret #copyright {
   text-align: right;
 }
 
-.icon-twitter:before {
-  color: #00ACED;
-}
-
-.icon-github:before {
-  color: #363636;
-}
-
-.icon-rss:before {
-  color: #E4711B;
-}
-
-.icon-facebook-squared:before {
-  color: #3B5998;
-}
-
-.icon-tumblr-squared:before {
-  color: #2C4762;
-}
-
-.icon-hatena:before {
-  color: #5279E7;
-}
-
-.icon-youtube:before {
-  color: #CD201f;
-}
-
-.icon-niconico:before {
-  color: #000000;
-}
-
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
@@ -559,4 +527,36 @@ input[type="submit"]:active, input[type^="reset"]:active, button:active {
 }
 #topscroll a {
   outline: none;
+}
+
+.icon-twitter:before {
+  color: #00ACED;
+}
+
+.icon-github:before {
+  color: #363636;
+}
+
+.icon-rss:before {
+  color: #E4711B;
+}
+
+.icon-facebook-squared:before {
+  color: #3B5998;
+}
+
+.icon-tumblr-squared:before {
+  color: #2C4762;
+}
+
+.icon-hatena:before {
+  color: #5279E7;
+}
+
+.icon-youtube:before {
+  color: #CD201f;
+}
+
+.icon-niconico:before {
+  color: #000000;
 }
