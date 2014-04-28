@@ -37,7 +37,7 @@
 				<div id="contact" class="col_10">
 					<dl>
 						<dt>テーマ</dt>
-						<dd><i class="icon-github"></i><a href="//github.com/yashihei/SYSKENONLINE4">SYSKEN ONLINE ver.4</a></dd>
+						<dd><i class="icon-github"></i><a href="//github.com/TNCT-SYSKEN/SYSKENONLINE4">SYSKEN ONLINE ver.4</a></dd>
 						<dt>動作確認済みブラウザ</dt>
 						<dd><i class="icon-ie"></i><a href="//windows.microsoft.com/ja-jp/internet-explorer/download-ie">InternetExplorer</a> <i class="icon-firefox"></i><a href="//getfirefox.jp">Firefox</a> <i class="icon-chrome"></i><a href="//www.google.co.jp/intl/ja/chrome/">Google Chrome</a> (最新版)
 						</dd>
