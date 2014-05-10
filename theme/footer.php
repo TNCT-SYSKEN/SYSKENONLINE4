@@ -41,7 +41,7 @@
 						<dt>動作確認済みブラウザ</dt>
 						<dd><i class="icon-ie"></i><a href="//windows.microsoft.com/ja-jp/internet-explorer/download-ie">InternetExplorer</a> <i class="icon-firefox"></i><a href="//getfirefox.jp">Firefox</a> <i class="icon-chrome"></i><a href="//www.google.co.jp/intl/ja/chrome/">Google Chrome</a> (最新版)
 						</dd>
-					
+					</dl>
 				</div>
 				<div id="copyright" class="col_2">&copy; 2003-<?php echo date('Y'); ?> SYSKEN</div>
 			</div>
