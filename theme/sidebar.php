@@ -15,7 +15,7 @@
 		<!-- Twitter Widgets -->
 		<div id="tw-widgets" class="shadow">
 			<h4><i class="icon-twitter"></i>Twitter</h4>
-			<a class="twitter-timeline" href="https://twitter.com/sysken" height="200" data-widget-id="364209088126664704" data-chrome="noheader nofooter noborders">@sysken からのツイート</a>
+			<a class="twitter-timeline" href="https://twitter.com/sysken" width="211" height="200" data-widget-id="364209088126664704" data-chrome="noheader nofooter noborders">@sysken からのツイート</a>
 			<div id="tw-loading"><a href="//twitter.com/sysken">Twitterへ</a></div>
 			<div id="tw-account">by @<a href="//twitter.com/sysken">sysken</a></div>
 		</div>
