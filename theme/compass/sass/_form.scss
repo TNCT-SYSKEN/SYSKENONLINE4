@@ -17,7 +17,7 @@ input::-moz-focus-inner {
 
 // テキストな入力欄
 input[type="text"], input[type="password"], input[type="search"],
-input[type="tel"], input[type="url"], input[type="datetime"],
+input[type="email"], input[type="tel"], input[type="url"], input[type="datetime"],
 input[type="month"], input[type="week"], input[type="time"],
 input[type="number"], input[type="range"], textarea
 {
