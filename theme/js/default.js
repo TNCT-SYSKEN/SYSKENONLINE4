@@ -2,6 +2,12 @@
 
 $(function(){
 
+	// メニューバー部分の下の補足的な日本語	
+	$("nav ul li").not("#home").children("a").each(function() {
+	    var title = $(this).attr("title");
+	    $(this).append("<span>"+title+"</span>");
+	});
+
 	$(window).load(function(){
 
 		// twitterウィジェットのスタイルの変更

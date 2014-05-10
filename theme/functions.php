@@ -9,7 +9,7 @@ add_theme_support('menus');
 add_image_size( 'eye-catch', 682, 383, true );
 add_image_size( 'product-eye-catch', 310, 250, true );
 
-//register_nav_menu('main-navi', 'メインナビ' );
+register_nav_menu('main-navi', 'メインナビ' );
 register_nav_menu('footer-navi', 'フッターナビ');
 
 //register_nav_menus(array);
@@ -127,19 +127,19 @@ add_filter('user_contactmethods','update_profile_fields',10,1);
 
 // Get the thumbnail image URL
 function get_thumbnail_image_url( $size ) {
-    $image_id = get_post_thumbnail_id();
-    $image_url = wp_get_attachment_image_src($image_id, $size, true);
-    echo $image_url[0];
+	$image_id = get_post_thumbnail_id();
+	$image_url = wp_get_attachment_image_src($image_id, $size, true);
+	echo $image_url[0];
 }
 
 // 管理用のツールバーに関する変更
 function customize_admin_bar_menu($wp_admin_bar) {
 	$wp_admin_bar->remove_node('wp-logo');
-	    $wp_admin_bar->add_menu(array(
-        'id'    => 'sysken-member',
-        'title' => 'しすあぷ板＠2nd',
-        'href'  => '/member/uploader/',
-    ));
+		$wp_admin_bar->add_menu(array(
+		'id'    => 'sysken-member',
+		'title' => 'しすあぷ板＠2nd',
+		'href'  => '/member/uploader/',
+	));
 }
 add_action('admin_bar_menu', 'customize_admin_bar_menu', 1000);
 
@@ -196,5 +196,28 @@ function get_user_grade($user) {
 // プロフィール欄内のHTMLを許可
 remove_filter('pre_user_description', 'wp_filter_kses');
 add_filter('pre_user_description', 'wp_filter_post_kses');
+
+ // ナビゲーションメニュー（改行とタブを削除するバージョン）
+function my_nav_menu( $args = array() )
+{
+	// 出力パラメータを保存
+	$echo = ( empty($args['echo']) ? true : $args['echo'] );
+
+	// 出力せずにコードを取得
+	$args['echo'] = false;
+	$html = wp_nav_menu( $args );
+
+	// タブをなくす（wp_nav_menu の出力では行頭にしかない前提）
+	$html = str_replace( "\t", '', $html );
+
+	// 改行をなくす（コードを見やすさを優先してコメント扱いにする）
+	$html = str_replace( "\r\n", "<!--\r\n-->", $html );
+	$html = str_replace( "\n", "<!--\n-->", $html );
+	$html = str_replace( "\r", "<!--\r-->", $html );
+
+	// 元々の設定に基づく出力
+	if ($echo) echo $html;
+	else return $html;
+}
 
 ?>

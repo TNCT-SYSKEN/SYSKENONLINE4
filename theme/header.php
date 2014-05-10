@@ -84,16 +84,18 @@
 </header>
 
 <!-- メニュー -->
-<?php //いつか動的に ?>
 <nav>
 	<ul>
-		<li id="home"><a href="<?php echo home_url('/') ?>"><i class="icon-home"></i></a></li><!-- 
-		--><li><a href="<?php echo home_url('/') ?>about">	About		<span>システム研究部とは</span>	</a></li><!--
-		--><li><a href="<?php echo home_url('/') ?>active">	Active		<span>最近の活動報告</span>		</a></li><!--
-		--><li><a href="<?php echo home_url('/') ?>list">	Member		<span>シス研部員名簿</span>		</a></li><!--
-		--><li><a href="<?php echo home_url('/') ?>blog">		Blog		<span>しすけんぶろぐ♪</span>	</a></li><!--
-		--><li><a href="<?php echo home_url('/') ?>product">	Product		<span>部員のつくったもの</span>	</a></li><!--
-		--><li><a href="<?php echo home_url('/') ?>link">		Link		<span>関連リンク</span>			</a></li>
+		<li id="home"><a href="<?php echo home_url('/') ?>"><i class="icon-home"></i></a></li><!--
+		--><?php 
+			$args = array(
+				'theme_location' => 'main-navi',
+				'container' => false,
+				'items_wrap' => '%3$s',
+			);
+			// 改行をコメントアウトするnav書き出し(function.php記載)
+			my_nav_menu($args);
+		?>
 	</ul>
 </nav>
 
