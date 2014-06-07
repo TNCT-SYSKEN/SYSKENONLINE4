@@ -220,4 +220,17 @@ function my_nav_menu( $args = array() )
 	else return $html;
 }
 
+// ログイン画面
+function custom_login_logo() { ?>
+	<style>
+		.login h1 a {
+			width: 300px;
+			height: 80px;
+			background-image: url("<?php bloginfo('template_url'); ?>/img/login-logo.png") no-repeat 0 0;
+			background-size: 300px 80px;
+		}
+	</style>
+<?php }
+add_action( 'login_enqueue_scripts', 'custom_login_logo' );
+
 ?>
