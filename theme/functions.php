@@ -226,7 +226,7 @@ function custom_login_logo() { ?>
 		.login h1 a {
 			width: 300px;
 			height: 80px;
-			background-image: url("<?php bloginfo('template_url'); ?>/img/login-logo.png") no-repeat 0 0;
+			background: url("<?php bloginfo('template_url'); ?>/img/login-logo.png") no-repeat center top;
 			background-size: 300px 80px;
 		}
 	</style>
