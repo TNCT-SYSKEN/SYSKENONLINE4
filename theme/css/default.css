@@ -52,6 +52,18 @@ header h1 {
   margin: 0;
   padding: 0;
 }
+header h1 a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 390px;
+  height: 78px;
+  background-image: url(../img/logo.png);
+  background-size: 390px 78px;
+}
+header h1 a img {
+  visibility: none;
+}
 header .space {
   height: 78px;
 }
@@ -433,6 +445,11 @@ footer #alice_carteret #copyright {
   text-align: right;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  h1 a {
+    background-image: url(../img/logo@2x.png);
+  }
+}
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
