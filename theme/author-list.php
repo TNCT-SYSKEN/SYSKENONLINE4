@@ -23,6 +23,10 @@ get_header();?>
 				$args = array('fields' => 'all_with_meta');
 				$users = get_users($args);
 				function cmp($a, $b){
+					// 専攻科性はしまっちゃおうね〜
+					if (is_numeric($a->enterYearAdv)) $a->enterYear = $a->enterYearAdv;
+					if (is_numeric($b->enterYearAdv)) $b->enterYear = $b->enterYearAdv;
+					
 					if ($a->enterYear == $b->enterYear) {
 						return ($a->ID < $b->ID ? -1 : 1);
 					}
