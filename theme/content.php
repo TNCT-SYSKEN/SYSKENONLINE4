@@ -34,8 +34,8 @@
 				<h5 class="name"><?php echo $user->display_name; ?></h5>
 				<div class="grade"><?php echo $grade['grade_text']; ?></div>
 				<div class="social-accounts">
-					<?php if ( $user->url ): //ウェブサイト ?>
-						<span class="social-account"><a href="<?php echo $user->website ?>"><i class="icon-website"></i></a></span>
+					<?php if ( $user->user_url ): //ウェブサイト ?>
+						<span class="social-account"><a href="<?php echo $user->user_url ?>"><i class="icon-website"></i></a></span>
 					<?php endif; ?>
 					<?php if ( $user->twitter ): // Twitterアカウント ?>
 						<span class="social-account"><i class="icon-twitter"></i><a href="//twitter.com/<?php echo $user->twitter ?>"><?php echo $user->twitter ?></a></span>

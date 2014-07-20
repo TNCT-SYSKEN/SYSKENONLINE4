@@ -572,7 +572,3 @@ input[type="submit"]:active, input[type^="reset"]:active, button:active {
 .icon-niconico:before {
   color: #000000;
 }
-
-.icon-website:before {
-  color: #444444;
-}
