@@ -75,6 +75,8 @@
 		<div class="col_3 space"></div>
 		<ul id="social_link" class="col_4">
 			<li id="twitter"><a href="//twitter.com/sysken"><i class="icon-twitter"></i></a></li><!--
+			--><li id="facebook"><a href="//www.facebook.com/tsuyama.sysken"><i class="icon-facebook-rect"></i></a></li><!--
+			--><li id="googleplus"><a href="//plus.google.com/105732983994050185959/"><i class="icon-googleplus-rect"></i></a></li><!--
 			--><li id="github"><a href="//github.com/TNCT-SYSKEN"><i class="icon-github"></i></a></li><!--
 			--><li id="niconico"><a href="//com.nicovideo.jp/community/co281688"><i class="icon-niconico"></i></a></li><!--
 			--><li id="youtube"><a href="//www.youtube.com/user/systemresearchclub"><i class="icon-youtube"></i></a></li>

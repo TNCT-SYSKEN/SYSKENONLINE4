@@ -572,3 +572,11 @@ input[type="submit"]:active, input[type^="reset"]:active, button:active {
 .icon-niconico:before {
   color: #000000;
 }
+
+.icon-googleplus-rect:before {
+  color: #dd4b39;
+}
+
+.icon-facebook-rect:before {
+  color: #3b5998;
+}
