@@ -49,8 +49,7 @@ function add_custom() {
 			'title',
 			'editor',
 			'author',
-			'thumbnail',
-			'comments'
+			'thumbnail'
 		),
 		'rewrite' => array(
 			'slug' => 'product',
