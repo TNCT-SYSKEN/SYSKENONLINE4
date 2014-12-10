@@ -165,7 +165,7 @@ function get_user_grade($user) {
 	}
 	else if ( $user->enterYear == 3 ) {
 		$grade['is_active']   = true;
-		$grade['grade_text']  = "飼育委員";
+		$grade['grade_text']  = "副部長代理";
 	}
 	// 専攻科
 	else if ( is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv >= 0 ) {
