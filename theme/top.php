@@ -71,4 +71,12 @@ get_header();?>
 	</div>
 </div>
 
+<div id="jack">
+	<div id="box">
+		<iframe src="/technyan-halo/" id="technyan"></iframe>
+		<div id="description"><a href="//www.tsuyama-ct.ac.jp/technyan/">てくにゃんは津山工業高等専門学校のゆるキャラです</a></div>
+		<div id="close" onclick="$('#jack').remove();">どうでもいいからSYSKEN ONLINEを見せろ</div>
+	</div>
+</div>
+
 <?php get_footer(); ?>

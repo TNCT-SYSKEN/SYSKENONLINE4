@@ -28,19 +28,19 @@
   text-transform: capitalize;
 }
 #news dl dt.member {
-  background: #941b7b;
+  background: #941B7B;
 }
 #news dl dt.active {
-  background: #e4ae21;
+  background: #E4AE21;
 }
 #news dl dt.blog {
-  background: #188ac0;
+  background: #188AC0;
 }
 #news dl dt.product {
-  background: #66b829;
+  background: #66B829;
 }
 #news dl dt.other {
-  background: #6a6a6a;
+  background: #6A6A6A;
 }
 #news dl dd {
   float: left;
@@ -87,4 +87,53 @@
 #top-search input[name="s"] {
   margin-left: .5em;
   width: 200px;
+}
+
+#jack {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 640px;
+  height: 500px;
+  margin: auto;
+}
+
+#technyan {
+  border: 0;
+  margin: 0 auto 20px;
+  padding: 0;
+  width: 640px;
+  height: 370px;
+  overflow: hidden;
+}
+
+#close {
+  font-weight: bold;
+  color: #FFF;
+  width: 400px;
+  margin: 50px auto;
+  background: #000;
+  line-height: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#description {
+  color: #FFF;
+  text-align: center;
+}
+
+#description a {
+  color: #FFF;
 }
