@@ -49,8 +49,8 @@ div#contents {
   position: relative;
   margin: 0.5em;
   padding: 20px;
-  border: 1px dotted #AAAAAA;
-  background: #EEEFF0;
+  border: 1px dotted #aaaaaa;
+  background: #eeeff0;
   z-index: 1;
 }
 .post .entry-content blockquote:after, .custom-post .entry-content blockquote:after {
@@ -64,7 +64,7 @@ div#contents {
   z-index: -1;
 }
 .post .entry-content q, .custom-post .entry-content q {
-  border-bottom: 1px dotted #AAAAAA;
+  border-bottom: 1px dotted #aaaaaa;
 }
 .post .entry-content .wp-caption, .custom-post .entry-content .wp-caption {
   margin: 0 auto;
@@ -148,14 +148,14 @@ div#contents {
   padding: 0.1em 0.5em;
   font-size: .94em;
   border-radius: 2px;
-  color: #FFF;
-  background: #188AC0;
+  color: white;
+  background: #188ac0;
   text-decoration: none;
   outline: none;
 }
 .post .entry-meta .category a[rel="category"]:link, .post .entry-meta .category a[rel="category"]:visited, .custom-post .entry-meta .category a[rel="category"]:link, .custom-post .entry-meta .category a[rel="category"]:visited {
-  color: #FFF;
-  background: #188AC0;
+  color: white;
+  background: #188ac0;
   text-decoration: none;
   outline: none;
 }
