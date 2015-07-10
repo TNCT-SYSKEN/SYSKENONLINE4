@@ -14,7 +14,7 @@ get_header();?>
 				<h2>作ったものなど</h2>
 				<p>ここでは部員の製作した作品を公開しています。</p>
 			</div>
-      <div id="products">
+			<div id="products">
 			<?php while (have_posts()) : the_post() ?>
 				<div class="abox shadow custom-post col_4">
 					<h3 class="entry-title">
@@ -52,6 +52,7 @@ get_header();?>
 					<!--<span class="download">download</span>-->
 				</div>
 			<?php endwhile; ?>
+			</div>
 			<?php if ($wp_query->max_num_pages > 1) : ?>
 				<div id="pager" class="abox shadow">
 					<div class="next"><?php previous_posts_link(); ?></div>
@@ -59,7 +60,6 @@ get_header();?>
 				</div>
 			<?php endif; ?>
 		</div>
-    </div>
 		<!-- メインバー(左) ここまで -->
 
 		<?php get_sidebar() ?>

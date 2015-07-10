@@ -28,19 +28,19 @@
   text-transform: capitalize;
 }
 #news dl dt.member {
-  background: #941b7b;
+  background: #941B7B;
 }
 #news dl dt.active {
-  background: #e4ae21;
+  background: #E4AE21;
 }
 #news dl dt.blog {
-  background: #188ac0;
+  background: #188AC0;
 }
 #news dl dt.product {
-  background: #66b829;
+  background: #66B829;
 }
 #news dl dt.other {
-  background: #6a6a6a;
+  background: #6A6A6A;
 }
 #news dl dd {
   float: left;

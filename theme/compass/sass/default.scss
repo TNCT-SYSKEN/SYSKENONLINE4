@@ -263,17 +263,14 @@ div#contents {
 			color: #888;
 		}
 	}
-    //作ったもの用
-    #products {
-        margin-left: -34px;
-        .custom-post {
-            margin-left: 34px;
-            #external_nico_0 {
-                width: 310px;
-                height: 250px;
-            }
-        }
-    }
+	//作ったもの用
+	#products {
+		@include clearfix();
+		margin-left: -34px;
+		.custom-post {
+			margin-left: 34px;
+		}
+	}
 }
 
 // サイドバー
