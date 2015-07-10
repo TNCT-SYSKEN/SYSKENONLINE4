@@ -52,7 +52,13 @@ get_header();?>
 					<!--<span class="download">download</span>-->
 				</div>
 			<?php endwhile; ?>
-			</div>
+			<?php if ($wp_query->max_num_pages > 1) : ?>
+				<div id="pager" class="abox shadow">
+					<div class="next"><?php previous_posts_link(); ?></div>
+					<div class="prev"><?php next_posts_link(); ?></div>
+				</div>
+			<?php endif; ?>
+		</div>
     </div>
 		<!-- メインバー(左) ここまで -->
 
