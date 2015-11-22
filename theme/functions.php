@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
  * function.php WordPressの設定を書き込むのデース
  */
@@ -14,7 +14,7 @@ register_nav_menu('footer-navi', 'フッターナビ');
 
 //register_nav_menus(array);
 
-//サイドバーを定義 
+//サイドバーを定義
 register_sidebar(array(
 	'name' => 'メインサイドバー',
 	'id' => 'sidebar-1',
@@ -85,7 +85,7 @@ function add_custom() {
 		)
 	));
 	//flush_rewrite_rules();
-	
+
 	//WordTwitでpost_typeに対応させるため
 	global $wp_post_types;
 	$wp_post_types["post"]->labels->singular_name= "ブログ";
@@ -118,8 +118,9 @@ function update_profile_fields( $contactmethods ) {
 
 	$contactmethods['enterYear'] = "本科入学年(西暦)";
 	$contactmethods['enterYearAdv'] = "専攻科入学年(西暦)";
+	$contactmethods['exitYear'] = "中退年月(西暦/月 理由)";
 
-	
+
 	return $contactmethods;
 }
 add_filter('user_contactmethods','update_profile_fields',10,1);
@@ -166,6 +167,11 @@ function get_user_grade($user) {
 	else if ( $user->enterYear == 3 ) {
 		$grade['is_active']   = true;
 		$grade['grade_text']  = "副部長代理";
+	}
+	// 中退
+	else if ( preg_match('/^(\d{4})\/([12]?\d)( .+)?$/', $user->exitYear, $regex) ) {
+		$grade['is_active']   = false;
+		$grade['grade_text']  = $regex[1] . "年度" . $regex[2] . "月". $regex[3];
 	}
 	// 専攻科
 	else if ( is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv >= 0 ) {
