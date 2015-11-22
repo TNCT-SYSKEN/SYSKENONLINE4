@@ -171,14 +171,7 @@ function get_user_grade($user) {
 	// 中退
 	else if ( preg_match('/^(\d{4})\/([12]?\d)( .+)?$/', $user->exitYear, $regex) ) {
 		$grade['is_active']   = false;
-		$grade['grade_text']  = "";
-		if ( is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv >= 0 ) {
-			$grade['grade_text'] .= $user->enterYearAdv . "年度専攻科入学 ";
-		}
-		else if ( is_numeric($user->enterYear) && $date[year] - $user->enterYear >= 0 )
-			$grade['grade_text'] .= $user->enterYear . "年度入学 ";
-		}
-		$grade['grade_text']  .= $regex[1] . "年" . $regex[2] . "月". $regex[3];
+		$grade['grade_text']  = $regex[1] . "年" . $regex[2] . "月". $regex[3];
 	}
 	// 専攻科
 	else if ( is_numeric($user->enterYearAdv) && $date[year] - $user->enterYearAdv >= 0 ) {
