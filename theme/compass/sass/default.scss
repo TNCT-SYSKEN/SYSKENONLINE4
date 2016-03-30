@@ -171,6 +171,7 @@ nav {
 	margin: 10px 0;
 }
 
+/* april2016 
 div#contents {
 	margin: 0;
 	padding: 30px 0;
@@ -186,6 +187,7 @@ div#contents {
 		visibility:hidden;
 	}
 }
+*/
 
 // メイン
 #main {
@@ -426,4 +428,5 @@ footer {
 @import "_form.scss";
 @import "_dynamic.scss";
 @import "_font_icons_color.scss";
+@import "_april2016";
 //@import "_debug.scss";

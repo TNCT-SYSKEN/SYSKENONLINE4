@@ -70,5 +70,11 @@ get_header();?>
 		<?php get_sidebar() ?>
 	</div>
 </div>
-
+<div id="jack">
+	<div id="box">
+		<iframe src="april2016/" id="technyan"></iframe>
+		<div id="description"><a href="//www.tsuyama-ct.ac.jp/technyan/">てくにゃんは津山高専のゆるキャラです</a></div>
+		<div id="close" onclick="$('#jack').remove();">IDOL ONLINEを見る★</div>
+	</div>
+</div>
 <?php get_footer(); ?>
