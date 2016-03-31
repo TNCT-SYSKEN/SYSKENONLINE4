@@ -8,7 +8,10 @@
 <!-- フッター -->
 <footer>
 	<div class="container">
+		<!-- Aprill2016
 		<h5>SYSKEN ONLINE - 津山高専システム研究部公式ウェブサイト</h5>
+		-->
+		<h5>IDOL ONLINE - 津山高専アイドル研究部公式ウェブサイト</h5>
 		<div id="contents_list" class="warp">
 			<?php 
 				$args = array(
