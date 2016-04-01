@@ -70,7 +70,7 @@
 <header>
 	<div class="container">
 		<h1 id="logo" class="col_5">
-			<a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo-aprill2016@2x.png"></a>
+			<a href="<?php echo home_url('/'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo@2x.png"></a>
 		</h1>
 		<div class="col_3 space"></div>
 		<ul id="social_link" class="col_4">

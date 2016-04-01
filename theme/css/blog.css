@@ -149,19 +149,19 @@ div#contents {
   font-size: .94em;
   border-radius: 2px;
   color: #FFF;
-  background: #FF7F50;
+  background: #188AC0;
   text-decoration: none;
   outline: none;
 }
 .post .entry-meta .category a[rel="category"]:link, .post .entry-meta .category a[rel="category"]:visited, .custom-post .entry-meta .category a[rel="category"]:link, .custom-post .entry-meta .category a[rel="category"]:visited {
   color: #FFF;
-  background: #FF7F50;
+  background: #188AC0;
   text-decoration: none;
   outline: none;
 }
 .post .entry-meta .category a[rel="category"]:hover, .post .entry-meta .category a[rel="category"]:active, .custom-post .entry-meta .category a[rel="category"]:hover, .custom-post .entry-meta .category a[rel="category"]:active {
   color: white;
-  background: #ff926a;
+  background: #1b9ad7;
   text-decoration: underline;
   outline: none;
 }
